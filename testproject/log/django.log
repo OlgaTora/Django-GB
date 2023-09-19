@@ -1,0 +1,440 @@
+INFO 2023-09-19 17:33:29,832 /home/olgatorres/PycharmProjects/Django/testproject/testproject/settings.py changed, reloading. autoreload 18614 trigger_reload
+INFO 2023-09-19 17:33:30,096 Watching for file changes with StatReloader autoreload 18633 run_with_reloader
+INFO 2023-09-19 17:33:30,637 Number is 65 views 18633 get_number
+INFO 2023-09-19 17:33:30,637 "GET /random/number HTTP/1.1" 200 12 basehttp 18633 log_message
+INFO 2023-09-19 17:33:31,070 Number is 80 views 18633 get_number
+INFO 2023-09-19 17:33:31,070 "GET /random/number HTTP/1.1" 200 12 basehttp 18633 log_message
+INFO 2023-09-19 17:35:18,106 /home/olgatorres/PycharmProjects/Django/testproject/testproject/settings.py changed, reloading. autoreload 18633 trigger_reload
+INFO 2023-09-19 17:47:23,706 Watching for file changes with StatReloader autoreload 19028 run_with_reloader
+INFO 2023-09-19 17:47:26,313 Index page accessed views 19028 index
+INFO 2023-09-19 17:47:26,316 "GET / HTTP/1.1" 200 123 basehttp 19028 log_message
+INFO 2023-09-19 17:47:27,662 Index page accessed views 19028 index
+INFO 2023-09-19 17:47:27,663 "GET / HTTP/1.1" 200 123 basehttp 19028 log_message
+WARNING 2023-09-19 17:47:49,302 Not Found: /about log 19028 log_response
+WARNING 2023-09-19 17:47:49,302 "GET /about HTTP/1.1" 404 2637 basehttp 19028 log_message
+INFO 2023-09-19 17:48:38,608 /home/olgatorres/PycharmProjects/Django/testproject/hwapp/urls.py changed, reloading. autoreload 19028 trigger_reload
+INFO 2023-09-19 17:48:38,858 Watching for file changes with StatReloader autoreload 19048 run_with_reloader
+INFO 2023-09-19 17:48:39,424 Index page accessed views 19048 about
+INFO 2023-09-19 17:48:39,427 "GET /about HTTP/1.1" 200 123 basehttp 19048 log_message
+INFO 2023-09-19 17:52:01,963 /home/olgatorres/PycharmProjects/Django/testproject/hwapp/urls.py changed, reloading. autoreload 19048 trigger_reload
+INFO 2023-09-19 17:52:02,236 Watching for file changes with StatReloader autoreload 19159 run_with_reloader
+INFO 2023-09-19 17:53:26,344 Index page accessed views 19159 index
+INFO 2023-09-19 17:53:26,346 "GET / HTTP/1.1" 200 123 basehttp 19159 log_message
+INFO 2023-09-19 17:53:27,164 Index page accessed views 19159 index
+INFO 2023-09-19 17:53:27,164 "GET / HTTP/1.1" 200 123 basehttp 19159 log_message
+INFO 2023-09-19 17:54:44,421 Index page accessed views 19159 index
+ERROR 2023-09-19 17:54:44,457 Internal Server Error: / log 19159 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp/views.py", line 9, in index
+    return render(request, 'hwapp/index.html')
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '('static', filename='images/roger.png')' from 'url_for('static', filename='images/roger.png')'
+ERROR 2023-09-19 17:54:44,458 "GET / HTTP/1.1" 500 165489 basehttp 19159 log_message
+INFO 2023-09-19 17:57:37,393 Index page accessed views 19159 index
+INFO 2023-09-19 17:57:37,394 "GET / HTTP/1.1" 200 849 basehttp 19159 log_message
+WARNING 2023-09-19 17:57:37,429 "GET /static/images/roger.png HTTP/1.1" 404 1807 basehttp 19159 log_message
+WARNING 2023-09-19 17:57:37,429 "GET /static/css/style.css HTTP/1.1" 404 1798 basehttp 19159 log_message
+WARNING 2023-09-19 17:57:42,694 "GET /static/images/roger.png HTTP/1.1" 404 1807 basehttp 19159 log_message
+INFO 2023-09-19 17:57:49,638 Index page accessed views 19159 index
+INFO 2023-09-19 17:57:49,638 "GET / HTTP/1.1" 200 849 basehttp 19159 log_message
+WARNING 2023-09-19 17:57:49,662 "GET /static/css/style.css HTTP/1.1" 404 1798 basehttp 19159 log_message
+WARNING 2023-09-19 17:57:49,667 "GET /static/images/roger.png HTTP/1.1" 404 1807 basehttp 19159 log_message
+INFO 2023-09-19 17:59:05,840 Index page accessed views 19159 index
+INFO 2023-09-19 17:59:05,842 "GET / HTTP/1.1" 200 842 basehttp 19159 log_message
+WARNING 2023-09-19 17:59:05,866 Not Found: /css/style.css log 19159 log_response
+WARNING 2023-09-19 17:59:05,867 "GET /css/style.css HTTP/1.1" 404 2825 basehttp 19159 log_message
+WARNING 2023-09-19 17:59:05,912 "GET /static/images/roger.png HTTP/1.1" 404 1807 basehttp 19159 log_message
+INFO 2023-09-19 17:59:06,637 Index page accessed views 19159 index
+INFO 2023-09-19 17:59:06,638 "GET / HTTP/1.1" 200 842 basehttp 19159 log_message
+WARNING 2023-09-19 17:59:06,661 Not Found: /css/style.css log 19159 log_response
+WARNING 2023-09-19 17:59:06,661 "GET /css/style.css HTTP/1.1" 404 2825 basehttp 19159 log_message
+WARNING 2023-09-19 17:59:06,708 "GET /static/images/roger.png HTTP/1.1" 404 1807 basehttp 19159 log_message
+INFO 2023-09-19 17:59:07,504 Index page accessed views 19159 index
+INFO 2023-09-19 17:59:07,505 "GET / HTTP/1.1" 200 842 basehttp 19159 log_message
+WARNING 2023-09-19 17:59:07,527 Not Found: /css/style.css log 19159 log_response
+WARNING 2023-09-19 17:59:07,528 "GET /css/style.css HTTP/1.1" 404 2825 basehttp 19159 log_message
+WARNING 2023-09-19 17:59:07,572 "GET /static/images/roger.png HTTP/1.1" 404 1807 basehttp 19159 log_message
+WARNING 2023-09-19 17:59:10,915 Not Found: /css/style.css log 19159 log_response
+WARNING 2023-09-19 17:59:10,916 "GET /css/style.css HTTP/1.1" 404 2825 basehttp 19159 log_message
+WARNING 2023-09-19 17:59:10,930 Not Found: /css/style.css log 19159 log_response
+WARNING 2023-09-19 17:59:10,930 "GET /css/style.css HTTP/1.1" 404 2825 basehttp 19159 log_message
+WARNING 2023-09-19 17:59:19,177 Not Found: /css/style.css log 19159 log_response
+WARNING 2023-09-19 17:59:19,177 "GET /css/style.css HTTP/1.1" 404 2825 basehttp 19159 log_message
+WARNING 2023-09-19 17:59:19,186 Not Found: /css/style.css log 19159 log_response
+WARNING 2023-09-19 17:59:19,186 "GET /css/style.css HTTP/1.1" 404 2825 basehttp 19159 log_message
+INFO 2023-09-19 17:59:33,060 Index page accessed views 19159 index
+INFO 2023-09-19 17:59:33,062 "GET / HTTP/1.1" 200 849 basehttp 19159 log_message
+WARNING 2023-09-19 17:59:33,113 "GET /static/css/style.css HTTP/1.1" 404 1798 basehttp 19159 log_message
+WARNING 2023-09-19 17:59:33,118 "GET /static/images/roger.png HTTP/1.1" 404 1807 basehttp 19159 log_message
+INFO 2023-09-19 18:00:07,341 Index page accessed views 19159 index
+INFO 2023-09-19 18:00:07,342 "GET / HTTP/1.1" 200 849 basehttp 19159 log_message
+WARNING 2023-09-19 18:00:07,388 "GET /static/css/style.css HTTP/1.1" 404 1798 basehttp 19159 log_message
+WARNING 2023-09-19 18:00:07,393 "GET /static/images/roger.png HTTP/1.1" 404 1807 basehttp 19159 log_message
+INFO 2023-09-19 18:01:02,895 Index page accessed views 19159 index
+INFO 2023-09-19 18:01:02,896 "GET / HTTP/1.1" 200 849 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:02,943 "GET /static/css/style.css HTTP/1.1" 404 1798 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:02,949 "GET /static/images/roger.png HTTP/1.1" 404 1807 basehttp 19159 log_message
+INFO 2023-09-19 18:01:07,064 Index page accessed views 19159 index
+INFO 2023-09-19 18:01:07,065 "GET / HTTP/1.1" 200 849 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:07,106 "GET /static/css/style.css HTTP/1.1" 404 1798 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:07,110 "GET /static/images/roger.png HTTP/1.1" 404 1807 basehttp 19159 log_message
+INFO 2023-09-19 18:01:21,990 Index page accessed views 19159 index
+INFO 2023-09-19 18:01:21,991 "GET / HTTP/1.1" 200 848 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:22,037 Not Found: /hwapp/css/style.css log 19159 log_response
+WARNING 2023-09-19 18:01:22,037 "GET /hwapp/css/style.css HTTP/1.1" 404 2843 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:22,041 "GET /static/images/roger.png HTTP/1.1" 404 1807 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:22,069 Not Found: /hwapp/css/style.css log 19159 log_response
+WARNING 2023-09-19 18:01:22,070 "GET /hwapp/css/style.css HTTP/1.1" 404 2843 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:22,094 Not Found: /hwapp/css/style.css log 19159 log_response
+WARNING 2023-09-19 18:01:22,094 "GET /hwapp/css/style.css HTTP/1.1" 404 2843 basehttp 19159 log_message
+INFO 2023-09-19 18:01:23,783 Index page accessed views 19159 index
+INFO 2023-09-19 18:01:23,784 "GET / HTTP/1.1" 200 848 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:23,824 Not Found: /hwapp/css/style.css log 19159 log_response
+WARNING 2023-09-19 18:01:23,824 "GET /hwapp/css/style.css HTTP/1.1" 404 2843 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:23,877 "GET /static/images/roger.png HTTP/1.1" 404 1807 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:23,965 Not Found: /hwapp/css/style.css log 19159 log_response
+WARNING 2023-09-19 18:01:23,966 "GET /hwapp/css/style.css HTTP/1.1" 404 2843 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:23,973 Not Found: /hwapp/css/style.css log 19159 log_response
+WARNING 2023-09-19 18:01:23,974 "GET /hwapp/css/style.css HTTP/1.1" 404 2843 basehttp 19159 log_message
+INFO 2023-09-19 18:01:27,618 Index page accessed views 19159 index
+INFO 2023-09-19 18:01:27,618 "GET / HTTP/1.1" 200 848 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:27,671 Not Found: /hwapp/css/style.css log 19159 log_response
+WARNING 2023-09-19 18:01:27,671 "GET /hwapp/css/style.css HTTP/1.1" 404 2843 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:27,676 "GET /static/images/roger.png HTTP/1.1" 404 1807 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:27,712 Not Found: /hwapp/css/style.css log 19159 log_response
+WARNING 2023-09-19 18:01:27,713 "GET /hwapp/css/style.css HTTP/1.1" 404 2843 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:27,778 Not Found: /hwapp/css/style.css log 19159 log_response
+WARNING 2023-09-19 18:01:27,779 "GET /hwapp/css/style.css HTTP/1.1" 404 2843 basehttp 19159 log_message
+INFO 2023-09-19 18:01:51,739 Index page accessed views 19159 index
+INFO 2023-09-19 18:01:51,741 "GET / HTTP/1.1" 200 854 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:51,790 Not Found: /hwapp/css/style.css log 19159 log_response
+WARNING 2023-09-19 18:01:51,790 "GET /hwapp/css/style.css HTTP/1.1" 404 2843 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:51,794 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:51,886 Not Found: /hwapp/css/style.css log 19159 log_response
+WARNING 2023-09-19 18:01:51,887 "GET /hwapp/css/style.css HTTP/1.1" 404 2843 basehttp 19159 log_message
+WARNING 2023-09-19 18:01:51,916 Not Found: /hwapp/css/style.css log 19159 log_response
+WARNING 2023-09-19 18:01:51,917 "GET /hwapp/css/style.css HTTP/1.1" 404 2843 basehttp 19159 log_message
+WARNING 2023-09-19 18:02:07,306 Not Found: /about/ log 19159 log_response
+WARNING 2023-09-19 18:02:07,307 "GET /about/ HTTP/1.1" 404 2804 basehttp 19159 log_message
+WARNING 2023-09-19 18:02:34,485 Not Found: /hwapp/css/style.css log 19159 log_response
+WARNING 2023-09-19 18:02:34,486 "GET /hwapp/css/style.css HTTP/1.1" 404 2843 basehttp 19159 log_message
+WARNING 2023-09-19 18:02:34,500 Not Found: /hwapp/css/style.css log 19159 log_response
+WARNING 2023-09-19 18:02:34,500 "GET /hwapp/css/style.css HTTP/1.1" 404 2843 basehttp 19159 log_message
+INFO 2023-09-19 18:03:19,843 Index page accessed views 19159 index
+INFO 2023-09-19 18:03:19,844 "GET / HTTP/1.1" 200 861 basehttp 19159 log_message
+WARNING 2023-09-19 18:03:19,894 "GET /static/hwapp/css/style.css HTTP/1.1" 404 1816 basehttp 19159 log_message
+WARNING 2023-09-19 18:03:19,898 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19159 log_message
+INFO 2023-09-19 18:03:25,521 Index page accessed views 19159 index
+INFO 2023-09-19 18:03:25,522 "GET / HTTP/1.1" 200 861 basehttp 19159 log_message
+WARNING 2023-09-19 18:03:25,562 "GET /static/hwapp/css/style.css HTTP/1.1" 404 1816 basehttp 19159 log_message
+WARNING 2023-09-19 18:03:25,566 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19159 log_message
+WARNING 2023-09-19 18:03:27,086 Not Found: /home/ log 19159 log_response
+WARNING 2023-09-19 18:03:27,086 "GET /home/ HTTP/1.1" 404 2801 basehttp 19159 log_message
+INFO 2023-09-19 18:03:37,359 Index page accessed views 19159 index
+WARNING 2023-09-19 18:03:37,372 Not Found: /home/ log 19159 log_response
+WARNING 2023-09-19 18:03:37,373 "GET /home/ HTTP/1.1" 404 2801 basehttp 19159 log_message
+INFO 2023-09-19 18:05:36,700 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/urls.py changed, reloading. autoreload 19159 trigger_reload
+INFO 2023-09-19 18:05:36,989 Watching for file changes with StatReloader autoreload 19479 run_with_reloader
+INFO 2023-09-19 18:05:37,511 Index page accessed views 19479 index
+INFO 2023-09-19 18:05:37,514 "GET / HTTP/1.1" 200 861 basehttp 19479 log_message
+WARNING 2023-09-19 18:05:37,565 "GET /static/hwapp/css/style.css HTTP/1.1" 404 1816 basehttp 19479 log_message
+WARNING 2023-09-19 18:05:37,569 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19479 log_message
+INFO 2023-09-19 18:05:38,648 Index page accessed views 19479 index
+INFO 2023-09-19 18:05:38,649 "GET /home/ HTTP/1.1" 200 861 basehttp 19479 log_message
+WARNING 2023-09-19 18:05:38,715 "GET /static/hwapp/css/style.css HTTP/1.1" 404 1816 basehttp 19479 log_message
+WARNING 2023-09-19 18:05:38,719 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19479 log_message
+INFO 2023-09-19 18:05:40,323 Index page accessed views 19479 about
+INFO 2023-09-19 18:05:40,324 "GET /about/ HTTP/1.1" 200 123 basehttp 19479 log_message
+INFO 2023-09-19 18:09:38,201 Index page accessed views 19479 about
+INFO 2023-09-19 18:09:38,203 "GET /about/ HTTP/1.1" 200 834 basehttp 19479 log_message
+WARNING 2023-09-19 18:09:38,252 "GET /static/hwapp/css/style.css HTTP/1.1" 404 1816 basehttp 19479 log_message
+WARNING 2023-09-19 18:09:38,257 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19479 log_message
+INFO 2023-09-19 18:12:00,919 Index page accessed views 19479 about
+ERROR 2023-09-19 18:12:00,947 Internal Server Error: /about/ log 19479 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp/views.py", line 14, in about
+    return render(request, 'hwapp/about.html')
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'static'. Did you forget to register or load this tag?
+ERROR 2023-09-19 18:12:00,949 "GET /about/ HTTP/1.1" 500 158398 basehttp 19479 log_message
+INFO 2023-09-19 18:13:14,885 Index page accessed views 19479 about
+INFO 2023-09-19 18:13:14,886 "GET /about/ HTTP/1.1" 200 820 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:14,941 Not Found: /about/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:13:14,942 "GET /about/css/style.css HTTP/1.1" 404 2845 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:14,945 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:15,041 Not Found: /about/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:13:15,041 "GET /about/css/style.css HTTP/1.1" 404 2845 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:15,071 Not Found: /about/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:13:15,071 "GET /about/css/style.css HTTP/1.1" 404 2845 basehttp 19479 log_message
+INFO 2023-09-19 18:13:25,736 Index page accessed views 19479 index
+INFO 2023-09-19 18:13:25,737 "GET /home/ HTTP/1.1" 200 847 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:25,796 Not Found: /home/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:13:25,797 "GET /home/css/style.css HTTP/1.1" 404 2842 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:25,801 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:25,829 Not Found: /home/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:13:25,830 "GET /home/css/style.css HTTP/1.1" 404 2842 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:25,886 Not Found: /home/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:13:25,887 "GET /home/css/style.css HTTP/1.1" 404 2842 basehttp 19479 log_message
+INFO 2023-09-19 18:13:29,299 Index page accessed views 19479 about
+INFO 2023-09-19 18:13:29,300 "GET /about/ HTTP/1.1" 200 820 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:29,364 Not Found: /about/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:13:29,365 "GET /about/css/style.css HTTP/1.1" 404 2845 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:29,369 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:29,406 Not Found: /about/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:13:29,407 "GET /about/css/style.css HTTP/1.1" 404 2845 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:29,466 Not Found: /about/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:13:29,467 "GET /about/css/style.css HTTP/1.1" 404 2845 basehttp 19479 log_message
+INFO 2023-09-19 18:13:32,506 Index page accessed views 19479 index
+INFO 2023-09-19 18:13:32,507 "GET /home/ HTTP/1.1" 200 847 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:32,578 Not Found: /home/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:13:32,579 "GET /home/css/style.css HTTP/1.1" 404 2842 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:32,583 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:32,625 Not Found: /home/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:13:32,626 "GET /home/css/style.css HTTP/1.1" 404 2842 basehttp 19479 log_message
+WARNING 2023-09-19 18:13:32,671 Not Found: /home/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:13:32,671 "GET /home/css/style.css HTTP/1.1" 404 2842 basehttp 19479 log_message
+INFO 2023-09-19 18:14:44,411 Index page accessed views 19479 index
+INFO 2023-09-19 18:14:44,412 "GET /home/ HTTP/1.1" 200 855 basehttp 19479 log_message
+WARNING 2023-09-19 18:14:44,462 "GET /static/css/style.css HTTP/1.1" 404 1798 basehttp 19479 log_message
+WARNING 2023-09-19 18:14:44,466 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19479 log_message
+INFO 2023-09-19 18:16:08,025 Index page accessed views 19479 index
+INFO 2023-09-19 18:16:08,026 "GET /home/ HTTP/1.1" 200 861 basehttp 19479 log_message
+WARNING 2023-09-19 18:16:08,072 "GET /static/hwapp/css/style.css HTTP/1.1" 404 1816 basehttp 19479 log_message
+WARNING 2023-09-19 18:16:08,077 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19479 log_message
+INFO 2023-09-19 18:16:19,021 Index page accessed views 19479 about
+INFO 2023-09-19 18:16:19,022 "GET /about/ HTTP/1.1" 200 834 basehttp 19479 log_message
+WARNING 2023-09-19 18:16:19,088 "GET /static/hwapp/css/style.css HTTP/1.1" 404 1816 basehttp 19479 log_message
+WARNING 2023-09-19 18:16:19,094 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19479 log_message
+INFO 2023-09-19 18:18:21,895 Index page accessed views 19479 about
+INFO 2023-09-19 18:18:21,896 "GET /about/ HTTP/1.1" 200 845 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:21,945 Not Found: /about/testproject/static/hwapp/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:18:21,945 "GET /about/testproject/static/hwapp/css/style.css HTTP/1.1" 404 2920 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:21,950 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:22,038 Not Found: /about/testproject/static/hwapp/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:18:22,039 "GET /about/testproject/static/hwapp/css/style.css HTTP/1.1" 404 2920 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:22,060 Not Found: /about/testproject/static/hwapp/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:18:22,060 "GET /about/testproject/static/hwapp/css/style.css HTTP/1.1" 404 2920 basehttp 19479 log_message
+INFO 2023-09-19 18:18:23,019 Index page accessed views 19479 about
+INFO 2023-09-19 18:18:23,020 "GET /about/ HTTP/1.1" 200 845 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:23,076 Not Found: /about/testproject/static/hwapp/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:18:23,076 "GET /about/testproject/static/hwapp/css/style.css HTTP/1.1" 404 2920 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:23,080 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:23,163 Not Found: /about/testproject/static/hwapp/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:18:23,163 "GET /about/testproject/static/hwapp/css/style.css HTTP/1.1" 404 2920 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:23,183 Not Found: /about/testproject/static/hwapp/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:18:23,184 "GET /about/testproject/static/hwapp/css/style.css HTTP/1.1" 404 2920 basehttp 19479 log_message
+INFO 2023-09-19 18:18:56,847 Index page accessed views 19479 about
+INFO 2023-09-19 18:18:56,848 "GET /about/ HTTP/1.1" 200 827 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:56,895 Not Found: /hwapp/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:18:56,896 "GET /hwapp/css/style.css HTTP/1.1" 404 2845 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:56,940 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:56,993 Not Found: /hwapp/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:18:56,993 "GET /hwapp/css/style.css HTTP/1.1" 404 2845 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:57,018 Not Found: /hwapp/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:18:57,018 "GET /hwapp/css/style.css HTTP/1.1" 404 2845 basehttp 19479 log_message
+INFO 2023-09-19 18:18:58,301 Index page accessed views 19479 about
+INFO 2023-09-19 18:18:58,302 "GET /about/ HTTP/1.1" 200 827 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:58,343 Not Found: /hwapp/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:18:58,343 "GET /hwapp/css/style.css HTTP/1.1" 404 2845 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:58,390 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:58,468 Not Found: /hwapp/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:18:58,468 "GET /hwapp/css/style.css HTTP/1.1" 404 2845 basehttp 19479 log_message
+WARNING 2023-09-19 18:18:58,477 Not Found: /hwapp/css/style.css log 19479 log_response
+WARNING 2023-09-19 18:18:58,477 "GET /hwapp/css/style.css HTTP/1.1" 404 2845 basehttp 19479 log_message
+INFO 2023-09-19 18:21:51,420 /home/olgatorres/PycharmProjects/Django/testproject/testproject/settings.py changed, reloading. autoreload 19479 trigger_reload
+INFO 2023-09-19 18:21:51,680 Watching for file changes with StatReloader autoreload 19705 run_with_reloader
+INFO 2023-09-19 18:22:04,861 /home/olgatorres/PycharmProjects/Django/testproject/testproject/settings.py changed, reloading. autoreload 19705 trigger_reload
+INFO 2023-09-19 18:22:05,136 Watching for file changes with StatReloader autoreload 19726 run_with_reloader
+INFO 2023-09-19 18:22:06,220 Index page accessed views 19726 about
+INFO 2023-09-19 18:22:06,225 "GET /about/ HTTP/1.1" 200 827 basehttp 19726 log_message
+WARNING 2023-09-19 18:22:06,289 Not Found: /hwapp/css/style.css log 19726 log_response
+WARNING 2023-09-19 18:22:06,290 "GET /hwapp/css/style.css HTTP/1.1" 404 2845 basehttp 19726 log_message
+WARNING 2023-09-19 18:22:06,294 Not Found: /static/hwapp/images/roger.png log 19726 log_response
+WARNING 2023-09-19 18:22:06,295 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 2875 basehttp 19726 log_message
+WARNING 2023-09-19 18:22:06,343 Not Found: /hwapp/css/style.css log 19726 log_response
+WARNING 2023-09-19 18:22:06,344 "GET /hwapp/css/style.css HTTP/1.1" 404 2845 basehttp 19726 log_message
+WARNING 2023-09-19 18:22:06,377 Not Found: /hwapp/css/style.css log 19726 log_response
+WARNING 2023-09-19 18:22:06,377 "GET /hwapp/css/style.css HTTP/1.1" 404 2845 basehttp 19726 log_message
+INFO 2023-09-19 18:22:28,918 Index page accessed views 19726 about
+INFO 2023-09-19 18:22:28,921 "GET /about/ HTTP/1.1" 200 821 basehttp 19726 log_message
+WARNING 2023-09-19 18:22:28,969 Not Found: /css/style.css log 19726 log_response
+WARNING 2023-09-19 18:22:28,969 "GET /css/style.css HTTP/1.1" 404 2827 basehttp 19726 log_message
+WARNING 2023-09-19 18:22:28,973 Not Found: /static/hwapp/images/roger.png log 19726 log_response
+WARNING 2023-09-19 18:22:28,974 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 2875 basehttp 19726 log_message
+WARNING 2023-09-19 18:22:28,996 Not Found: /css/style.css log 19726 log_response
+WARNING 2023-09-19 18:22:28,996 "GET /css/style.css HTTP/1.1" 404 2827 basehttp 19726 log_message
+WARNING 2023-09-19 18:22:29,009 Not Found: /css/style.css log 19726 log_response
+WARNING 2023-09-19 18:22:29,009 "GET /css/style.css HTTP/1.1" 404 2827 basehttp 19726 log_message
+INFO 2023-09-19 18:22:29,955 Index page accessed views 19726 about
+INFO 2023-09-19 18:22:29,956 "GET /about/ HTTP/1.1" 200 821 basehttp 19726 log_message
+WARNING 2023-09-19 18:22:30,002 Not Found: /css/style.css log 19726 log_response
+WARNING 2023-09-19 18:22:30,002 "GET /css/style.css HTTP/1.1" 404 2827 basehttp 19726 log_message
+WARNING 2023-09-19 18:22:30,007 Not Found: /static/hwapp/images/roger.png log 19726 log_response
+WARNING 2023-09-19 18:22:30,007 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 2875 basehttp 19726 log_message
+WARNING 2023-09-19 18:22:30,090 Not Found: /css/style.css log 19726 log_response
+WARNING 2023-09-19 18:22:30,091 "GET /css/style.css HTTP/1.1" 404 2827 basehttp 19726 log_message
+WARNING 2023-09-19 18:22:30,114 Not Found: /css/style.css log 19726 log_response
+WARNING 2023-09-19 18:22:30,114 "GET /css/style.css HTTP/1.1" 404 2827 basehttp 19726 log_message
+INFO 2023-09-19 18:24:24,779 /home/olgatorres/PycharmProjects/Django/testproject/testproject/settings.py changed, reloading. autoreload 19726 trigger_reload
+INFO 2023-09-19 18:24:25,049 Watching for file changes with StatReloader autoreload 19759 run_with_reloader
+INFO 2023-09-19 18:26:00,296 Index page accessed views 19759 about
+INFO 2023-09-19 18:26:00,300 "GET /about/ HTTP/1.1" 200 829 basehttp 19759 log_message
+WARNING 2023-09-19 18:26:00,345 "GET /static/css/style.css HTTP/1.1" 404 1798 basehttp 19759 log_message
+WARNING 2023-09-19 18:26:00,349 "GET /static/hwapp/images/roger.png HTTP/1.1" 404 1825 basehttp 19759 log_message
+INFO 2023-09-19 18:28:38,771 /home/olgatorres/PycharmProjects/Django/testproject/testproject/settings.py changed, reloading. autoreload 19759 trigger_reload
+INFO 2023-09-19 18:28:39,039 Watching for file changes with StatReloader autoreload 19825 run_with_reloader
+INFO 2023-09-19 18:28:40,022 Index page accessed views 19825 about
+INFO 2023-09-19 18:28:40,026 "GET /about/ HTTP/1.1" 200 829 basehttp 19825 log_message
+WARNING 2023-09-19 18:28:40,072 "GET /static/css/style.css HTTP/1.1" 404 1798 basehttp 19825 log_message
+INFO 2023-09-19 18:28:40,079 "GET /static/hwapp/images/roger.png HTTP/1.1" 200 538064 basehttp 19825 log_message
+INFO 2023-09-19 18:29:20,855 Index page accessed views 19825 about
+INFO 2023-09-19 18:29:20,856 "GET /about/ HTTP/1.1" 200 842 basehttp 19825 log_message
+WARNING 2023-09-19 18:29:20,904 "GET /static/static/hwapp/css/style.css HTTP/1.1" 404 1837 basehttp 19825 log_message
+INFO 2023-09-19 18:29:24,526 Index page accessed views 19825 about
+INFO 2023-09-19 18:29:24,527 "GET /about/ HTTP/1.1" 200 842 basehttp 19825 log_message
+WARNING 2023-09-19 18:29:24,571 "GET /static/static/hwapp/css/style.css HTTP/1.1" 404 1837 basehttp 19825 log_message
+INFO 2023-09-19 18:29:25,273 Index page accessed views 19825 index
+INFO 2023-09-19 18:29:25,274 "GET /home/ HTTP/1.1" 200 869 basehttp 19825 log_message
+WARNING 2023-09-19 18:29:25,337 "GET /static/static/hwapp/css/style.css HTTP/1.1" 404 1837 basehttp 19825 log_message
+INFO 2023-09-19 18:29:27,454 Index page accessed views 19825 about
+INFO 2023-09-19 18:29:27,455 "GET /about/ HTTP/1.1" 200 842 basehttp 19825 log_message
+WARNING 2023-09-19 18:29:27,509 "GET /static/static/hwapp/css/style.css HTTP/1.1" 404 1837 basehttp 19825 log_message
+INFO 2023-09-19 18:29:29,255 Index page accessed views 19825 index
+INFO 2023-09-19 18:29:29,256 "GET /home/ HTTP/1.1" 200 869 basehttp 19825 log_message
+WARNING 2023-09-19 18:29:29,315 "GET /static/static/hwapp/css/style.css HTTP/1.1" 404 1837 basehttp 19825 log_message
+INFO 2023-09-19 18:29:40,864 Index page accessed views 19825 index
+INFO 2023-09-19 18:29:40,865 "GET /home/ HTTP/1.1" 200 862 basehttp 19825 log_message
+INFO 2023-09-19 18:29:40,907 "GET /static/hwapp/css/style.css HTTP/1.1" 200 1270 basehttp 19825 log_message
+INFO 2023-09-19 18:29:50,987 Index page accessed views 19825 about
+INFO 2023-09-19 18:29:50,989 "GET /about/ HTTP/1.1" 200 835 basehttp 19825 log_message
+INFO 2023-09-19 18:31:57,424 Index page accessed views 19825 about
+INFO 2023-09-19 18:31:57,425 "GET /about/ HTTP/1.1" 200 835 basehttp 19825 log_message
+INFO 2023-09-19 18:31:58,719 Index page accessed views 19825 about
+INFO 2023-09-19 18:31:58,720 "GET /about/ HTTP/1.1" 200 835 basehttp 19825 log_message
+INFO 2023-09-19 18:32:00,171 Index page accessed views 19825 about
+INFO 2023-09-19 18:32:00,173 "GET /about/ HTTP/1.1" 200 835 basehttp 19825 log_message
+INFO 2023-09-19 18:32:01,516 Index page accessed views 19825 about
+INFO 2023-09-19 18:32:01,517 "GET /about/ HTTP/1.1" 200 835 basehttp 19825 log_message
+INFO 2023-09-19 18:32:02,668 Index page accessed views 19825 about
+INFO 2023-09-19 18:32:02,668 "GET /about/ HTTP/1.1" 200 835 basehttp 19825 log_message
+INFO 2023-09-19 18:32:04,446 Index page accessed views 19825 index
+INFO 2023-09-19 18:32:04,448 "GET /home/ HTTP/1.1" 200 862 basehttp 19825 log_message
+INFO 2023-09-19 18:32:06,007 Index page accessed views 19825 about
+INFO 2023-09-19 18:32:06,008 "GET /about/ HTTP/1.1" 200 835 basehttp 19825 log_message
+INFO 2023-09-19 18:32:20,472 Watching for file changes with StatReloader autoreload 19887 run_with_reloader
+INFO 2023-09-19 18:32:24,195 Index page accessed views 19887 about
+INFO 2023-09-19 18:32:24,200 "GET /about/ HTTP/1.1" 200 835 basehttp 19887 log_message
+INFO 2023-09-19 18:32:27,707 Index page accessed views 19887 index
+INFO 2023-09-19 18:32:27,708 "GET /home/ HTTP/1.1" 200 862 basehttp 19887 log_message
+INFO 2023-09-19 18:32:30,536 Index page accessed views 19887 about
+INFO 2023-09-19 18:32:30,537 "GET /about/ HTTP/1.1" 200 835 basehttp 19887 log_message
+INFO 2023-09-19 18:32:32,893 Index page accessed views 19887 about
+INFO 2023-09-19 18:32:32,893 "GET /about/ HTTP/1.1" 200 835 basehttp 19887 log_message
+WARNING 2023-09-19 18:33:55,427 Not Found: /signup/ log 19887 log_response
+INFO 2023-09-19 18:36:59,464 Index page accessed views 19887 about
+INFO 2023-09-19 18:36:59,466 "GET /about/ HTTP/1.1" 200 835 basehttp 19887 log_message
+INFO 2023-09-19 18:37:00,408 Index page accessed views 19887 about
+INFO 2023-09-19 18:37:00,409 "GET /about/ HTTP/1.1" 200 835 basehttp 19887 log_message
+INFO 2023-09-19 18:37:01,441 Index page accessed views 19887 index
+INFO 2023-09-19 18:37:01,442 "GET /home/ HTTP/1.1" 200 868 basehttp 19887 log_message
+INFO 2023-09-19 18:37:01,514 "GET /static/hwapp/images/roger_home.jpeg HTTP/1.1" 200 4995 basehttp 19887 log_message
+INFO 2023-09-19 18:37:18,451 Index page accessed views 19887 about
+INFO 2023-09-19 18:37:18,453 "GET /about/ HTTP/1.1" 200 835 basehttp 19887 log_message
+INFO 2023-09-19 18:38:03,874 Index page accessed views 19887 index
+INFO 2023-09-19 18:38:03,877 "GET /home/ HTTP/1.1" 200 867 basehttp 19887 log_message
+INFO 2023-09-19 18:38:03,906 "GET /static/hwapp/images/roger_home.png HTTP/1.1" 200 4256 basehttp 19887 log_message
+INFO 2023-09-19 18:38:43,595 Index page accessed views 19887 index
+INFO 2023-09-19 18:38:43,596 "GET /home/ HTTP/1.1" 200 867 basehttp 19887 log_message
+INFO 2023-09-19 18:38:43,629 "GET /static/hwapp/images/roger_home.png HTTP/1.1" 200 10235 basehttp 19887 log_message
+INFO 2023-09-19 18:38:51,876 Index page accessed views 19887 index
+INFO 2023-09-19 18:38:51,877 "GET /home/ HTTP/1.1" 200 867 basehttp 19887 log_message
+INFO 2023-09-19 18:38:51,904 "GET /static/hwapp/images/roger_home.png HTTP/1.1" 304 0 basehttp 19887 log_message
