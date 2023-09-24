@@ -438,3 +438,477 @@ INFO 2023-09-19 18:38:43,629 "GET /static/hwapp/images/roger_home.png HTTP/1.1" 
 INFO 2023-09-19 18:38:51,876 Index page accessed views 19887 index
 INFO 2023-09-19 18:38:51,877 "GET /home/ HTTP/1.1" 200 867 basehttp 19887 log_message
 INFO 2023-09-19 18:38:51,904 "GET /static/hwapp/images/roger_home.png HTTP/1.1" 304 0 basehttp 19887 log_message
+INFO 2023-09-24 14:07:27,354 Watching for file changes with StatReloader autoreload 28972 run_with_reloader
+INFO 2023-09-24 14:07:31,630 Index page accessed views 28972 index
+INFO 2023-09-24 14:07:31,640 "GET / HTTP/1.1" 200 867 basehttp 28972 log_message
+INFO 2023-09-24 14:07:31,724 "GET /static/hwapp/css/style.css HTTP/1.1" 200 1444 basehttp 28972 log_message
+INFO 2023-09-24 14:07:31,727 "GET /static/hwapp/images/roger_home.png HTTP/1.1" 200 10235 basehttp 28972 log_message
+INFO 2023-09-24 14:07:35,909 Index page accessed views 28972 index
+INFO 2023-09-24 14:07:35,910 "GET / HTTP/1.1" 200 867 basehttp 28972 log_message
+WARNING 2023-09-24 14:07:40,803 Not Found: /random/ log 28972 log_response
+WARNING 2023-09-24 14:07:40,804 "GET /random/ HTTP/1.1" 404 3242 basehttp 28972 log_message
+INFO 2023-09-24 14:07:50,872 "GET /random/heads_or_tails HTTP/1.1" 301 0 basehttp 28972 log_message
+ERROR 2023-09-24 14:07:50,930 Internal Server Error: /random/heads_or_tails/ log 28972 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 28, in get_tails
+    res = HeadsOrTails.result_stat(n)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py", line 12, in result_stat
+    results = list(HeadsOrTails.objects.all())[-n:]
+TypeError: bad operand type for unary -: 'NoneType'
+ERROR 2023-09-24 14:07:50,932 "GET /random/heads_or_tails/ HTTP/1.1" 500 69318 basehttp 28972 log_message
+WARNING 2023-09-24 14:08:00,584 Not Found: /random/heads_or_tails/4 log 28972 log_response
+WARNING 2023-09-24 14:08:00,585 "GET /random/heads_or_tails/4 HTTP/1.1" 404 3290 basehttp 28972 log_message
+INFO 2023-09-24 14:08:44,202 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 28972 trigger_reload
+INFO 2023-09-24 14:08:44,672 Watching for file changes with StatReloader autoreload 29155 run_with_reloader
+INFO 2023-09-24 14:08:45,156 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29155 log_message
+INFO 2023-09-24 14:08:48,105 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29155 log_message
+INFO 2023-09-24 14:08:48,901 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29155 log_message
+INFO 2023-09-24 14:08:49,484 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29155 log_message
+INFO 2023-09-24 14:08:50,353 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29155 log_message
+INFO 2023-09-24 14:08:51,730 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29155 log_message
+INFO 2023-09-24 14:08:52,431 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29155 log_message
+INFO 2023-09-24 14:08:52,915 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29155 log_message
+INFO 2023-09-24 14:08:53,465 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29155 log_message
+INFO 2023-09-24 14:08:55,265 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29155 log_message
+INFO 2023-09-24 14:08:57,115 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29155 log_message
+INFO 2023-09-24 14:09:35,086 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29155 log_message
+INFO 2023-09-24 14:10:09,568 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py changed, reloading. autoreload 29155 trigger_reload
+INFO 2023-09-24 14:10:10,017 Watching for file changes with StatReloader autoreload 29190 run_with_reloader
+INFO 2023-09-24 14:10:10,408 "GET /random/heads_or_tails/ HTTP/1.1" 200 26 basehttp 29190 log_message
+INFO 2023-09-24 14:10:11,586 "GET /random/heads_or_tails/ HTTP/1.1" 200 26 basehttp 29190 log_message
+INFO 2023-09-24 14:10:13,144 "GET /random/heads_or_tails/ HTTP/1.1" 200 26 basehttp 29190 log_message
+INFO 2023-09-24 14:10:14,450 "GET /random/heads_or_tails/ HTTP/1.1" 200 26 basehttp 29190 log_message
+INFO 2023-09-24 14:10:16,228 "GET /random/heads_or_tails/ HTTP/1.1" 200 26 basehttp 29190 log_message
+INFO 2023-09-24 14:11:03,258 "GET /random/heads_or_tails/ HTTP/1.1" 200 26 basehttp 29190 log_message
+INFO 2023-09-24 14:11:37,007 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 29190 trigger_reload
+INFO 2023-09-24 14:11:37,454 Watching for file changes with StatReloader autoreload 29212 run_with_reloader
+ERROR 2023-09-24 14:11:38,631 Internal Server Error: /random/heads_or_tails/ log 29212 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 28, in get_tails
+    res = HeadsOrTails.result_stat(n)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py", line 12, in result_stat
+    results = list(HeadsOrTails.objects.all())[-n:]
+TypeError: bad operand type for unary -: 'str'
+ERROR 2023-09-24 14:11:45,904 Internal Server Error: /random/heads_or_tails/ log 29212 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 28, in get_tails
+    res = HeadsOrTails.result_stat(n)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py", line 12, in result_stat
+    results = list(HeadsOrTails.objects.all())[-n:]
+TypeError: bad operand type for unary -: 'str'
+ERROR 2023-09-24 14:11:45,905 "GET /random/heads_or_tails/ HTTP/1.1" 500 69188 basehttp 29212 log_message
+INFO 2023-09-24 14:13:16,389 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 29212 trigger_reload
+INFO 2023-09-24 14:13:16,772 Watching for file changes with StatReloader autoreload 29247 run_with_reloader
+ERROR 2023-09-24 14:13:17,903 Internal Server Error: /random/heads_or_tails/ log 29247 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 28, in get_tails
+    res = HeadsOrTails.result_stat(n)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py", line 12, in result_stat
+    results = list(HeadsOrTails.objects.all())[-n:]
+TypeError: bad operand type for unary -: 'str'
+ERROR 2023-09-24 14:13:17,906 "GET /random/heads_or_tails/ HTTP/1.1" 500 69178 basehttp 29247 log_message
+ERROR 2023-09-24 14:13:21,184 Internal Server Error: /random/heads_or_tails/ log 29247 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 28, in get_tails
+    res = HeadsOrTails.result_stat(n)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py", line 12, in result_stat
+    results = list(HeadsOrTails.objects.all())[-n:]
+TypeError: bad operand type for unary -: 'str'
+ERROR 2023-09-24 14:13:21,185 "GET /random/heads_or_tails/ HTTP/1.1" 500 69178 basehttp 29247 log_message
+INFO 2023-09-24 14:14:11,375 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py changed, reloading. autoreload 29247 trigger_reload
+INFO 2023-09-24 14:14:11,814 Watching for file changes with StatReloader autoreload 29266 run_with_reloader
+INFO 2023-09-24 14:14:14,430 "GET /random/heads_or_tails/ HTTP/1.1" 200 1 basehttp 29266 log_message
+INFO 2023-09-24 14:14:15,751 "GET /random/heads_or_tails/ HTTP/1.1" 200 1 basehttp 29266 log_message
+INFO 2023-09-24 14:14:25,096 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 29266 trigger_reload
+INFO 2023-09-24 14:14:25,466 Watching for file changes with StatReloader autoreload 29287 run_with_reloader
+INFO 2023-09-24 14:14:25,650 "GET /random/heads_or_tails/ HTTP/1.1" 200 26 basehttp 29287 log_message
+INFO 2023-09-24 14:14:26,715 "GET /random/heads_or_tails/ HTTP/1.1" 200 26 basehttp 29287 log_message
+INFO 2023-09-24 14:14:27,594 "GET /random/heads_or_tails/ HTTP/1.1" 200 26 basehttp 29287 log_message
+INFO 2023-09-24 14:14:28,372 "GET /random/heads_or_tails/ HTTP/1.1" 200 26 basehttp 29287 log_message
+INFO 2023-09-24 14:15:00,931 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 29287 trigger_reload
+INFO 2023-09-24 14:15:01,314 Watching for file changes with StatReloader autoreload 29319 run_with_reloader
+INFO 2023-09-24 14:15:06,412 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29319 log_message
+INFO 2023-09-24 14:15:07,082 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29319 log_message
+INFO 2023-09-24 14:15:08,054 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29319 log_message
+INFO 2023-09-24 14:15:08,745 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29319 log_message
+INFO 2023-09-24 14:15:09,311 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29319 log_message
+INFO 2023-09-24 14:15:22,637 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 29319 trigger_reload
+INFO 2023-09-24 14:15:23,112 Watching for file changes with StatReloader autoreload 29334 run_with_reloader
+INFO 2023-09-24 14:15:23,818 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29334 log_message
+INFO 2023-09-24 14:15:24,937 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29334 log_message
+INFO 2023-09-24 14:15:25,691 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29334 log_message
+INFO 2023-09-24 14:15:26,235 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29334 log_message
+INFO 2023-09-24 14:15:26,646 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29334 log_message
+INFO 2023-09-24 14:15:27,060 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29334 log_message
+INFO 2023-09-24 14:15:27,277 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29334 log_message
+INFO 2023-09-24 14:15:27,427 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29334 log_message
+INFO 2023-09-24 14:15:27,894 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29334 log_message
+INFO 2023-09-24 14:15:38,393 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 29334 trigger_reload
+INFO 2023-09-24 14:15:38,804 Watching for file changes with StatReloader autoreload 29348 run_with_reloader
+INFO 2023-09-24 14:15:40,259 "GET /random/heads_or_tails/ HTTP/1.1" 200 10 basehttp 29348 log_message
+INFO 2023-09-24 14:15:41,278 "GET /random/heads_or_tails/ HTTP/1.1" 200 10 basehttp 29348 log_message
+INFO 2023-09-24 14:15:44,008 "GET /random/heads_or_tails/ HTTP/1.1" 200 10 basehttp 29348 log_message
+INFO 2023-09-24 14:15:45,791 "GET /random/heads_or_tails/ HTTP/1.1" 200 10 basehttp 29348 log_message
+INFO 2023-09-24 14:18:10,228 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py changed, reloading. autoreload 29348 trigger_reload
+INFO 2023-09-24 14:18:10,707 Watching for file changes with StatReloader autoreload 29463 run_with_reloader
+ERROR 2023-09-24 14:18:16,582 Internal Server Error: /random/heads_or_tails/ log 29463 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 98, in inner
+    return func(*args, **kwargs)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 25, in get_tails
+    attempt.save()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1833, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/base/operations.py", line 213, in fetch_returned_insert_columns
+    return cursor.fetchone()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 97, in inner
+    with self:
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 98, in inner
+    return func(*args, **kwargs)
+django.db.utils.OperationalError: database is locked
+INFO 2023-09-24 14:19:09,051 "GET /random/heads_or_tails/ HTTP/1.1" 200 10 basehttp 29463 log_message
+INFO 2023-09-24 14:19:09,999 "GET /random/heads_or_tails/ HTTP/1.1" 200 10 basehttp 29463 log_message
+INFO 2023-09-24 14:19:10,850 "GET /random/heads_or_tails/ HTTP/1.1" 200 10 basehttp 29463 log_message
+INFO 2023-09-24 14:20:02,899 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py changed, reloading. autoreload 29463 trigger_reload
+INFO 2023-09-24 14:20:03,335 Watching for file changes with StatReloader autoreload 29507 run_with_reloader
+INFO 2023-09-24 14:20:03,784 "GET /random/heads_or_tails/ HTTP/1.1" 200 10 basehttp 29507 log_message
+INFO 2023-09-24 14:20:04,793 "GET /random/heads_or_tails/ HTTP/1.1" 200 10 basehttp 29507 log_message
+INFO 2023-09-24 14:21:46,506 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py changed, reloading. autoreload 29507 trigger_reload
+INFO 2023-09-24 14:21:47,063 Watching for file changes with StatReloader autoreload 29552 run_with_reloader
+INFO 2023-09-24 14:21:47,618 "GET /random/heads_or_tails/ HTTP/1.1" 200 10 basehttp 29552 log_message
+INFO 2023-09-24 14:21:48,466 "GET /random/heads_or_tails/ HTTP/1.1" 200 10 basehttp 29552 log_message
+INFO 2023-09-24 14:22:01,285 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 29552 trigger_reload
+INFO 2023-09-24 14:22:01,683 Watching for file changes with StatReloader autoreload 29571 run_with_reloader
+INFO 2023-09-24 14:22:04,146 "GET /random/heads_or_tails/ HTTP/1.1" 200 26 basehttp 29571 log_message
+INFO 2023-09-24 14:22:05,203 "GET /random/heads_or_tails/ HTTP/1.1" 200 26 basehttp 29571 log_message
+INFO 2023-09-24 14:22:05,954 "GET /random/heads_or_tails/ HTTP/1.1" 200 26 basehttp 29571 log_message
+INFO 2023-09-24 14:22:06,580 "GET /random/heads_or_tails/ HTTP/1.1" 200 26 basehttp 29571 log_message
+INFO 2023-09-24 14:22:07,188 "GET /random/heads_or_tails/ HTTP/1.1" 200 26 basehttp 29571 log_message
+INFO 2023-09-24 14:34:10,938 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py changed, reloading. autoreload 29571 trigger_reload
+INFO 2023-09-24 14:34:11,353 Watching for file changes with StatReloader autoreload 29767 run_with_reloader
+INFO 2023-09-24 14:34:11,482 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29767 log_message
+INFO 2023-09-24 14:34:12,353 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29767 log_message
+INFO 2023-09-24 14:34:13,074 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29767 log_message
+INFO 2023-09-24 14:34:13,441 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29767 log_message
+INFO 2023-09-24 14:34:13,840 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29767 log_message
+INFO 2023-09-24 14:34:17,246 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29767 log_message
+INFO 2023-09-24 14:34:18,154 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29767 log_message
+INFO 2023-09-24 14:34:19,043 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29767 log_message
+INFO 2023-09-24 14:35:12,131 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py changed, reloading. autoreload 29767 trigger_reload
+INFO 2023-09-24 14:35:12,521 Watching for file changes with StatReloader autoreload 29792 run_with_reloader
+INFO 2023-09-24 14:35:13,955 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29792 log_message
+INFO 2023-09-24 14:35:14,632 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29792 log_message
+INFO 2023-09-24 14:35:15,544 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29792 log_message
+INFO 2023-09-24 14:35:56,131 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 29792 trigger_reload
+INFO 2023-09-24 14:35:56,520 Watching for file changes with StatReloader autoreload 29810 run_with_reloader
+INFO 2023-09-24 14:35:56,726 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29810 log_message
+INFO 2023-09-24 14:35:57,484 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29810 log_message
+INFO 2023-09-24 14:36:48,095 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 29810 trigger_reload
+INFO 2023-09-24 14:36:48,546 Watching for file changes with StatReloader autoreload 29846 run_with_reloader
+INFO 2023-09-24 14:36:49,237 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29846 log_message
+INFO 2023-09-24 14:36:50,257 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29846 log_message
+INFO 2023-09-24 14:36:50,907 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29846 log_message
+INFO 2023-09-24 14:36:51,414 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29846 log_message
+INFO 2023-09-24 14:36:51,741 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29846 log_message
+INFO 2023-09-24 14:36:51,929 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29846 log_message
+INFO 2023-09-24 14:36:52,074 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29846 log_message
+INFO 2023-09-24 14:36:52,242 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29846 log_message
+INFO 2023-09-24 14:36:52,411 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29846 log_message
+INFO 2023-09-24 14:36:52,497 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29846 log_message
+INFO 2023-09-24 14:37:23,697 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29846 log_message
+INFO 2023-09-24 14:37:44,059 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29846 log_message
+INFO 2023-09-24 14:37:44,162 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py changed, reloading. autoreload 29846 trigger_reload
+INFO 2023-09-24 14:37:44,671 Watching for file changes with StatReloader autoreload 29871 run_with_reloader
+INFO 2023-09-24 14:37:56,349 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29871 log_message
+INFO 2023-09-24 14:37:57,215 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29871 log_message
+INFO 2023-09-24 14:38:30,243 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py changed, reloading. autoreload 29871 trigger_reload
+INFO 2023-09-24 14:38:30,643 Watching for file changes with StatReloader autoreload 29883 run_with_reloader
+INFO 2023-09-24 14:38:30,826 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29883 log_message
+INFO 2023-09-24 14:38:31,507 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29883 log_message
+INFO 2023-09-24 14:38:38,559 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29883 log_message
+INFO 2023-09-24 14:38:39,124 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29883 log_message
+INFO 2023-09-24 14:39:20,298 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py changed, reloading. autoreload 29883 trigger_reload
+INFO 2023-09-24 14:39:20,721 Watching for file changes with StatReloader autoreload 29908 run_with_reloader
+INFO 2023-09-24 14:39:21,251 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29908 log_message
+INFO 2023-09-24 14:39:21,987 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 29908 log_message
+INFO 2023-09-24 14:41:12,078 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 29908 trigger_reload
+INFO 2023-09-24 14:41:12,460 Watching for file changes with StatReloader autoreload 29932 run_with_reloader
+INFO 2023-09-24 14:41:12,587 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29932 log_message
+INFO 2023-09-24 14:41:13,447 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29932 log_message
+INFO 2023-09-24 14:41:14,270 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29932 log_message
+INFO 2023-09-24 14:41:14,936 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29932 log_message
+INFO 2023-09-24 14:42:49,568 Watching for file changes with StatReloader autoreload 29960 run_with_reloader
+INFO 2023-09-24 14:42:52,432 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29960 log_message
+INFO 2023-09-24 14:42:53,463 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29960 log_message
+INFO 2023-09-24 14:42:54,173 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29960 log_message
+INFO 2023-09-24 14:42:54,728 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29960 log_message
+INFO 2023-09-24 14:43:51,352 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py changed, reloading. autoreload 29960 trigger_reload
+INFO 2023-09-24 14:43:51,751 Watching for file changes with StatReloader autoreload 29988 run_with_reloader
+INFO 2023-09-24 14:43:52,633 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29988 log_message
+INFO 2023-09-24 14:43:53,407 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 29988 log_message
+INFO 2023-09-24 14:44:51,540 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py changed, reloading. autoreload 29988 trigger_reload
+INFO 2023-09-24 14:44:52,248 Watching for file changes with StatReloader autoreload 30023 run_with_reloader
+INFO 2023-09-24 14:45:15,647 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/models.py changed, reloading. autoreload 30023 trigger_reload
+INFO 2023-09-24 14:45:15,997 Watching for file changes with StatReloader autoreload 30134 run_with_reloader
+INFO 2023-09-24 14:45:16,173 "GET /random/heads_or_tails/ HTTP/1.1" 200 5 basehttp 30134 log_message
+INFO 2023-09-24 14:45:53,392 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 30134 trigger_reload
+INFO 2023-09-24 14:45:53,798 Watching for file changes with StatReloader autoreload 30159 run_with_reloader
+INFO 2023-09-24 14:46:01,828 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 30159 log_message
+INFO 2023-09-24 14:46:02,706 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 30159 log_message
+INFO 2023-09-24 14:46:03,481 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 30159 log_message
+INFO 2023-09-24 14:46:06,372 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 30159 log_message
+INFO 2023-09-24 14:46:07,220 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 30159 log_message
+INFO 2023-09-24 14:46:07,684 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 30159 log_message
+INFO 2023-09-24 14:46:08,014 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 30159 log_message
+INFO 2023-09-24 14:46:08,167 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 30159 log_message
+INFO 2023-09-24 14:46:08,344 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 30159 log_message
+INFO 2023-09-24 14:46:08,626 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 30159 log_message
+INFO 2023-09-24 14:46:08,782 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 30159 log_message
+INFO 2023-09-24 14:46:08,945 "GET /random/heads_or_tails/ HTTP/1.1" 200 24 basehttp 30159 log_message
+WARNING 2023-09-24 14:46:28,283 Not Found: /random/heads_or_tails/4 log 30159 log_response
+WARNING 2023-09-24 14:46:28,284 "GET /random/heads_or_tails/4 HTTP/1.1" 404 2900 basehttp 30159 log_message
+INFO 2023-09-24 14:46:56,589 "GET /random/heads_or_tails/?n=4 HTTP/1.1" 200 24 basehttp 30159 log_message
+INFO 2023-09-24 14:47:00,948 "GET /random/heads_or_tails/?n=14 HTTP/1.1" 200 25 basehttp 30159 log_message
+INFO 2023-09-24 14:57:51,862 Watching for file changes with StatReloader autoreload 4616 run_with_reloader
+INFO 2023-09-24 14:58:29,218 /home/olgatorres/PycharmProjects/Django/testproject/hwapp1/apps.py changed, reloading. autoreload 4616 trigger_reload
+INFO 2023-09-24 14:58:29,524 Watching for file changes with StatReloader autoreload 4645 run_with_reloader
+INFO 2023-09-24 14:58:57,252 Watching for file changes with StatReloader autoreload 4661 run_with_reloader
+INFO 2023-09-24 14:59:20,052 Watching for file changes with StatReloader autoreload 4673 run_with_reloader
+WARNING 2023-09-24 14:59:35,833 Not Found: /hwapp1 log 4673 log_response
+WARNING 2023-09-24 14:59:35,833 "GET /hwapp1 HTTP/1.1" 404 2416 basehttp 4673 log_message
+INFO 2023-09-24 15:00:05,608 "GET /hw1 HTTP/1.1" 301 0 basehttp 4673 log_message
+INFO 2023-09-24 15:00:05,624 Index page accessed views 4673 index
+INFO 2023-09-24 15:00:05,633 "GET /hw1/ HTTP/1.1" 200 867 basehttp 4673 log_message
+WARNING 2023-09-24 15:00:07,323 Not Found: /about/ log 4673 log_response
+WARNING 2023-09-24 15:00:07,324 "GET /about/ HTTP/1.1" 404 2416 basehttp 4673 log_message
+WARNING 2023-09-24 15:00:16,106 Not Found: /about/ log 4673 log_response
+WARNING 2023-09-24 15:00:16,107 "GET /about/ HTTP/1.1" 404 2416 basehttp 4673 log_message
+INFO 2023-09-24 15:02:05,513 Index page accessed views 4673 index
+INFO 2023-09-24 15:02:05,515 "GET /hw1/ HTTP/1.1" 200 867 basehttp 4673 log_message
+WARNING 2023-09-24 15:02:06,785 Not Found: /home/ log 4673 log_response
+WARNING 2023-09-24 15:02:06,785 "GET /home/ HTTP/1.1" 404 2413 basehttp 4673 log_message
+INFO 2023-09-24 15:02:43,536 Index page accessed views 4673 index
+INFO 2023-09-24 15:02:43,538 "GET /hw1/ HTTP/1.1" 200 867 basehttp 4673 log_message
+INFO 2023-09-24 15:02:50,011 "GET /hw1/about HTTP/1.1" 301 0 basehttp 4673 log_message
+INFO 2023-09-24 15:02:50,022 Index page accessed views 4673 about
+ERROR 2023-09-24 15:02:50,048 Internal Server Error: /hw1/about/ log 4673 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp1/views.py", line 14, in about
+    return render(request, 'hwapp/about.html')
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hwapp/about.html
+ERROR 2023-09-24 15:02:50,052 "GET /hw1/about/ HTTP/1.1" 500 79304 basehttp 4673 log_message
+INFO 2023-09-24 15:03:52,109 Index page accessed views 4673 index
+ERROR 2023-09-24 15:03:52,131 Internal Server Error: /hw1/ log 4673 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp1/views.py", line 9, in index
+    return render(request, 'hwapp/index.html')
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hwapp/index.html
+ERROR 2023-09-24 15:03:52,132 "GET /hw1/ HTTP/1.1" 500 80032 basehttp 4673 log_message
+INFO 2023-09-24 15:04:16,344 /home/olgatorres/PycharmProjects/Django/testproject/hwapp1/views.py changed, reloading. autoreload 4673 trigger_reload
+INFO 2023-09-24 15:04:16,825 Watching for file changes with StatReloader autoreload 4907 run_with_reloader
+INFO 2023-09-24 15:04:17,418 Index page accessed views 4907 index
+INFO 2023-09-24 15:04:17,428 "GET /hw1/ HTTP/1.1" 200 869 basehttp 4907 log_message
+INFO 2023-09-24 15:04:20,008 Index page accessed views 4907 index
+INFO 2023-09-24 15:04:20,010 "GET /hw1/ HTTP/1.1" 200 869 basehttp 4907 log_message
+INFO 2023-09-24 15:04:20,063 "GET /static/hwapp1/css/style.css HTTP/1.1" 200 1444 basehttp 4907 log_message
+INFO 2023-09-24 15:04:20,065 "GET /static/hwapp1/images/roger_home.png HTTP/1.1" 200 10235 basehttp 4907 log_message
+WARNING 2023-09-24 15:04:21,657 Not Found: /home/ log 4907 log_response
+WARNING 2023-09-24 15:04:21,658 "GET /home/ HTTP/1.1" 404 2413 basehttp 4907 log_message
+INFO 2023-09-24 15:04:37,672 "GET /hw1/home HTTP/1.1" 301 0 basehttp 4907 log_message
+INFO 2023-09-24 15:04:37,689 Index page accessed views 4907 index
+INFO 2023-09-24 15:04:37,689 "GET /hw1/home/ HTTP/1.1" 200 869 basehttp 4907 log_message
+INFO 2023-09-24 15:04:43,558 Index page accessed views 4907 about
+INFO 2023-09-24 15:04:43,559 "GET /hw1/about/ HTTP/1.1" 200 837 basehttp 4907 log_message
+INFO 2023-09-24 15:04:43,661 "GET /static/hwapp1/images/roger.png HTTP/1.1" 200 538064 basehttp 4907 log_message
+WARNING 2023-09-24 15:04:46,193 Not Found: /about/ log 4907 log_response
+WARNING 2023-09-24 15:04:46,194 "GET /about/ HTTP/1.1" 404 2416 basehttp 4907 log_message
+INFO 2023-09-24 15:06:42,611 /home/olgatorres/PycharmProjects/Django/testproject/hwapp1/urls.py changed, reloading. autoreload 4907 trigger_reload
+INFO 2023-09-24 15:06:43,009 Watching for file changes with StatReloader autoreload 5041 run_with_reloader
+WARNING 2023-09-24 15:06:43,772 Not Found: /hw1/about/ log 5041 log_response
+WARNING 2023-09-24 15:06:43,772 "GET /hw1/about/ HTTP/1.1" 404 2832 basehttp 5041 log_message
+INFO 2023-09-24 15:06:58,276 /home/olgatorres/PycharmProjects/Django/testproject/hwapp1/urls.py changed, reloading. autoreload 5041 trigger_reload
+INFO 2023-09-24 15:06:58,765 Watching for file changes with StatReloader autoreload 5053 run_with_reloader
+INFO 2023-09-24 15:07:00,228 Index page accessed views 5053 about
+INFO 2023-09-24 15:07:00,242 "GET /hw1/about/ HTTP/1.1" 200 837 basehttp 5053 log_message
+WARNING 2023-09-24 15:07:02,430 Not Found: /about/ log 5053 log_response
+WARNING 2023-09-24 15:07:02,431 "GET /about/ HTTP/1.1" 404 2416 basehttp 5053 log_message
+INFO 2023-09-24 15:07:25,668 Index page accessed views 5053 about
+INFO 2023-09-24 15:07:25,670 "GET /hw1/about/ HTTP/1.1" 200 843 basehttp 5053 log_message
+WARNING 2023-09-24 15:07:26,557 Not Found: /hw1/about/hw1/about/ log 5053 log_response
+WARNING 2023-09-24 15:07:26,557 "GET /hw1/about/hw1/about/ HTTP/1.1" 404 2860 basehttp 5053 log_message
+WARNING 2023-09-24 15:07:37,351 Not Found: /about/ log 5053 log_response
+WARNING 2023-09-24 15:07:37,352 "GET /about/ HTTP/1.1" 404 2416 basehttp 5053 log_message
+WARNING 2023-09-24 15:07:40,286 Not Found: /home/ log 5053 log_response
+WARNING 2023-09-24 15:07:40,287 "GET /home/ HTTP/1.1" 404 2413 basehttp 5053 log_message
+WARNING 2023-09-24 15:07:53,377 Not Found: /home/ log 5053 log_response
+WARNING 2023-09-24 15:07:53,377 "GET /home/ HTTP/1.1" 404 2413 basehttp 5053 log_message
+INFO 2023-09-24 15:08:08,270 Index page accessed views 5053 index
+INFO 2023-09-24 15:08:08,273 "GET /hw1/home/ HTTP/1.1" 200 875 basehttp 5053 log_message
+WARNING 2023-09-24 15:08:09,184 Not Found: /hw1/home/hw1/home/ log 5053 log_response
+WARNING 2023-09-24 15:08:09,184 "GET /hw1/home/hw1/home/ HTTP/1.1" 404 2854 basehttp 5053 log_message
+INFO 2023-09-24 15:08:16,960 Index page accessed views 5053 index
+INFO 2023-09-24 15:08:16,963 "GET /hw1/home/ HTTP/1.1" 200 875 basehttp 5053 log_message
+WARNING 2023-09-24 15:08:18,229 Not Found: /hw1/home/hw1/home/ log 5053 log_response
+WARNING 2023-09-24 15:08:18,230 "GET /hw1/home/hw1/home/ HTTP/1.1" 404 2854 basehttp 5053 log_message
+INFO 2023-09-24 15:08:28,942 Index page accessed views 5053 index
+INFO 2023-09-24 15:08:28,945 "GET /hw1/home/ HTTP/1.1" 200 869 basehttp 5053 log_message
+INFO 2023-09-24 15:08:29,671 Index page accessed views 5053 index
+INFO 2023-09-24 15:08:29,672 "GET /hw1/home/ HTTP/1.1" 200 869 basehttp 5053 log_message
+WARNING 2023-09-24 15:08:30,289 Not Found: /home/ log 5053 log_response
+WARNING 2023-09-24 15:08:30,290 "GET /home/ HTTP/1.1" 404 2413 basehttp 5053 log_message
+WARNING 2023-09-24 15:09:43,435 Not Found: /about/ log 5053 log_response
+WARNING 2023-09-24 15:09:43,436 "GET /about/ HTTP/1.1" 404 2416 basehttp 5053 log_message
+INFO 2023-09-24 15:10:18,586 Index page accessed views 5053 index
+INFO 2023-09-24 15:10:18,589 "GET /hw1/home/ HTTP/1.1" 200 872 basehttp 5053 log_message
+WARNING 2023-09-24 15:10:20,124 Not Found: /hw1/home/hw1/about/ log 5053 log_response
+WARNING 2023-09-24 15:10:20,124 "GET /hw1/home/hw1/about/ HTTP/1.1" 404 2857 basehttp 5053 log_message
+WARNING 2023-09-24 15:10:37,863 Not Found: /hw1/home/hw1/about/ log 5053 log_response
+WARNING 2023-09-24 15:10:37,864 "GET /hw1/home/hw1/about/ HTTP/1.1" 404 2857 basehttp 5053 log_message
+WARNING 2023-09-24 15:10:38,629 Not Found: /hw1/home/hw1/about/ log 5053 log_response
+WARNING 2023-09-24 15:10:38,629 "GET /hw1/home/hw1/about/ HTTP/1.1" 404 2857 basehttp 5053 log_message
+WARNING 2023-09-24 15:10:40,606 Not Found: /home/ log 5053 log_response
+WARNING 2023-09-24 15:10:40,606 "GET /home/ HTTP/1.1" 404 2413 basehttp 5053 log_message
+WARNING 2023-09-24 15:10:43,565 Not Found: /about/ log 5053 log_response
+WARNING 2023-09-24 15:10:43,566 "GET /about/ HTTP/1.1" 404 2416 basehttp 5053 log_message
+WARNING 2023-09-24 15:10:46,363 Not Found: /hw1/home/hw1/about/ log 5053 log_response
+WARNING 2023-09-24 15:10:46,364 "GET /hw1/home/hw1/about/ HTTP/1.1" 404 2857 basehttp 5053 log_message
+INFO 2023-09-24 15:11:00,396 Index page accessed views 5053 about
+INFO 2023-09-24 15:11:00,397 "GET /hw1/about/ HTTP/1.1" 200 837 basehttp 5053 log_message
+WARNING 2023-09-24 15:11:02,947 Not Found: /about/ log 5053 log_response
+WARNING 2023-09-24 15:11:02,948 "GET /about/ HTTP/1.1" 404 2416 basehttp 5053 log_message
+INFO 2023-09-24 15:11:38,034 /home/olgatorres/PycharmProjects/Django/testproject/hwapp1/urls.py changed, reloading. autoreload 5053 trigger_reload
+INFO 2023-09-24 15:11:38,405 Watching for file changes with StatReloader autoreload 5135 run_with_reloader
+INFO 2023-09-24 15:11:39,561 Index page accessed views 5135 about
+INFO 2023-09-24 15:11:39,568 "GET /hw1/about/ HTTP/1.1" 200 837 basehttp 5135 log_message
+INFO 2023-09-24 15:11:40,646 Index page accessed views 5135 about
+INFO 2023-09-24 15:11:40,649 "GET /hw1/about/ HTTP/1.1" 200 837 basehttp 5135 log_message
+WARNING 2023-09-24 15:11:41,987 Not Found: /home/ log 5135 log_response
+WARNING 2023-09-24 15:11:41,987 "GET /home/ HTTP/1.1" 404 2413 basehttp 5135 log_message
+INFO 2023-09-24 15:12:07,157 Index page accessed views 5135 index
+INFO 2023-09-24 15:12:07,160 "GET /hw1/home/ HTTP/1.1" 200 872 basehttp 5135 log_message
+WARNING 2023-09-24 15:12:08,442 Not Found: /hw1/home/hw1/about/ log 5135 log_response
+WARNING 2023-09-24 15:12:08,443 "GET /hw1/home/hw1/about/ HTTP/1.1" 404 2692 basehttp 5135 log_message
+INFO 2023-09-24 15:12:46,998 Index page accessed views 5135 index
+INFO 2023-09-24 15:12:47,001 "GET /hw1/home/ HTTP/1.1" 200 869 basehttp 5135 log_message
+INFO 2023-09-24 15:12:48,260 Index page accessed views 5135 index
+INFO 2023-09-24 15:12:48,261 "GET /hw1/home/ HTTP/1.1" 200 869 basehttp 5135 log_message
+WARNING 2023-09-24 15:12:49,815 Not Found: /about/ log 5135 log_response
+WARNING 2023-09-24 15:12:49,815 "GET /about/ HTTP/1.1" 404 2416 basehttp 5135 log_message
+WARNING 2023-09-24 15:13:17,482 Not Found: /about/ log 5135 log_response
+WARNING 2023-09-24 15:13:17,483 "GET /about/ HTTP/1.1" 404 2416 basehttp 5135 log_message
+INFO 2023-09-24 15:14:37,629 Watching for file changes with StatReloader autoreload 5239 run_with_reloader
+WARNING 2023-09-24 15:14:41,935 Not Found: /about/ log 5239 log_response
+WARNING 2023-09-24 15:14:41,936 "GET /about/ HTTP/1.1" 404 2416 basehttp 5239 log_message
+WARNING 2023-09-24 15:14:54,771 Not Found: /hw1/ log 5239 log_response
+WARNING 2023-09-24 15:14:54,772 "GET /hw1/ HTTP/1.1" 404 2647 basehttp 5239 log_message
+WARNING 2023-09-24 15:15:30,562 Not Found: /hw1/ log 5239 log_response
+WARNING 2023-09-24 15:15:30,563 "GET /hw1/ HTTP/1.1" 404 2647 basehttp 5239 log_message
+INFO 2023-09-24 15:15:42,450 /home/olgatorres/PycharmProjects/Django/testproject/hwapp1/urls.py changed, reloading. autoreload 5239 trigger_reload
+INFO 2023-09-24 15:15:42,854 Watching for file changes with StatReloader autoreload 5282 run_with_reloader
+INFO 2023-09-24 15:15:44,454 Index page accessed views 5282 index
+INFO 2023-09-24 15:15:44,462 "GET /hw1/ HTTP/1.1" 200 869 basehttp 5282 log_message
+INFO 2023-09-24 15:15:45,623 Index page accessed views 5282 index
+INFO 2023-09-24 15:15:45,625 "GET /hw1/ HTTP/1.1" 200 869 basehttp 5282 log_message
+WARNING 2023-09-24 15:15:47,138 Not Found: /home/ log 5282 log_response
+WARNING 2023-09-24 15:15:47,139 "GET /home/ HTTP/1.1" 404 2413 basehttp 5282 log_message
+WARNING 2023-09-24 15:18:12,760 Not Found: /home/ log 5282 log_response
+WARNING 2023-09-24 15:18:12,761 "GET /home/ HTTP/1.1" 404 2413 basehttp 5282 log_message
+INFO 2023-09-24 15:18:16,262 Index page accessed views 5282 index
+INFO 2023-09-24 15:18:16,268 "GET /hw1/ HTTP/1.1" 200 867 basehttp 5282 log_message
+INFO 2023-09-24 15:18:17,107 Index page accessed views 5282 index
+INFO 2023-09-24 15:18:17,108 "GET /hw1/home/ HTTP/1.1" 200 867 basehttp 5282 log_message
+WARNING 2023-09-24 15:18:18,528 Not Found: /hw1/home/home/ log 5282 log_response
+WARNING 2023-09-24 15:18:18,528 "GET /hw1/home/home/ HTTP/1.1" 404 2842 basehttp 5282 log_message
+WARNING 2023-09-24 15:18:23,246 Not Found: /hw1/home/home/ log 5282 log_response
+WARNING 2023-09-24 15:18:23,247 "GET /hw1/home/home/ HTTP/1.1" 404 2842 basehttp 5282 log_message
+WARNING 2023-09-24 15:18:25,186 Not Found: /hw1/home/about/ log 5282 log_response
+WARNING 2023-09-24 15:18:25,186 "GET /hw1/home/about/ HTTP/1.1" 404 2845 basehttp 5282 log_message
+WARNING 2023-09-24 15:18:28,866 Not Found: /hw1/home/about/ log 5282 log_response
+WARNING 2023-09-24 15:18:28,867 "GET /hw1/home/about/ HTTP/1.1" 404 2845 basehttp 5282 log_message
+INFO 2023-09-24 15:19:08,461 Index page accessed views 5282 index
+INFO 2023-09-24 15:19:08,466 "GET /hw1/home/ HTTP/1.1" 200 868 basehttp 5282 log_message
+WARNING 2023-09-24 15:19:09,405 Not Found: /home/ log 5282 log_response
+WARNING 2023-09-24 15:19:09,405 "GET /home/ HTTP/1.1" 404 2413 basehttp 5282 log_message
+WARNING 2023-09-24 15:19:11,850 Not Found: /hw1/home/about/ log 5282 log_response
+WARNING 2023-09-24 15:19:11,853 "GET /hw1/home/about/ HTTP/1.1" 404 2845 basehttp 5282 log_message
+INFO 2023-09-24 15:20:18,360 Index page accessed views 5282 index
+INFO 2023-09-24 15:20:18,362 "GET /hw1/home/ HTTP/1.1" 200 877 basehttp 5282 log_message
+INFO 2023-09-24 15:20:19,226 Index page accessed views 5282 index
+INFO 2023-09-24 15:20:19,228 "GET /hw1/home/ HTTP/1.1" 200 877 basehttp 5282 log_message
+INFO 2023-09-24 15:20:20,011 Index page accessed views 5282 index
+INFO 2023-09-24 15:20:20,012 "GET /hw1/home/ HTTP/1.1" 200 877 basehttp 5282 log_message
+INFO 2023-09-24 15:20:20,797 Index page accessed views 5282 about
+INFO 2023-09-24 15:20:20,800 "GET /hw1/about/ HTTP/1.1" 200 845 basehttp 5282 log_message
+WARNING 2023-09-24 15:23:40,985 Not Found: /blog log 5282 log_response
+WARNING 2023-09-24 15:23:40,985 "GET /blog HTTP/1.1" 404 2410 basehttp 5282 log_message
+INFO 2023-09-24 15:23:53,378 /home/olgatorres/PycharmProjects/Django/testproject/testproject/urls.py changed, reloading. autoreload 5282 trigger_reload
+INFO 2023-09-24 15:23:53,739 Watching for file changes with StatReloader autoreload 5426 run_with_reloader
+INFO 2023-09-24 15:23:59,874 "GET /blog/authors HTTP/1.1" 301 0 basehttp 5426 log_message
+INFO 2023-09-24 15:23:59,888 "GET /blog/authors/ HTTP/1.1" 200 0 basehttp 5426 log_message
+INFO 2023-09-24 15:28:12,794 /home/olgatorres/PycharmProjects/Django/testproject/blog/models.py changed, reloading. autoreload 5426 trigger_reload
+INFO 2023-09-24 15:28:13,164 Watching for file changes with StatReloader autoreload 5544 run_with_reloader
+INFO 2023-09-24 15:31:58,834 /home/olgatorres/PycharmProjects/Django/testproject/blog/models.py changed, reloading. autoreload 5544 trigger_reload
+INFO 2023-09-24 15:31:59,175 Watching for file changes with StatReloader autoreload 5596 run_with_reloader

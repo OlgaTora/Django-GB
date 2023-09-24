@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class HwappConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'hwapp'
+    name = 'hwapp1'

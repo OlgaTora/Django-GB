@@ -1,7 +1,7 @@
 import logging
 import random
 from django.http import HttpResponse
-from django.shortcuts import render
+from randomapp.models import HeadsOrTails
 
 logger = logging.getLogger(__name__)
 
@@ -21,7 +21,9 @@ def get_number(request):
 
 
 def get_tails(request):
-    num = random.choice(['heads', 'tails'])
-    res = f'{num} wins'
-    logger.info(res)
-    return HttpResponse(res)
+    attempt = HeadsOrTails(result=random.choice(['heads', 'tails']))
+    attempt.save()
+    logger.info(attempt)
+    n = request.GET.get('n', '5')
+    res = HeadsOrTails.result_stat(n)
+    return HttpResponse(res.items())
