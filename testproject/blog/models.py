@@ -11,6 +11,9 @@ class Author(models.Model):
     def full_name(self):
         return f'{self.name} {self.surname}'
 
+    def __str__(self):
+        return f'{self.name} {self.surname}'
+
 
 class Article(models.Model):
     title = models.CharField(max_length=200)
@@ -21,3 +24,5 @@ class Article(models.Model):
     views = models.IntegerField(default=0)
     is_published = models.BooleanField(default=False)
 
+    def __str__(self):
+        return f'{self.publish_date} {self.title} {self.author}'

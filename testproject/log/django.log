@@ -912,3 +912,761 @@ INFO 2023-09-24 15:28:12,794 /home/olgatorres/PycharmProjects/Django/testproject
 INFO 2023-09-24 15:28:13,164 Watching for file changes with StatReloader autoreload 5544 run_with_reloader
 INFO 2023-09-24 15:31:58,834 /home/olgatorres/PycharmProjects/Django/testproject/blog/models.py changed, reloading. autoreload 5544 trigger_reload
 INFO 2023-09-24 15:31:59,175 Watching for file changes with StatReloader autoreload 5596 run_with_reloader
+INFO 2023-09-24 16:50:58,749 Watching for file changes with StatReloader autoreload 8231 run_with_reloader
+WARNING 2023-09-24 16:51:47,717 Not Found: /blog/articles_by_author/ log 8231 log_response
+WARNING 2023-09-24 16:51:47,717 "GET /blog/articles_by_author/?name=Name2 HTTP/1.1" 404 3033 basehttp 8231 log_message
+INFO 2023-09-24 16:52:27,941 /home/olgatorres/PycharmProjects/Django/testproject/blog/urls.py changed, reloading. autoreload 8231 trigger_reload
+INFO 2023-09-24 16:52:28,365 Watching for file changes with StatReloader autoreload 8409 run_with_reloader
+ERROR 2023-09-24 16:52:29,229 Internal Server Error: /blog/articles_by_author/ log 8409 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 18, in article_by_author
+    articles = Article.object.filter(author_id=author_id).all()
+AttributeError: type object 'Article' has no attribute 'object'
+ERROR 2023-09-24 16:52:29,231 "GET /blog/articles_by_author/?name=Name2 HTTP/1.1" 500 65750 basehttp 8409 log_message
+ERROR 2023-09-24 16:52:30,156 Internal Server Error: /blog/articles_by_author/ log 8409 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 18, in article_by_author
+    articles = Article.object.filter(author_id=author_id).all()
+AttributeError: type object 'Article' has no attribute 'object'
+ERROR 2023-09-24 16:52:30,157 "GET /blog/articles_by_author/?name=Name2 HTTP/1.1" 500 65750 basehttp 8409 log_message
+ERROR 2023-09-24 16:52:31,454 Internal Server Error: /blog/articles_by_author/ log 8409 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 18, in article_by_author
+    articles = Article.object.filter(author_id=author_id).all()
+AttributeError: type object 'Article' has no attribute 'object'
+ERROR 2023-09-24 16:52:31,455 "GET /blog/articles_by_author/?name=Name2 HTTP/1.1" 500 65750 basehttp 8409 log_message
+INFO 2023-09-24 16:52:40,604 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 8409 trigger_reload
+INFO 2023-09-24 16:52:41,049 Watching for file changes with StatReloader autoreload 8420 run_with_reloader
+INFO 2023-09-24 16:52:43,890 "GET /blog/articles_by_author/?name=Name2 HTTP/1.1" 200 0 basehttp 8420 log_message
+INFO 2023-09-24 16:52:45,795 "GET /blog/articles_by_author/?name=Name2 HTTP/1.1" 200 0 basehttp 8420 log_message
+INFO 2023-09-24 16:52:46,949 "GET /blog/articles_by_author/?name=Name2 HTTP/1.1" 200 0 basehttp 8420 log_message
+INFO 2023-09-24 16:52:57,941 "GET /blog/articles_by_author/?name=Name5 HTTP/1.1" 200 321 basehttp 8420 log_message
+INFO 2023-09-25 07:36:06,985 Watching for file changes with StatReloader autoreload 7728 run_with_reloader
+WARNING 2023-09-25 07:36:14,899 Not Found: / log 7728 log_response
+WARNING 2023-09-25 07:36:14,899 "GET / HTTP/1.1" 404 2589 basehttp 7728 log_message
+INFO 2023-09-25 07:36:21,951 "GET /hw2 HTTP/1.1" 301 0 basehttp 7728 log_message
+ERROR 2023-09-25 07:36:21,992 Internal Server Error: /hw2/ log 7728 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/middleware/clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'str' object has no attribute 'get'
+ERROR 2023-09-25 07:36:21,993 "GET /hw2/ HTTP/1.1" 500 65336 basehttp 7728 log_message
+INFO 2023-09-25 07:37:53,303 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/urls.py changed, reloading. autoreload 7728 trigger_reload
+INFO 2023-09-25 07:37:53,702 Watching for file changes with StatReloader autoreload 7913 run_with_reloader
+INFO 2023-09-25 07:37:53,974 "GET /hw2/ HTTP/1.1" 200 13 basehttp 7913 log_message
+INFO 2023-09-25 07:38:01,298 "GET /hw2/orders HTTP/1.1" 301 0 basehttp 7913 log_message
+INFO 2023-09-25 07:38:01,345 "GET /hw2/orders/ HTTP/1.1" 200 4900 basehttp 7913 log_message
+INFO 2023-09-25 07:39:36,955 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 7913 trigger_reload
+INFO 2023-09-25 07:39:37,506 Watching for file changes with StatReloader autoreload 7958 run_with_reloader
+INFO 2023-09-25 07:39:40,114 "GET /hw2/orders/ HTTP/1.1" 200 4900 basehttp 7958 log_message
+INFO 2023-09-25 07:43:26,186 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 7958 trigger_reload
+INFO 2023-09-25 07:43:26,570 Watching for file changes with StatReloader autoreload 8040 run_with_reloader
+INFO 2023-09-25 07:43:36,286 "GET /hw2/products/ HTTP/1.1" 200 91 basehttp 8040 log_message
+INFO 2023-09-25 07:44:31,462 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 8040 trigger_reload
+INFO 2023-09-25 07:44:31,839 Watching for file changes with StatReloader autoreload 8070 run_with_reloader
+INFO 2023-09-25 07:44:31,991 "GET /hw2/products/ HTTP/1.1" 200 107 basehttp 8070 log_message
+INFO 2023-09-25 07:44:55,172 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 8070 trigger_reload
+INFO 2023-09-25 07:44:55,569 Watching for file changes with StatReloader autoreload 8094 run_with_reloader
+INFO 2023-09-25 07:44:56,180 "GET /hw2/products/ HTTP/1.1" 200 307 basehttp 8094 log_message
+INFO 2023-09-25 07:45:34,057 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 8094 trigger_reload
+INFO 2023-09-25 07:45:34,427 Watching for file changes with StatReloader autoreload 8119 run_with_reloader
+ERROR 2023-09-25 07:45:35,267 Internal Server Error: /hw2/products/ log 8119 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py", line 16, in get_products_available
+    products = '\n'. join(Product.objects.all())
+TypeError: sequence item 0: expected str instance, Product found
+ERROR 2023-09-25 07:45:35,268 "GET /hw2/products/ HTTP/1.1" 500 65093 basehttp 8119 log_message
+INFO 2023-09-25 07:46:12,899 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 8119 trigger_reload
+INFO 2023-09-25 07:46:13,261 Watching for file changes with StatReloader autoreload 8139 run_with_reloader
+ERROR 2023-09-25 07:46:14,464 Internal Server Error: /hw2/products/ log 8139 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py", line 17, in get_products_available
+    res = '\n'.join(list(products))
+TypeError: sequence item 0: expected str instance, Product found
+ERROR 2023-09-25 07:46:14,465 "GET /hw2/products/ HTTP/1.1" 500 65750 basehttp 8139 log_message
+INFO 2023-09-25 07:49:02,524 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 8139 trigger_reload
+INFO 2023-09-25 07:49:02,949 Watching for file changes with StatReloader autoreload 8168 run_with_reloader
+INFO 2023-09-25 07:49:03,538 "GET /hw2/products/ HTTP/1.1" 200 307 basehttp 8168 log_message
+INFO 2023-09-25 07:49:14,150 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 8168 trigger_reload
+INFO 2023-09-25 07:49:14,536 Watching for file changes with StatReloader autoreload 8182 run_with_reloader
+INFO 2023-09-25 07:49:15,354 "GET /hw2/products/ HTTP/1.1" 200 316 basehttp 8182 log_message
+INFO 2023-09-25 07:49:23,169 "GET /hw2/products/ HTTP/1.1" 200 316 basehttp 8182 log_message
+INFO 2023-09-25 07:49:35,898 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 8182 trigger_reload
+INFO 2023-09-25 07:49:36,269 Watching for file changes with StatReloader autoreload 8197 run_with_reloader
+INFO 2023-09-25 07:49:37,529 "GET /hw2/products/ HTTP/1.1" 200 316 basehttp 8197 log_message
+INFO 2023-09-25 07:50:05,704 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 8197 trigger_reload
+INFO 2023-09-25 07:50:06,063 Watching for file changes with StatReloader autoreload 8217 run_with_reloader
+INFO 2023-09-25 07:50:36,479 "GET /hw2/products/ HTTP/1.1" 200 307 basehttp 8217 log_message
+INFO 2023-09-25 07:51:18,739 "GET /hw2/products/ HTTP/1.1" 200 307 basehttp 8217 log_message
+INFO 2023-09-25 07:51:38,140 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 8217 trigger_reload
+INFO 2023-09-25 07:51:38,587 Watching for file changes with StatReloader autoreload 8270 run_with_reloader
+INFO 2023-09-25 07:53:25,845 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 8270 trigger_reload
+INFO 2023-09-25 07:53:26,284 Watching for file changes with StatReloader autoreload 8321 run_with_reloader
+INFO 2023-09-25 07:53:26,952 "GET /hw2/products/ HTTP/1.1" 200 277 basehttp 8321 log_message
+INFO 2023-09-25 08:02:45,641 "GET /hw2/products/ HTTP/1.1" 200 277 basehttp 8321 log_message
+INFO 2023-09-25 08:05:31,182 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/urls.py changed, reloading. autoreload 8321 trigger_reload
+INFO 2023-09-25 08:05:31,590 Watching for file changes with StatReloader autoreload 8603 run_with_reloader
+WARNING 2023-09-25 08:05:44,575 Not Found: /hw2/orders_by_client/ log 8603 log_response
+WARNING 2023-09-25 08:05:44,576 "GET /hw2/orders_by_client/ HTTP/1.1" 404 3113 basehttp 8603 log_message
+WARNING 2023-09-25 08:05:52,471 Not Found: /hw2/orders_by_client/ log 8603 log_response
+WARNING 2023-09-25 08:05:52,472 "GET /hw2/orders_by_client/?pk=10 HTTP/1.1" 404 3119 basehttp 8603 log_message
+WARNING 2023-09-25 08:05:56,232 Not Found: /hw2/orders_by_client/ log 8603 log_response
+WARNING 2023-09-25 08:05:56,233 "GET /hw2/orders_by_client/?pk=9 HTTP/1.1" 404 3118 basehttp 8603 log_message
+INFO 2023-09-25 08:06:08,971 "GET /hw2/orders_by_clients/?pk=9 HTTP/1.1" 200 0 basehttp 8603 log_message
+INFO 2023-09-25 08:06:12,759 "GET /hw2/orders_by_clients/?pk=8 HTTP/1.1" 200 0 basehttp 8603 log_message
+INFO 2023-09-25 08:06:15,103 "GET /hw2/orders_by_clients/?pk=18 HTTP/1.1" 200 0 basehttp 8603 log_message
+INFO 2023-09-25 08:06:34,174 "GET /hw2/orders_by_clients/?pk=114 HTTP/1.1" 200 1125 basehttp 8603 log_message
+INFO 2023-09-25 08:08:03,388 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 8603 trigger_reload
+INFO 2023-09-25 08:08:03,783 Watching for file changes with StatReloader autoreload 8669 run_with_reloader
+INFO 2023-09-25 08:08:04,001 "GET /hw2/orders_by_clients/?pk=114 HTTP/1.1" 200 1815 basehttp 8669 log_message
+INFO 2023-09-25 08:10:57,474 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 8669 trigger_reload
+INFO 2023-09-25 08:10:57,841 Watching for file changes with StatReloader autoreload 8716 run_with_reloader
+INFO 2023-09-25 08:12:54,969 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 8716 trigger_reload
+INFO 2023-09-25 08:12:55,336 Watching for file changes with StatReloader autoreload 8740 run_with_reloader
+INFO 2023-09-25 08:19:34,139 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 8740 trigger_reload
+INFO 2023-09-25 08:19:34,497 Watching for file changes with StatReloader autoreload 8919 run_with_reloader
+INFO 2023-09-25 08:20:32,495 Watching for file changes with StatReloader autoreload 8942 run_with_reloader
+INFO 2023-09-25 08:21:17,222 Watching for file changes with StatReloader autoreload 8963 run_with_reloader
+INFO 2023-09-25 08:23:21,469 Watching for file changes with StatReloader autoreload 9320 run_with_reloader
+INFO 2023-09-25 08:24:21,303 Watching for file changes with StatReloader autoreload 9339 run_with_reloader
+INFO 2023-09-25 08:24:32,482 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 9339 trigger_reload
+INFO 2023-09-25 08:24:32,884 Watching for file changes with StatReloader autoreload 9351 run_with_reloader
+INFO 2023-09-25 08:24:35,263 Watching for file changes with StatReloader autoreload 9356 run_with_reloader
+INFO 2023-09-25 09:17:22,757 Watching for file changes with StatReloader autoreload 11026 run_with_reloader
+INFO 2023-09-25 09:17:25,683 "GET /hw2/orders_by_clients/?pk=114 HTTP/1.1" 200 0 basehttp 11026 log_message
+INFO 2023-09-25 09:17:26,646 "GET /hw2/orders_by_clients/?pk=114 HTTP/1.1" 200 0 basehttp 11026 log_message
+INFO 2023-09-25 09:17:39,819 "GET /hw2/orders_by_clients/?pk=127 HTTP/1.1" 200 158 basehttp 11026 log_message
+INFO 2023-09-25 09:18:53,408 "GET /hw2/orders_by_clients/?pk=127 HTTP/1.1" 200 158 basehttp 11026 log_message
+INFO 2023-09-25 09:20:23,554 "GET /hw2/orders_by_clients/?pk=127 HTTP/1.1" 200 158 basehttp 11026 log_message
+INFO 2023-09-25 09:20:23,660 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 11026 trigger_reload
+INFO 2023-09-25 09:20:23,958 Watching for file changes with StatReloader autoreload 11091 run_with_reloader
+INFO 2023-09-25 09:20:39,168 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 11091 trigger_reload
+INFO 2023-09-25 09:20:39,419 Watching for file changes with StatReloader autoreload 11097 run_with_reloader
+INFO 2023-09-25 09:20:39,649 "GET /hw2/orders_by_clients/?pk=127 HTTP/1.1" 200 522 basehttp 11097 log_message
+INFO 2023-09-25 09:20:42,640 "GET /hw2/orders_by_clients/?pk=127 HTTP/1.1" 200 522 basehttp 11097 log_message
+INFO 2023-09-25 09:22:14,491 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 11097 trigger_reload
+INFO 2023-09-25 09:22:14,736 Watching for file changes with StatReloader autoreload 11128 run_with_reloader
+INFO 2023-09-25 09:22:14,845 "GET /hw2/orders_by_clients/?pk=127 HTTP/1.1" 200 414 basehttp 11128 log_message
+INFO 2023-09-25 09:22:53,363 Watching for file changes with StatReloader autoreload 11151 run_with_reloader
+INFO 2023-09-25 09:22:56,445 "GET /hw2/orders_by_clients/?pk=127 HTTP/1.1" 200 414 basehttp 11151 log_message
+INFO 2023-09-25 09:22:57,891 "GET /hw2/orders_by_clients/?pk=127 HTTP/1.1" 200 414 basehttp 11151 log_message
+INFO 2023-09-25 09:22:58,989 "GET /hw2/orders_by_clients/?pk=127 HTTP/1.1" 200 414 basehttp 11151 log_message
+INFO 2023-09-25 09:43:07,198 Watching for file changes with StatReloader autoreload 12723 run_with_reloader
+INFO 2023-09-25 09:43:09,630 "GET /hw2/orders_by_clients/?pk=127 HTTP/1.1" 200 414 basehttp 12723 log_message
+INFO 2023-09-25 09:43:10,845 "GET /hw2/orders_by_clients/?pk=127 HTTP/1.1" 200 414 basehttp 12723 log_message
+INFO 2023-09-25 09:43:42,165 "GET /hw2/orders_by_clients/?pk=126 HTTP/1.1" 200 519 basehttp 12723 log_message
+INFO 2023-09-25 09:43:53,227 "GET /hw2/orders_by_clients/?pk=126 HTTP/1.1" 200 519 basehttp 12723 log_message
+INFO 2023-09-25 09:44:00,295 "GET /hw2/orders_by_clients/?pk=126 HTTP/1.1" 200 519 basehttp 12723 log_message
+INFO 2023-09-25 09:44:21,904 "GET /hw2/orders_by_clients/?pk=126 HTTP/1.1" 200 519 basehttp 12723 log_message
+INFO 2023-09-25 09:44:28,711 "GET /hw2/orders_by_clients/?pk=126 HTTP/1.1" 200 519 basehttp 12723 log_message
+INFO 2023-09-25 09:44:35,017 "GET /hw2/orders_by_clients/?pk=128 HTTP/1.1" 200 626 basehttp 12723 log_message
+INFO 2023-09-25 09:46:25,103 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 12723 trigger_reload
+INFO 2023-09-25 09:46:25,443 Watching for file changes with StatReloader autoreload 12800 run_with_reloader
+INFO 2023-09-25 09:46:26,315 "GET /hw2/orders_by_clients/?pk=128 HTTP/1.1" 200 514 basehttp 12800 log_message
+INFO 2023-09-25 09:46:27,304 "GET /hw2/orders_by_clients/?pk=128 HTTP/1.1" 200 514 basehttp 12800 log_message
+INFO 2023-09-25 09:47:58,458 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 12800 trigger_reload
+INFO 2023-09-25 09:47:58,721 Watching for file changes with StatReloader autoreload 12840 run_with_reloader
+INFO 2023-09-25 09:48:39,126 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 12840 trigger_reload
+INFO 2023-09-25 09:48:39,384 Watching for file changes with StatReloader autoreload 12861 run_with_reloader
+INFO 2023-09-25 09:49:49,704 Watching for file changes with StatReloader autoreload 12906 run_with_reloader
+INFO 2023-09-25 09:49:55,594 "GET /hw2/orders_by_clients/?pk=128 HTTP/1.1" 200 514 basehttp 12906 log_message
+INFO 2023-09-25 09:49:57,420 "GET /hw2/orders_by_clients/?pk=128 HTTP/1.1" 200 514 basehttp 12906 log_message
+INFO 2023-09-25 09:51:59,084 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/urls.py changed, reloading. autoreload 12906 trigger_reload
+INFO 2023-09-25 09:51:59,378 Watching for file changes with StatReloader autoreload 12955 run_with_reloader
+INFO 2023-09-25 09:52:14,378 "GET /hw2/status_order/?status=5 HTTP/1.1" 200 62 basehttp 12955 log_message
+INFO 2023-09-25 09:52:47,970 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 12955 trigger_reload
+INFO 2023-09-25 09:52:48,264 Watching for file changes with StatReloader autoreload 12978 run_with_reloader
+INFO 2023-09-25 09:53:16,516 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 12978 trigger_reload
+INFO 2023-09-25 09:53:16,761 Watching for file changes with StatReloader autoreload 12987 run_with_reloader
+INFO 2023-09-25 09:56:00,705 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 12987 trigger_reload
+INFO 2023-09-25 09:56:00,963 Watching for file changes with StatReloader autoreload 13014 run_with_reloader
+ERROR 2023-09-25 09:56:04,750 Internal Server Error: /hw2/status_order/ log 13014 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py", line 24, in status_order
+    status = Order.Status.label(name=status)
+  File "/usr/lib/python3.10/enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: label
+ERROR 2023-09-25 09:56:04,751 "GET /hw2/status_order/?status=5 HTTP/1.1" 500 69498 basehttp 13014 log_message
+INFO 2023-09-25 09:56:57,652 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 13014 trigger_reload
+INFO 2023-09-25 09:56:57,914 Watching for file changes with StatReloader autoreload 13038 run_with_reloader
+ERROR 2023-09-25 09:56:58,335 Internal Server Error: /hw2/status_order/ log 13038 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py", line 24, in status_order
+    status = Order.Status.objects.filter(name=status)
+  File "/usr/lib/python3.10/enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: objects
+ERROR 2023-09-25 09:56:58,336 "GET /hw2/status_order/?status=5 HTTP/1.1" 500 69526 basehttp 13038 log_message
+INFO 2023-09-25 09:59:17,594 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 13038 trigger_reload
+INFO 2023-09-25 09:59:17,852 Watching for file changes with StatReloader autoreload 13074 run_with_reloader
+ERROR 2023-09-25 09:59:33,150 Internal Server Error: /hw2/status_order/ log 13074 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py", line 24, in status_order
+    status = Order.Status.label(name=status)
+  File "/usr/lib/python3.10/enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: label
+ERROR 2023-09-25 09:59:33,151 "GET /hw2/status_order/?status=5 HTTP/1.1" 500 69498 basehttp 13074 log_message
+INFO 2023-09-25 10:01:24,246 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 13074 trigger_reload
+INFO 2023-09-25 10:01:24,501 Watching for file changes with StatReloader autoreload 13102 run_with_reloader
+ERROR 2023-09-25 10:01:24,950 Internal Server Error: /hw2/status_order/ log 13102 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py", line 24, in status_order
+    status = status.label
+AttributeError: 'str' object has no attribute 'label'
+ERROR 2023-09-25 10:01:24,951 "GET /hw2/status_order/?status=5 HTTP/1.1" 500 66131 basehttp 13102 log_message
+INFO 2023-09-25 10:03:11,654 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 13102 trigger_reload
+INFO 2023-09-25 10:03:11,909 Watching for file changes with StatReloader autoreload 13140 run_with_reloader
+INFO 2023-09-25 10:03:18,522 "GET /hw2/status_order/?status=cancelled HTTP/1.1" 200 69 basehttp 13140 log_message
+INFO 2023-09-25 10:06:45,298 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 13140 trigger_reload
+INFO 2023-09-25 10:06:45,556 Watching for file changes with StatReloader autoreload 13211 run_with_reloader
+INFO 2023-09-25 10:06:56,964 "GET /hw2/orders_by_clients/128 HTTP/1.1" 301 0 basehttp 13211 log_message
+INFO 2023-09-25 10:06:56,976 "GET /hw2/orders_by_clients/128/ HTTP/1.1" 200 514 basehttp 13211 log_message
+INFO 2023-09-25 10:07:12,941 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 13211 trigger_reload
+INFO 2023-09-25 10:07:13,198 Watching for file changes with StatReloader autoreload 13228 run_with_reloader
+INFO 2023-09-25 10:08:06,809 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/urls.py changed, reloading. autoreload 13228 trigger_reload
+INFO 2023-09-25 10:08:07,070 Watching for file changes with StatReloader autoreload 13250 run_with_reloader
+INFO 2023-09-25 10:11:35,131 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/urls.py changed, reloading. autoreload 13250 trigger_reload
+INFO 2023-09-25 10:11:35,392 Watching for file changes with StatReloader autoreload 13319 run_with_reloader
+INFO 2023-09-25 10:12:19,406 "GET /hw2/update_status/9/paid HTTP/1.1" 301 0 basehttp 13319 log_message
+ERROR 2023-09-25 10:12:19,428 Internal Server Error: /hw2/update_status/9/paid/ log 13319 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: status_order() got an unexpected keyword argument 'pk'
+ERROR 2023-09-25 10:12:19,429 "GET /hw2/update_status/9/paid/ HTTP/1.1" 500 62483 basehttp 13319 log_message
+INFO 2023-09-25 10:12:46,152 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/urls.py changed, reloading. autoreload 13319 trigger_reload
+INFO 2023-09-25 10:12:46,438 Watching for file changes with StatReloader autoreload 13353 run_with_reloader
+ERROR 2023-09-25 10:12:47,581 Internal Server Error: /hw2/update_status/9/paid/ log 13353 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: update_status() got an unexpected keyword argument 'slug'
+ERROR 2023-09-25 10:12:47,582 "GET /hw2/update_status/9/paid/ HTTP/1.1" 500 62498 basehttp 13353 log_message
+INFO 2023-09-25 10:14:01,128 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/urls.py changed, reloading. autoreload 13353 trigger_reload
+INFO 2023-09-25 10:14:01,416 Watching for file changes with StatReloader autoreload 13373 run_with_reloader
+ERROR 2023-09-25 10:14:04,779 Internal Server Error: /hw2/update_status/9_paid/ log 13373 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: update_status() got an unexpected keyword argument 'slug'
+ERROR 2023-09-25 10:14:04,780 "GET /hw2/update_status/9_paid/ HTTP/1.1" 500 62498 basehttp 13373 log_message
+INFO 2023-09-25 10:18:15,855 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/urls.py changed, reloading. autoreload 13373 trigger_reload
+INFO 2023-09-25 10:18:16,174 Watching for file changes with StatReloader autoreload 13658 run_with_reloader
+INFO 2023-09-25 10:18:52,437 Watching for file changes with StatReloader autoreload 13676 run_with_reloader
+ERROR 2023-09-25 10:18:54,710 Internal Server Error: /hw2/update_status/9/paid/ log 13676 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: update_status() got an unexpected keyword argument 'slug'
+ERROR 2023-09-25 10:18:54,712 "GET /hw2/update_status/9/paid/ HTTP/1.1" 500 62498 basehttp 13676 log_message
+ERROR 2023-09-25 10:18:55,718 Internal Server Error: /hw2/update_status/9/paid/ log 13676 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: update_status() got an unexpected keyword argument 'slug'
+ERROR 2023-09-25 10:18:55,718 "GET /hw2/update_status/9/paid/ HTTP/1.1" 500 62498 basehttp 13676 log_message
+WARNING 2023-09-25 10:20:38,118 Not Found: /hw2/update_status/9 log 13676 log_response
+WARNING 2023-09-25 10:20:38,119 "GET /hw2/update_status/9 HTTP/1.1" 404 3544 basehttp 13676 log_message
+WARNING 2023-09-25 10:20:47,924 Not Found: /hw2/update_status/9/; log 13676 log_response
+WARNING 2023-09-25 10:20:47,924 "GET /hw2/update_status/9/; HTTP/1.1" 404 3552 basehttp 13676 log_message
+INFO 2023-09-25 10:20:53,203 "GET /hw2/update_status/9/ui HTTP/1.1" 301 0 basehttp 13676 log_message
+ERROR 2023-09-25 10:20:53,222 Internal Server Error: /hw2/update_status/9/ui/ log 13676 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: update_status() got an unexpected keyword argument 'slug'
+ERROR 2023-09-25 10:20:53,222 "GET /hw2/update_status/9/ui/ HTTP/1.1" 500 62478 basehttp 13676 log_message
+INFO 2023-09-25 10:22:24,571 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 13676 trigger_reload
+INFO 2023-09-25 10:22:24,864 Watching for file changes with StatReloader autoreload 13811 run_with_reloader
+INFO 2023-09-25 10:23:00,164 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 13811 trigger_reload
+INFO 2023-09-25 10:23:00,431 Watching for file changes with StatReloader autoreload 13829 run_with_reloader
+ERROR 2023-09-25 10:23:08,377 Internal Server Error: /hw2/update_status/9/paid/ log 13829 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: hwapp2_order.status
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py", line 31, in update_status
+    order.save()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 990, in _save_table
+    updated = self._do_update(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1984, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: hwapp2_order.status
+ERROR 2023-09-25 10:23:08,378 "GET /hw2/update_status/9/paid/ HTTP/1.1" 500 158943 basehttp 13829 log_message
+ERROR 2023-09-25 10:23:15,697 Internal Server Error: /hw2/update_status/9/paid/ log 13829 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: hwapp2_order.status
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py", line 31, in update_status
+    order.save()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 990, in _save_table
+    updated = self._do_update(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1984, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: hwapp2_order.status
+ERROR 2023-09-25 10:23:15,698 "GET /hw2/update_status/9/paid/ HTTP/1.1" 500 158943 basehttp 13829 log_message
+ERROR 2023-09-25 10:23:28,607 Internal Server Error: /hw2/update_status/9/cancelled/ log 13829 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: hwapp2_order.status
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py", line 31, in update_status
+    order.save()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 990, in _save_table
+    updated = self._do_update(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1984, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: hwapp2_order.status
+ERROR 2023-09-25 10:23:28,608 "GET /hw2/update_status/9/cancelled/ HTTP/1.1" 500 159003 basehttp 13829 log_message
+INFO 2023-09-25 10:24:20,242 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 13829 trigger_reload
+INFO 2023-09-25 10:24:20,517 Watching for file changes with StatReloader autoreload 13847 run_with_reloader
+ERROR 2023-09-25 10:24:21,579 Internal Server Error: /hw2/update_status/9/cancelled/ log 13847 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: hwapp2_order.status
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py", line 32, in update_status
+    order.save()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 990, in _save_table
+    updated = self._do_update(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1984, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: hwapp2_order.status
+ERROR 2023-09-25 10:24:21,581 "GET /hw2/update_status/9/cancelled/ HTTP/1.1" 500 159020 basehttp 13847 log_message
+INFO 2023-09-25 10:24:57,926 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/urls.py changed, reloading. autoreload 13847 trigger_reload
+INFO 2023-09-25 10:24:58,204 Watching for file changes with StatReloader autoreload 13862 run_with_reloader
+INFO 2023-09-25 10:24:59,432 "GET /hw2/update_status/9/cancelled/ HTTP/1.1" 200 70 basehttp 13862 log_message
+INFO 2023-09-25 10:25:14,384 "GET /hw2/update_status/10/paid/ HTTP/1.1" 200 65 basehttp 13862 log_message
+INFO 2023-09-25 10:27:09,472 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/urls.py changed, reloading. autoreload 13862 trigger_reload
+INFO 2023-09-25 10:27:09,736 Watching for file changes with StatReloader autoreload 13905 run_with_reloader
+INFO 2023-09-25 10:27:11,699 "GET /hw2/update_status/10/paid/ HTTP/1.1" 200 65 basehttp 13905 log_message
+INFO 2023-09-25 10:27:16,196 "GET /hw2/update_status/12/paid/ HTTP/1.1" 200 65 basehttp 13905 log_message
+WARNING 2023-09-25 10:27:30,784 Not Found: /hw2/status_order/ log 13905 log_response
+WARNING 2023-09-25 10:27:30,785 "GET /hw2/status_order/?status=cancelled HTTP/1.1" 404 3558 basehttp 13905 log_message
+INFO 2023-09-25 10:27:43,331 "GET /hw2/status_order/cancelled HTTP/1.1" 301 0 basehttp 13905 log_message
+INFO 2023-09-25 10:27:43,340 "GET /hw2/status_order/cancelled/ HTTP/1.1" 200 139 basehttp 13905 log_message
+INFO 2023-09-25 10:29:36,124 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 13905 trigger_reload
+INFO 2023-09-25 10:29:36,400 Watching for file changes with StatReloader autoreload 13977 run_with_reloader
+INFO 2023-09-25 10:30:24,903 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 13977 trigger_reload
+INFO 2023-09-25 10:30:25,157 Watching for file changes with StatReloader autoreload 13992 run_with_reloader
+INFO 2023-09-25 10:30:35,819 "GET /hw2/orders_by_clients/128/ HTTP/1.1" 200 582 basehttp 13992 log_message
+INFO 2023-09-25 10:30:45,434 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 13992 trigger_reload
+INFO 2023-09-25 10:30:45,698 Watching for file changes with StatReloader autoreload 14011 run_with_reloader
+INFO 2023-09-25 10:30:47,516 "GET /hw2/orders_by_clients/128/ HTTP/1.1" 200 583 basehttp 14011 log_message
+INFO 2023-09-25 10:30:48,224 "GET /hw2/orders_by_clients/128/ HTTP/1.1" 200 583 basehttp 14011 log_message
+INFO 2023-09-25 10:30:48,896 "GET /hw2/orders_by_clients/128/ HTTP/1.1" 200 583 basehttp 14011 log_message
+INFO 2023-09-25 10:31:06,964 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 14011 trigger_reload
+INFO 2023-09-25 10:31:07,223 Watching for file changes with StatReloader autoreload 14030 run_with_reloader
+INFO 2023-09-25 10:31:07,880 "GET /hw2/orders_by_clients/128/ HTTP/1.1" 200 580 basehttp 14030 log_message
+INFO 2023-09-25 10:31:08,711 "GET /hw2/orders_by_clients/128/ HTTP/1.1" 200 580 basehttp 14030 log_message
+INFO 2023-09-25 10:31:09,744 "GET /hw2/orders_by_clients/128/ HTTP/1.1" 200 580 basehttp 14030 log_message
+INFO 2023-09-25 10:31:52,768 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 14030 trigger_reload
+INFO 2023-09-25 10:31:53,061 Watching for file changes with StatReloader autoreload 14048 run_with_reloader
+INFO 2023-09-25 10:32:29,394 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 14048 trigger_reload
+INFO 2023-09-25 10:32:29,645 Watching for file changes with StatReloader autoreload 14062 run_with_reloader
+INFO 2023-09-25 10:32:30,130 "GET /hw2/update_status/9/paid/ HTTP/1.1" 200 65 basehttp 14062 log_message
+INFO 2023-09-25 10:32:31,845 "GET /hw2/update_status/9/paid/ HTTP/1.1" 200 65 basehttp 14062 log_message
+INFO 2023-09-25 10:32:36,236 "GET /hw2/orders_by_clients/128/ HTTP/1.1" 200 577 basehttp 14062 log_message
+INFO 2023-09-25 10:32:37,249 "GET /hw2/orders_by_clients/128/ HTTP/1.1" 200 577 basehttp 14062 log_message
+INFO 2023-09-25 10:32:52,918 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 14062 trigger_reload
+INFO 2023-09-25 10:32:53,187 Watching for file changes with StatReloader autoreload 14073 run_with_reloader
+INFO 2023-09-25 10:32:53,639 "GET /hw2/orders_by_clients/128/ HTTP/1.1" 200 514 basehttp 14073 log_message
+INFO 2023-09-25 10:49:17,730 Watching for file changes with StatReloader autoreload 15307 run_with_reloader
+INFO 2023-09-25 10:49:20,823 "GET /hw2/orders_by_clients/162/ HTTP/1.1" 200 682 basehttp 15307 log_message
+INFO 2023-09-25 10:49:26,753 "GET /hw2/orders_by_clients/162/ HTTP/1.1" 200 682 basehttp 15307 log_message
+INFO 2023-09-25 10:51:46,810 Watching for file changes with StatReloader autoreload 15604 run_with_reloader
+INFO 2023-09-25 10:51:48,942 "GET /hw2/orders_by_clients/162/ HTTP/1.1" 200 972 basehttp 15604 log_message
+INFO 2023-09-25 10:53:33,948 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 15604 trigger_reload
+INFO 2023-09-25 10:53:34,218 Watching for file changes with StatReloader autoreload 15637 run_with_reloader
+INFO 2023-09-25 10:53:34,501 "GET /hw2/orders_by_clients/162/ HTTP/1.1" 200 297 basehttp 15637 log_message
+INFO 2023-09-25 10:54:06,516 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/urls.py changed, reloading. autoreload 15637 trigger_reload
+INFO 2023-09-25 10:54:06,785 Watching for file changes with StatReloader autoreload 15658 run_with_reloader
+INFO 2023-09-25 10:55:25,595 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/urls.py changed, reloading. autoreload 15658 trigger_reload
+INFO 2023-09-25 10:55:25,863 Watching for file changes with StatReloader autoreload 15682 run_with_reloader
+INFO 2023-09-25 10:55:45,024 Watching for file changes with StatReloader autoreload 15698 run_with_reloader
+WARNING 2023-09-25 10:55:47,182 Not Found: /hw2/orders_by_clients/162/ log 15698 log_response
+WARNING 2023-09-25 10:55:47,182 "GET /hw2/orders_by_clients/162/ HTTP/1.1" 404 3586 basehttp 15698 log_message
+INFO 2023-09-25 10:55:50,277 "GET /hw2/orders_by_clients/162/3 HTTP/1.1" 301 0 basehttp 15698 log_message
+INFO 2023-09-25 10:55:50,288 "GET /hw2/orders_by_clients/162/3/ HTTP/1.1" 200 297 basehttp 15698 log_message
+INFO 2023-09-25 10:55:54,283 "GET /hw2/orders_by_clients/162/2 HTTP/1.1" 301 0 basehttp 15698 log_message
+INFO 2023-09-25 10:55:54,297 "GET /hw2/orders_by_clients/162/2/ HTTP/1.1" 200 297 basehttp 15698 log_message
+INFO 2023-09-25 10:56:01,516 "GET /hw2/orders_by_clients/162/5 HTTP/1.1" 301 0 basehttp 15698 log_message
+INFO 2023-09-25 10:56:01,527 "GET /hw2/orders_by_clients/162/5/ HTTP/1.1" 200 297 basehttp 15698 log_message
+WARNING 2023-09-25 10:56:06,167 Not Found: /hw2/orders_by_clients/162 log 15698 log_response
+WARNING 2023-09-25 10:56:06,167 "GET /hw2/orders_by_clients/162 HTTP/1.1" 404 3583 basehttp 15698 log_message
+INFO 2023-09-25 10:56:09,725 "GET /hw2/orders_by_clients/162/1 HTTP/1.1" 301 0 basehttp 15698 log_message
+INFO 2023-09-25 10:56:09,733 "GET /hw2/orders_by_clients/162/1/ HTTP/1.1" 200 297 basehttp 15698 log_message
+INFO 2023-09-25 10:56:29,563 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 15698 trigger_reload
+INFO 2023-09-25 10:56:29,827 Watching for file changes with StatReloader autoreload 15719 run_with_reloader
+INFO 2023-09-25 10:56:30,584 "GET /hw2/orders_by_clients/162/1/ HTTP/1.1" 200 99 basehttp 15719 log_message
+INFO 2023-09-25 10:56:36,370 "GET /hw2/orders_by_clients/162/2/ HTTP/1.1" 200 198 basehttp 15719 log_message
+INFO 2023-09-25 10:57:14,344 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 15719 trigger_reload
+INFO 2023-09-25 10:57:14,606 Watching for file changes with StatReloader autoreload 15737 run_with_reloader
+INFO 2023-09-25 10:57:15,298 "GET /hw2/orders_by_clients/162/2/ HTTP/1.1" 200 198 basehttp 15737 log_message
+WARNING 2023-09-25 10:57:18,316 Not Found: /hw2/orders_by_clients/162/ log 15737 log_response
+WARNING 2023-09-25 10:57:18,316 "GET /hw2/orders_by_clients/162/ HTTP/1.1" 404 3586 basehttp 15737 log_message
+WARNING 2023-09-25 10:57:30,367 Not Found: /hw2/orders_by_clients/162 log 15737 log_response
+WARNING 2023-09-25 10:57:30,368 "GET /hw2/orders_by_clients/162 HTTP/1.1" 404 3583 basehttp 15737 log_message
+INFO 2023-09-25 10:57:36,848 "GET /hw2/orders_by_clients/162/6 HTTP/1.1" 301 0 basehttp 15737 log_message
+INFO 2023-09-25 10:57:36,858 "GET /hw2/orders_by_clients/162/6/ HTTP/1.1" 200 582 basehttp 15737 log_message
+INFO 2023-09-25 10:58:10,254 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 15737 trigger_reload
+INFO 2023-09-25 10:58:10,514 Watching for file changes with StatReloader autoreload 15775 run_with_reloader
+INFO 2023-09-25 11:16:05,334 Watching for file changes with StatReloader autoreload 5104 run_with_reloader
+WARNING 2023-09-25 11:16:10,744 Not Found: /hw2/orders_by_clients/162 log 5104 log_response
+WARNING 2023-09-25 11:16:10,744 "GET /hw2/orders_by_clients/162 HTTP/1.1" 404 3583 basehttp 5104 log_message
+WARNING 2023-09-25 11:16:11,771 Not Found: /hw2/orders_by_clients/162 log 5104 log_response
+WARNING 2023-09-25 11:16:11,772 "GET /hw2/orders_by_clients/162 HTTP/1.1" 404 3583 basehttp 5104 log_message
+WARNING 2023-09-25 11:16:13,703 Not Found: /hw2/orders_by_clients/162 log 5104 log_response
+WARNING 2023-09-25 11:16:13,704 "GET /hw2/orders_by_clients/162 HTTP/1.1" 404 3583 basehttp 5104 log_message
+INFO 2023-09-25 11:16:16,332 "GET /hw2/orders_by_clients/162/2/ HTTP/1.1" 200 198 basehttp 5104 log_message
+WARNING 2023-09-25 11:16:19,676 Not Found: /hw2/orders_by_clients/162 log 5104 log_response
+WARNING 2023-09-25 11:16:19,677 "GET /hw2/orders_by_clients/162 HTTP/1.1" 404 3583 basehttp 5104 log_message
+WARNING 2023-09-25 11:19:05,943 Not Found: /hw2/orders_by_clients/162 log 5104 log_response
+WARNING 2023-09-25 11:19:05,943 "GET /hw2/orders_by_clients/162 HTTP/1.1" 404 3583 basehttp 5104 log_message
+WARNING 2023-09-25 11:19:06,850 Not Found: /hw2/orders_by_clients/162 log 5104 log_response
+WARNING 2023-09-25 11:19:06,851 "GET /hw2/orders_by_clients/162 HTTP/1.1" 404 3583 basehttp 5104 log_message
+INFO 2023-09-25 11:26:22,850 Watching for file changes with StatReloader autoreload 5289 run_with_reloader
+INFO 2023-09-25 11:26:27,890 "GET /hw2/orders_by_clients/162/2/ HTTP/1.1" 200 0 basehttp 5289 log_message
+INFO 2023-09-25 11:26:30,083 "GET /hw2/orders_by_clients/162/2/ HTTP/1.1" 200 0 basehttp 5289 log_message
+INFO 2023-09-25 11:26:34,812 "GET /hw2/orders_by_clients/182/2/ HTTP/1.1" 200 0 basehttp 5289 log_message
+INFO 2023-09-25 11:26:56,543 "GET /hw2/orders_by_clients/172/2/ HTTP/1.1" 200 197 basehttp 5289 log_message
+INFO 2023-09-25 11:28:36,139 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 5289 trigger_reload
+INFO 2023-09-25 11:28:36,431 Watching for file changes with StatReloader autoreload 5329 run_with_reloader
+INFO 2023-09-25 11:28:59,521 "GET /hw2/orders_by_clients/172/2/ HTTP/1.1" 200 357 basehttp 5329 log_message
+INFO 2023-09-25 11:29:02,499 "GET /hw2/orders_by_clients/172/2/ HTTP/1.1" 200 357 basehttp 5329 log_message
+INFO 2023-09-25 11:30:16,354 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 5329 trigger_reload
+INFO 2023-09-25 11:30:16,706 Watching for file changes with StatReloader autoreload 5467 run_with_reloader
+INFO 2023-09-25 11:32:26,999 Watching for file changes with StatReloader autoreload 5523 run_with_reloader
+INFO 2023-09-25 11:32:29,116 "GET /hw2/orders_by_clients/172/2/ HTTP/1.1" 200 357 basehttp 5523 log_message
+INFO 2023-09-25 11:32:30,469 "GET /hw2/orders_by_clients/172/2/ HTTP/1.1" 200 357 basehttp 5523 log_message
+INFO 2023-09-25 11:32:42,247 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 5523 trigger_reload
+INFO 2023-09-25 11:32:42,524 Watching for file changes with StatReloader autoreload 5542 run_with_reloader
+INFO 2023-09-25 11:32:42,652 "GET /hw2/orders_by_clients/172/2/ HTTP/1.1" 200 197 basehttp 5542 log_message
+INFO 2023-09-25 11:32:43,811 "GET /hw2/orders_by_clients/172/2/ HTTP/1.1" 200 197 basehttp 5542 log_message
+INFO 2023-09-25 11:42:12,691 Watching for file changes with StatReloader autoreload 5867 run_with_reloader
+INFO 2023-09-25 11:42:17,165 "GET /hw2/orders_by_clients/172/2/ HTTP/1.1" 200 0 basehttp 5867 log_message
+INFO 2023-09-25 11:42:18,166 "GET /hw2/orders_by_clients/172/2/ HTTP/1.1" 200 0 basehttp 5867 log_message
+INFO 2023-09-25 11:42:20,937 "GET /hw2/orders_by_clients/1/2/ HTTP/1.1" 200 198 basehttp 5867 log_message
+INFO 2023-09-25 11:43:14,333 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 5867 trigger_reload
+INFO 2023-09-25 11:43:14,609 Watching for file changes with StatReloader autoreload 5892 run_with_reloader
+INFO 2023-09-25 11:43:21,214 "GET /hw2/products HTTP/1.1" 301 0 basehttp 5892 log_message
+INFO 2023-09-25 11:43:21,225 "GET /hw2/products/ HTTP/1.1" 200 155 basehttp 5892 log_message
+WARNING 2023-09-25 11:43:30,598 Not Found: /hw2/orders_by_clients/1/ log 5892 log_response
+WARNING 2023-09-25 11:43:30,599 "GET /hw2/orders_by_clients/1/ HTTP/1.1" 404 3580 basehttp 5892 log_message
+INFO 2023-09-25 11:43:33,067 "GET /hw2/orders_by_clients/1/3 HTTP/1.1" 301 0 basehttp 5892 log_message
+INFO 2023-09-25 11:43:33,082 "GET /hw2/orders_by_clients/1/3/ HTTP/1.1" 200 296 basehttp 5892 log_message
+INFO 2023-09-25 11:44:27,372 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 5892 trigger_reload
+INFO 2023-09-25 11:44:27,630 Watching for file changes with StatReloader autoreload 5917 run_with_reloader
+INFO 2023-09-25 11:44:28,419 "GET /hw2/orders_by_clients/1/3/ HTTP/1.1" 200 668 basehttp 5917 log_message
+INFO 2023-09-25 11:45:35,293 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 5917 trigger_reload
+INFO 2023-09-25 11:45:35,554 Watching for file changes with StatReloader autoreload 5941 run_with_reloader
+INFO 2023-09-25 11:45:37,581 "GET /hw2/orders_by_clients/1/3/ HTTP/1.1" 200 554 basehttp 5941 log_message
+INFO 2023-09-25 11:46:30,240 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 5941 trigger_reload
+INFO 2023-09-25 11:46:30,505 Watching for file changes with StatReloader autoreload 5959 run_with_reloader
+INFO 2023-09-25 11:46:31,298 "GET /hw2/orders_by_clients/1/3/ HTTP/1.1" 200 437 basehttp 5959 log_message
+INFO 2023-09-25 11:47:50,182 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 5959 trigger_reload
+INFO 2023-09-25 11:47:50,438 Watching for file changes with StatReloader autoreload 5998 run_with_reloader
+INFO 2023-09-25 11:47:51,077 "GET /hw2/orders_by_clients/1/3/ HTTP/1.1" 200 374 basehttp 5998 log_message
+INFO 2023-09-25 11:47:56,240 "GET /hw2/orders_by_clients/1/3/ HTTP/1.1" 200 374 basehttp 5998 log_message
+INFO 2023-09-25 11:48:09,699 "GET /hw2/orders_by_clients/1/3/ HTTP/1.1" 200 374 basehttp 5998 log_message
+INFO 2023-09-25 11:48:09,719 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 5998 trigger_reload
+INFO 2023-09-25 11:48:10,010 Watching for file changes with StatReloader autoreload 6015 run_with_reloader
+INFO 2023-09-25 11:48:10,538 "GET /hw2/orders_by_clients/1/3/ HTTP/1.1" 200 356 basehttp 6015 log_message
+INFO 2023-09-25 11:48:30,272 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/models.py changed, reloading. autoreload 6015 trigger_reload
+INFO 2023-09-25 11:48:30,568 Watching for file changes with StatReloader autoreload 6023 run_with_reloader
+INFO 2023-09-25 11:48:30,897 "GET /hw2/orders_by_clients/1/3/ HTTP/1.1" 200 359 basehttp 6023 log_message
+WARNING 2023-09-25 11:48:38,272 Not Found: /hw2/status_order/ log 6023 log_response
+WARNING 2023-09-25 11:48:38,272 "GET /hw2/status_order/ HTTP/1.1" 404 3559 basehttp 6023 log_message
+WARNING 2023-09-25 11:48:45,578 Not Found: /hw2/status_order/1/paid log 6023 log_response
+WARNING 2023-09-25 11:48:45,578 "GET /hw2/status_order/1/paid HTTP/1.1" 404 3577 basehttp 6023 log_message
+INFO 2023-09-25 11:48:50,673 "GET /hw2/status_order/paid HTTP/1.1" 301 0 basehttp 6023 log_message
+INFO 2023-09-25 11:48:50,685 "GET /hw2/status_order/paid/ HTTP/1.1" 200 573 basehttp 6023 log_message
+ERROR 2023-09-25 11:49:13,115 Internal Server Error: /hw2/update_status/1/paid/ log 6023 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py", line 35, in update_status
+    order.save()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 990, in _save_table
+    updated = self._do_update(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1984, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: database is locked
+ERROR 2023-09-25 11:49:18,166 Internal Server Error: /hw2/update_status/1/paid/ log 6023 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py", line 35, in update_status
+    order.save()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 990, in _save_table
+    updated = self._do_update(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1984, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: database is locked
+ERROR 2023-09-25 11:49:18,167 "GET /hw2/update_status/1/paid/ HTTP/1.1" 500 152714 basehttp 6023 log_message
+INFO 2023-09-25 11:49:43,773 "GET /hw2/update_status/1/paid/ HTTP/1.1" 200 88 basehttp 6023 log_message
+INFO 2023-09-25 11:55:41,896 /home/olgatorres/PycharmProjects/Django/testproject/hwapp2/views.py changed, reloading. autoreload 6023 trigger_reload
+INFO 2023-09-25 11:55:42,147 Watching for file changes with StatReloader autoreload 6144 run_with_reloader
+INFO 2023-09-25 11:56:30,510 Request for change order id = 1, new status = paid views 6144 update_status
+INFO 2023-09-25 11:56:30,518 "GET /hw2/update_status/1/paid/ HTTP/1.1" 200 88 basehttp 6144 log_message

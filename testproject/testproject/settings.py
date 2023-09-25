@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'testapp',
     'randomapp',
     'hwapp1',
-    'blog'
+    'blog',
+    'hwapp2',
 ]
 
 MIDDLEWARE = [
@@ -166,6 +167,11 @@ LOGGING = {
             'propagate': True,
         },
         'blog': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'hwapp2': {
             'handlers': ['console', 'file'],
             'level': 'DEBUG',
             'propagate': True,
