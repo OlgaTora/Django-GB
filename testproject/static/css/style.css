@@ -1,0 +1,23 @@
+body{
+    background-color: lightgray;
+}
+
+.header{
+    background-color: rgb(148, 146, 146);
+    height: 50px;
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+
+.menu-item{
+    color: rgb(22, 22, 22);
+    display: inline;
+    font-size: 25px;
+}
+
+.footer{
+    background-color: rgb(148, 146, 146);
+    height: 120px;
+    font-size: 25px;
+    margin-top: 200px;
+}

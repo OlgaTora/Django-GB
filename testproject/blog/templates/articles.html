@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Articles of {{author}}: </h1>
+
+<ul>
+{% for article in articles %}
+    {% if article.is_published %}
+    <li><a href="{% url 'article_content' article.id %}">{{ article.title }}</a></li>
+    {% else %}
+    <li>{{ article.title }}</li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+{% endblock %}

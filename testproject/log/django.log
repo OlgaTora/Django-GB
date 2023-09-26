@@ -1670,3 +1670,584 @@ INFO 2023-09-25 11:55:41,896 /home/olgatorres/PycharmProjects/Django/testproject
 INFO 2023-09-25 11:55:42,147 Watching for file changes with StatReloader autoreload 6144 run_with_reloader
 INFO 2023-09-25 11:56:30,510 Request for change order id = 1, new status = paid views 6144 update_status
 INFO 2023-09-25 11:56:30,518 "GET /hw2/update_status/1/paid/ HTTP/1.1" 200 88 basehttp 6144 log_message
+INFO 2023-09-26 16:36:14,544 Watching for file changes with StatReloader autoreload 5564 run_with_reloader
+WARNING 2023-09-26 16:36:16,883 Not Found: / log 5564 log_response
+WARNING 2023-09-26 16:36:16,884 "GET / HTTP/1.1" 404 2589 basehttp 5564 log_message
+INFO 2023-09-26 16:36:24,925 Index page accessed views 5564 index
+INFO 2023-09-26 16:36:24,933 "GET /hw1/ HTTP/1.1" 200 877 basehttp 5564 log_message
+INFO 2023-09-26 16:36:25,033 "GET /static/hwapp1/css/style.css HTTP/1.1" 304 0 basehttp 5564 log_message
+INFO 2023-09-26 16:36:25,036 "GET /static/hwapp1/images/roger_home.png HTTP/1.1" 304 0 basehttp 5564 log_message
+WARNING 2023-09-26 16:36:28,976 Not Found: /about/ log 5564 log_response
+WARNING 2023-09-26 16:36:28,976 "GET /about/ HTTP/1.1" 404 2625 basehttp 5564 log_message
+INFO 2023-09-26 16:36:39,987 Index page accessed views 5564 index
+INFO 2023-09-26 16:36:39,989 "GET /hw1/home/ HTTP/1.1" 200 877 basehttp 5564 log_message
+INFO 2023-09-26 16:36:41,665 Index page accessed views 5564 index
+INFO 2023-09-26 16:36:41,666 "GET /hw1/home/ HTTP/1.1" 200 877 basehttp 5564 log_message
+INFO 2023-09-26 16:36:42,520 Index page accessed views 5564 about
+INFO 2023-09-26 16:36:42,523 "GET /hw1/about/ HTTP/1.1" 200 845 basehttp 5564 log_message
+WARNING 2023-09-26 16:36:46,962 Not Found: /about/ log 5564 log_response
+WARNING 2023-09-26 16:36:46,963 "GET /about/ HTTP/1.1" 404 2625 basehttp 5564 log_message
+WARNING 2023-09-26 16:37:45,181 Not Found: /about/ log 5564 log_response
+WARNING 2023-09-26 16:37:45,181 "GET /about/ HTTP/1.1" 404 2625 basehttp 5564 log_message
+WARNING 2023-09-26 16:37:58,614 Not Found: /about/ log 5564 log_response
+WARNING 2023-09-26 16:37:58,616 "GET /about/ HTTP/1.1" 404 2625 basehttp 5564 log_message
+WARNING 2023-09-26 16:38:07,738 Not Found: /about/ log 5564 log_response
+WARNING 2023-09-26 16:38:07,738 "GET /about/ HTTP/1.1" 404 2625 basehttp 5564 log_message
+INFO 2023-09-26 16:38:48,982 Index page accessed views 5564 index
+INFO 2023-09-26 16:38:48,984 "GET /hw1/home/ HTTP/1.1" 200 880 basehttp 5564 log_message
+WARNING 2023-09-26 16:38:52,051 Not Found: /hw1/home/hw1/about/ log 5564 log_response
+WARNING 2023-09-26 16:38:52,052 "GET /hw1/home/hw1/about/ HTTP/1.1" 404 3066 basehttp 5564 log_message
+WARNING 2023-09-26 16:39:16,121 Not Found: /hw1/home/hw1/about/ log 5564 log_response
+WARNING 2023-09-26 16:39:16,122 "GET /hw1/home/hw1/about/ HTTP/1.1" 404 3066 basehttp 5564 log_message
+WARNING 2023-09-26 16:39:18,117 Not Found: /hw1/home/hw1/about/ log 5564 log_response
+WARNING 2023-09-26 16:39:18,118 "GET /hw1/home/hw1/about/ HTTP/1.1" 404 3066 basehttp 5564 log_message
+INFO 2023-09-26 16:39:39,561 Index page accessed views 5564 index
+INFO 2023-09-26 16:39:39,563 "GET /hw1/home/ HTTP/1.1" 200 881 basehttp 5564 log_message
+INFO 2023-09-26 16:39:42,211 Index page accessed views 5564 about
+INFO 2023-09-26 16:39:42,215 "GET /hw1/about/ HTTP/1.1" 200 845 basehttp 5564 log_message
+INFO 2023-09-26 16:43:01,188 Watching for file changes with StatReloader autoreload 5818 run_with_reloader
+WARNING 2023-09-26 16:43:10,349 Not Found: / log 5818 log_response
+WARNING 2023-09-26 16:43:10,350 "GET / HTTP/1.1" 404 2589 basehttp 5818 log_message
+INFO 2023-09-26 16:43:19,567 Index page accessed views 5818 index
+INFO 2023-09-26 16:43:19,575 "GET /hw1/ HTTP/1.1" 200 905 basehttp 5818 log_message
+INFO 2023-09-26 16:43:43,756 /home/olgatorres/PycharmProjects/Django/testproject/hwapp1/views.py changed, reloading. autoreload 5818 trigger_reload
+INFO 2023-09-26 16:43:44,143 Watching for file changes with StatReloader autoreload 5982 run_with_reloader
+INFO 2023-09-26 16:44:08,955 Index page accessed views 5982 index
+INFO 2023-09-26 16:44:08,964 "GET /hw1/ HTTP/1.1" 200 909 basehttp 5982 log_message
+INFO 2023-09-26 16:45:32,347 /home/olgatorres/PycharmProjects/Django/testproject/hwapp1/views.py changed, reloading. autoreload 5982 trigger_reload
+INFO 2023-09-26 16:45:32,779 Watching for file changes with StatReloader autoreload 6021 run_with_reloader
+INFO 2023-09-26 16:45:34,389 Index page accessed views 6021 about
+INFO 2023-09-26 16:45:34,395 "GET /hw1/about/ HTTP/1.1" 200 899 basehttp 6021 log_message
+INFO 2023-09-26 16:45:35,693 Index page accessed views 6021 about
+INFO 2023-09-26 16:45:35,694 "GET /hw1/about/ HTTP/1.1" 200 899 basehttp 6021 log_message
+INFO 2023-09-26 16:45:37,421 Index page accessed views 6021 about
+INFO 2023-09-26 16:45:37,423 "GET /hw1/about/ HTTP/1.1" 200 899 basehttp 6021 log_message
+INFO 2023-09-26 16:45:39,527 Index page accessed views 6021 about
+INFO 2023-09-26 16:45:39,529 "GET /hw1/about/ HTTP/1.1" 200 899 basehttp 6021 log_message
+INFO 2023-09-26 16:45:51,142 /home/olgatorres/PycharmProjects/Django/testproject/hwapp1/views.py changed, reloading. autoreload 6021 trigger_reload
+INFO 2023-09-26 16:45:51,539 Watching for file changes with StatReloader autoreload 6037 run_with_reloader
+INFO 2023-09-26 16:45:51,832 Index page accessed views 6037 about
+INFO 2023-09-26 16:45:51,844 "GET /hw1/about/ HTTP/1.1" 200 874 basehttp 6037 log_message
+INFO 2023-09-26 16:47:01,419 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/urls.py changed, reloading. autoreload 6037 trigger_reload
+INFO 2023-09-26 16:47:01,809 Watching for file changes with StatReloader autoreload 6063 run_with_reloader
+INFO 2023-09-26 16:50:47,491 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/urls.py changed, reloading. autoreload 6063 trigger_reload
+INFO 2023-09-26 16:50:47,826 Watching for file changes with StatReloader autoreload 6164 run_with_reloader
+INFO 2023-09-26 18:10:57,207 Watching for file changes with StatReloader autoreload 4901 run_with_reloader
+WARNING 2023-09-26 18:11:00,956 Not Found: /favicon.ico log 4901 log_response
+WARNING 2023-09-26 18:11:11,112 Not Found: /random/cube log 4901 log_response
+WARNING 2023-09-26 18:11:11,113 "GET /random/cube HTTP/1.1" 404 3124 basehttp 4901 log_message
+INFO 2023-09-26 18:11:22,868 "GET /random/cube/3 HTTP/1.1" 301 0 basehttp 4901 log_message
+ERROR 2023-09-26 18:11:22,907 Internal Server Error: /random/cube/3/ log 4901 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: get_cube() got an unexpected keyword argument 'roll'
+ERROR 2023-09-26 18:11:22,908 "GET /random/cube/3/ HTTP/1.1" 500 62333 basehttp 4901 log_message
+INFO 2023-09-26 18:12:58,584 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 4901 trigger_reload
+INFO 2023-09-26 18:12:59,102 Watching for file changes with StatReloader autoreload 5014 run_with_reloader
+ERROR 2023-09-26 18:12:59,611 Internal Server Error: /random/cube/3/ log 5014 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: get_cube() got an unexpected keyword argument 'roll'
+ERROR 2023-09-26 18:12:59,614 "GET /random/cube/3/ HTTP/1.1" 500 62333 basehttp 5014 log_message
+ERROR 2023-09-26 18:13:11,657 Internal Server Error: /random/cube/3/ log 5014 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: get_cube() got an unexpected keyword argument 'roll'
+INFO 2023-09-26 18:13:26,433 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/urls.py changed, reloading. autoreload 5014 trigger_reload
+INFO 2023-09-26 18:13:26,830 Watching for file changes with StatReloader autoreload 5029 run_with_reloader
+ERROR 2023-09-26 18:13:27,202 Internal Server Error: /random/cube/3/ log 5029 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 13, in get_cube
+    for _ in rolls:
+TypeError: 'int' object is not iterable
+ERROR 2023-09-26 18:13:27,203 "GET /random/cube/3/ HTTP/1.1" 500 66045 basehttp 5029 log_message
+ERROR 2023-09-26 18:13:29,464 Internal Server Error: /random/cube/3/ log 5029 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 13, in get_cube
+    for _ in rolls:
+TypeError: 'int' object is not iterable
+ERROR 2023-09-26 18:13:29,465 "GET /random/cube/3/ HTTP/1.1" 500 66045 basehttp 5029 log_message
+INFO 2023-09-26 18:13:49,149 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 5029 trigger_reload
+INFO 2023-09-26 18:13:49,521 Watching for file changes with StatReloader autoreload 5038 run_with_reloader
+ERROR 2023-09-26 18:13:50,884 Internal Server Error: /random/cube/3/ log 5038 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 19, in get_cube
+    return render(request, 'game_result', context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: game_result
+ERROR 2023-09-26 18:13:50,886 "GET /random/cube/3/ HTTP/1.1" 500 82545 basehttp 5038 log_message
+INFO 2023-09-26 18:14:55,600 Watching for file changes with StatReloader autoreload 5050 run_with_reloader
+INFO 2023-09-26 18:15:08,914 Index page accessed views 5050 index
+INFO 2023-09-26 18:15:08,925 "GET /hw1/ HTTP/1.1" 200 909 basehttp 5050 log_message
+INFO 2023-09-26 18:15:10,160 Index page accessed views 5050 about
+INFO 2023-09-26 18:15:10,162 "GET /hw1/about/ HTTP/1.1" 200 874 basehttp 5050 log_message
+ERROR 2023-09-26 18:16:16,275 Internal Server Error: /random/cube/3/ log 5050 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 19, in get_cube
+    return render(request, 'game_result', context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: game_result
+ERROR 2023-09-26 18:16:16,276 "GET /random/cube/3/ HTTP/1.1" 500 82545 basehttp 5050 log_message
+ERROR 2023-09-26 18:16:17,231 Internal Server Error: /random/cube/3/ log 5050 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 19, in get_cube
+    return render(request, 'game_result', context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: game_result
+ERROR 2023-09-26 18:16:17,232 "GET /random/cube/3/ HTTP/1.1" 500 82545 basehttp 5050 log_message
+ERROR 2023-09-26 18:16:19,821 Internal Server Error: /random/cube/3/ log 5050 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 19, in get_cube
+    return render(request, 'game_result', context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: game_result
+ERROR 2023-09-26 18:16:19,823 "GET /random/cube/3/ HTTP/1.1" 500 82545 basehttp 5050 log_message
+ERROR 2023-09-26 18:16:27,687 Internal Server Error: /random/cube/3/ log 5050 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 19, in get_cube
+    return render(request, 'game_result', context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: game_result
+ERROR 2023-09-26 18:16:27,687 "GET /random/cube/3/ HTTP/1.1" 500 82545 basehttp 5050 log_message
+INFO 2023-09-26 18:16:41,898 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 5050 trigger_reload
+INFO 2023-09-26 18:16:42,384 Watching for file changes with StatReloader autoreload 5099 run_with_reloader
+ERROR 2023-09-26 18:16:43,140 Internal Server Error: /random/cube/3/ log 5099 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 19, in get_cube
+    return render(request, 'game_result.html', context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: game_result.html
+ERROR 2023-09-26 18:16:43,144 "GET /random/cube/3/ HTTP/1.1" 500 82645 basehttp 5099 log_message
+ERROR 2023-09-26 18:17:58,410 Internal Server Error: /random/cube/3/ log 5099 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 19, in get_cube
+    return render(request, 'game_result.html', context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: game_result.html
+ERROR 2023-09-26 18:17:58,411 "GET /random/cube/3/ HTTP/1.1" 500 82645 basehttp 5099 log_message
+ERROR 2023-09-26 18:18:44,229 Internal Server Error: /random/cube/3/ log 5099 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py", line 19, in get_cube
+    return render(request, 'game_result.html', context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 9: 'endblock', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2023-09-26 18:18:44,232 "GET /random/cube/3/ HTTP/1.1" 500 178697 basehttp 5099 log_message
+INFO 2023-09-26 18:19:13,292 "GET /random/cube/3/ HTTP/1.1" 200 688 basehttp 5099 log_message
+INFO 2023-09-26 18:19:18,079 "GET /random/cube/3/ HTTP/1.1" 200 688 basehttp 5099 log_message
+INFO 2023-09-26 18:20:01,780 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 5099 trigger_reload
+INFO 2023-09-26 18:20:02,212 Watching for file changes with StatReloader autoreload 5149 run_with_reloader
+INFO 2023-09-26 18:20:02,906 "GET /random/cube/3/ HTTP/1.1" 200 781 basehttp 5149 log_message
+INFO 2023-09-26 18:20:03,977 "GET /random/cube/3/ HTTP/1.1" 200 781 basehttp 5149 log_message
+INFO 2023-09-26 18:20:05,723 "GET /random/cube/3/ HTTP/1.1" 200 781 basehttp 5149 log_message
+INFO 2023-09-26 18:20:50,788 "GET /random/cube/3/ HTTP/1.1" 200 781 basehttp 5149 log_message
+INFO 2023-09-26 18:20:50,884 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 5149 trigger_reload
+INFO 2023-09-26 18:20:51,383 Watching for file changes with StatReloader autoreload 5164 run_with_reloader
+INFO 2023-09-26 18:20:52,214 "GET /random/cube/3/ HTTP/1.1" 200 796 basehttp 5164 log_message
+INFO 2023-09-26 18:23:10,031 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 5164 trigger_reload
+INFO 2023-09-26 18:23:10,525 Watching for file changes with StatReloader autoreload 5182 run_with_reloader
+INFO 2023-09-26 18:24:00,790 "GET /random/cube/3/ HTTP/1.1" 200 890 basehttp 5182 log_message
+INFO 2023-09-26 18:26:07,542 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 5182 trigger_reload
+INFO 2023-09-26 18:26:07,992 Watching for file changes with StatReloader autoreload 5242 run_with_reloader
+INFO 2023-09-26 18:26:18,673 "GET /random/number/4 HTTP/1.1" 301 0 basehttp 5242 log_message
+INFO 2023-09-26 18:26:18,690 "GET /random/number/4/ HTTP/1.1" 200 959 basehttp 5242 log_message
+INFO 2023-09-26 18:29:04,946 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 5242 trigger_reload
+INFO 2023-09-26 18:29:05,462 Watching for file changes with StatReloader autoreload 5301 run_with_reloader
+INFO 2023-09-26 18:29:14,134 "GET /random/h_or_t/5 HTTP/1.1" 301 0 basehttp 5301 log_message
+INFO 2023-09-26 18:29:14,159 "GET /random/h_or_t/5/ HTTP/1.1" 200 1045 basehttp 5301 log_message
+INFO 2023-09-26 18:30:48,690 /home/olgatorres/PycharmProjects/Django/testproject/randomapp/views.py changed, reloading. autoreload 5301 trigger_reload
+INFO 2023-09-26 18:30:49,176 Watching for file changes with StatReloader autoreload 5352 run_with_reloader
+INFO 2023-09-26 18:33:23,173 "GET /blog/articles_by_author HTTP/1.1" 301 0 basehttp 5352 log_message
+INFO 2023-09-26 18:33:23,193 "GET /blog/articles_by_author/ HTTP/1.1" 200 0 basehttp 5352 log_message
+WARNING 2023-09-26 18:33:27,794 Not Found: /blog/articles_by_author/5 log 5352 log_response
+WARNING 2023-09-26 18:33:27,795 "GET /blog/articles_by_author/5 HTTP/1.1" 404 3129 basehttp 5352 log_message
+WARNING 2023-09-26 18:33:35,122 Not Found: /blog/articles_by_author/2 log 5352 log_response
+WARNING 2023-09-26 18:33:35,123 "GET /blog/articles_by_author/2 HTTP/1.1" 404 3129 basehttp 5352 log_message
+INFO 2023-09-26 18:34:20,172 Watching for file changes with StatReloader autoreload 5405 run_with_reloader
+WARNING 2023-09-26 18:34:22,489 Not Found: /blog/articles_by_author/2 log 5405 log_response
+WARNING 2023-09-26 18:34:22,490 "GET /blog/articles_by_author/2 HTTP/1.1" 404 3129 basehttp 5405 log_message
+WARNING 2023-09-26 18:34:23,804 Not Found: /blog/articles_by_author/2 log 5405 log_response
+WARNING 2023-09-26 18:34:23,806 "GET /blog/articles_by_author/2 HTTP/1.1" 404 3129 basehttp 5405 log_message
+WARNING 2023-09-26 18:35:19,912 Not Found: /blog/articles_by_author/2 log 5405 log_response
+WARNING 2023-09-26 18:35:19,914 "GET /blog/articles_by_author/2 HTTP/1.1" 404 3129 basehttp 5405 log_message
+INFO 2023-09-26 18:35:19,915 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 5405 trigger_reload
+INFO 2023-09-26 18:35:20,467 Watching for file changes with StatReloader autoreload 5448 run_with_reloader
+INFO 2023-09-26 18:35:20,752 "GET /blog/articles_by_author/2 HTTP/1.1" 200 0 basehttp 5448 log_message
+INFO 2023-09-26 18:35:22,058 "GET /blog/articles_by_author/2 HTTP/1.1" 200 0 basehttp 5448 log_message
+INFO 2023-09-26 18:35:23,575 "GET /blog/articles_by_author/2 HTTP/1.1" 200 0 basehttp 5448 log_message
+INFO 2023-09-26 18:36:17,460 Watching for file changes with StatReloader autoreload 5493 run_with_reloader
+INFO 2023-09-26 18:36:20,021 "GET /blog/articles_by_author/Name2 HTTP/1.1" 200 321 basehttp 5493 log_message
+INFO 2023-09-26 18:36:43,978 "GET /blog/articles_by_author/Name2 HTTP/1.1" 200 321 basehttp 5493 log_message
+INFO 2023-09-26 18:37:48,511 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 5493 trigger_reload
+INFO 2023-09-26 18:37:48,999 Watching for file changes with StatReloader autoreload 5527 run_with_reloader
+INFO 2023-09-26 18:42:30,983 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 5527 trigger_reload
+INFO 2023-09-26 18:42:31,375 Watching for file changes with StatReloader autoreload 5595 run_with_reloader
+INFO 2023-09-26 18:43:13,910 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 5595 trigger_reload
+INFO 2023-09-26 18:43:14,258 Watching for file changes with StatReloader autoreload 5614 run_with_reloader
+ERROR 2023-09-26 18:43:14,426 Internal Server Error: /blog/articles_by_author/Name2 log 5614 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: article_by_author() got an unexpected keyword argument 'author'
+ERROR 2023-09-26 18:43:14,430 "GET /blog/articles_by_author/Name2 HTTP/1.1" 500 62552 basehttp 5614 log_message
+INFO 2023-09-26 18:43:31,551 /home/olgatorres/PycharmProjects/Django/testproject/blog/urls.py changed, reloading. autoreload 5614 trigger_reload
+INFO 2023-09-26 18:43:31,937 Watching for file changes with StatReloader autoreload 5626 run_with_reloader
+INFO 2023-09-26 18:43:32,480 "GET /blog/articles_by_author/Name2 HTTP/1.1" 200 1130 basehttp 5626 log_message
+INFO 2023-09-26 18:45:06,141 "GET /blog/articles_by_author/Name2 HTTP/1.1" 200 870 basehttp 5626 log_message
+INFO 2023-09-26 18:48:59,522 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 5626 trigger_reload
+INFO 2023-09-26 18:48:59,870 Watching for file changes with StatReloader autoreload 5728 run_with_reloader
+INFO 2023-09-26 18:52:06,064 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 5728 trigger_reload
+INFO 2023-09-26 18:52:06,479 Watching for file changes with StatReloader autoreload 5776 run_with_reloader
+INFO 2023-09-26 18:52:31,726 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 5776 trigger_reload
+INFO 2023-09-26 18:52:32,093 Watching for file changes with StatReloader autoreload 5788 run_with_reloader
+INFO 2023-09-26 18:53:56,869 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 5788 trigger_reload
+INFO 2023-09-26 18:53:57,222 Watching for file changes with StatReloader autoreload 5820 run_with_reloader
+ERROR 2023-09-26 18:58:01,647 Internal Server Error: /blog/articles_by_author/Name2 log 5820 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'article'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 26, in article_by_author
+    return render(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'article', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2023-09-26 18:58:01,648 "GET /blog/articles_by_author/Name2 HTTP/1.1" 500 189117 basehttp 5820 log_message
+ERROR 2023-09-26 18:58:22,864 Internal Server Error: /blog/articles_by_author/Name2 log 5820 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 26, in article_by_author
+    return render(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 3: 'block'. Looking for one of: endblock.
+ERROR 2023-09-26 18:58:22,866 "GET /blog/articles_by_author/Name2 HTTP/1.1" 500 160052 basehttp 5820 log_message
+ERROR 2023-09-26 18:58:43,489 Internal Server Error: /blog/articles_by_author/Name2 log 5820 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 26, in article_by_author
+    return render(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article' not found. 'article' is not a valid view function or pattern name.
+ERROR 2023-09-26 18:58:43,490 "GET /blog/articles_by_author/Name2 HTTP/1.1" 500 200871 basehttp 5820 log_message
+INFO 2023-09-26 19:00:27,197 "GET /blog/articles_by_author/Name2 HTTP/1.1" 200 1330 basehttp 5820 log_message
+ERROR 2023-09-26 19:00:29,733 Internal Server Error: /blog/article/11/ log 5820 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: article_content() got an unexpected keyword argument 'id'
+ERROR 2023-09-26 19:00:29,734 "GET /blog/article/11/ HTTP/1.1" 500 62566 basehttp 5820 log_message
+INFO 2023-09-26 19:01:42,643 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 5820 trigger_reload
+INFO 2023-09-26 19:01:43,115 Watching for file changes with StatReloader autoreload 5938 run_with_reloader
+INFO 2023-09-26 19:01:44,630 "GET /blog/articles_by_author/Name2 HTTP/1.1" 200 1330 basehttp 5938 log_message
+INFO 2023-09-26 19:01:45,955 "GET /blog/article/11/ HTTP/1.1" 200 734 basehttp 5938 log_message
+INFO 2023-09-26 19:04:20,529 Watching for file changes with StatReloader autoreload 3429 run_with_reloader
+INFO 2023-09-26 19:04:27,143 "GET /blog/articles_by_author/Name2 HTTP/1.1" 200 1010 basehttp 3429 log_message
+INFO 2023-09-26 19:04:28,458 "GET /blog/articles_by_author/Name2 HTTP/1.1" 200 1010 basehttp 3429 log_message
+INFO 2023-09-26 19:04:32,643 "GET /blog/articles_by_author/Name2 HTTP/1.1" 200 1010 basehttp 3429 log_message
+INFO 2023-09-26 19:04:35,087 Index page accessed views 3429 index
+INFO 2023-09-26 19:04:35,089 "GET /hw1/home/ HTTP/1.1" 200 909 basehttp 3429 log_message
+INFO 2023-09-26 19:08:50,229 Watching for file changes with StatReloader autoreload 4417 run_with_reloader
+ERROR 2023-09-26 19:08:52,066 Internal Server Error: /blog/articles_by_author/Name2 log 4417 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 24, in article_by_author
+    author = get_object_or_404(Author, name=name)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+blog.models.Author.MultipleObjectsReturned: get() returned more than one Author -- it returned 2!
+ERROR 2023-09-26 19:08:52,068 "GET /blog/articles_by_author/Name2 HTTP/1.1" 500 76246 basehttp 4417 log_message
+INFO 2023-09-26 19:09:58,297 Watching for file changes with StatReloader autoreload 4458 run_with_reloader
+INFO 2023-09-26 19:10:00,157 "GET /blog/articles_by_author/Name2 HTTP/1.1" 200 1010 basehttp 4458 log_message
+INFO 2023-09-26 19:10:01,387 "GET /blog/articles_by_author/Name2 HTTP/1.1" 200 1010 basehttp 4458 log_message
+INFO 2023-09-26 19:10:02,852 "GET /blog/articles_by_author/Name2 HTTP/1.1" 200 1010 basehttp 4458 log_message
+INFO 2023-09-26 19:10:05,784 "GET /blog/articles_by_author/Name4 HTTP/1.1" 200 1010 basehttp 4458 log_message
+INFO 2023-09-26 19:10:08,144 "GET /blog/articles_by_author/Name4 HTTP/1.1" 200 1010 basehttp 4458 log_message
+INFO 2023-09-26 19:10:08,877 "GET /blog/articles_by_author/Name4 HTTP/1.1" 200 1010 basehttp 4458 log_message
+INFO 2023-09-26 19:11:17,258 "GET /blog/articles_by_author/Name2 HTTP/1.1" 200 699 basehttp 4458 log_message
+WARNING 2023-09-26 19:11:24,008 Not Found: /blog/articles_by_author/Name12 log 4458 log_response
+WARNING 2023-09-26 19:11:24,008 "GET /blog/articles_by_author/Name12 HTTP/1.1" 404 3326 basehttp 4458 log_message
+INFO 2023-09-26 19:12:14,734 Watching for file changes with StatReloader autoreload 4539 run_with_reloader
+WARNING 2023-09-26 19:12:18,285 Not Found: /blog/articles_by_author/Name12 log 4539 log_response
+WARNING 2023-09-26 19:12:18,286 "GET /blog/articles_by_author/Name12 HTTP/1.1" 404 3326 basehttp 4539 log_message
+INFO 2023-09-26 19:12:21,553 "GET /blog/articles_by_author/Name1 HTTP/1.1" 200 1142 basehttp 4539 log_message
+INFO 2023-09-26 19:12:23,810 "GET /blog/article/130/ HTTP/1.1" 200 734 basehttp 4539 log_message

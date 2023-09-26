@@ -28,5 +28,6 @@ class Command(BaseCommand):
                             f' #{j} is bla bla bla many long text',
                     author=author,
                     publish_date=datetime.now(),
+                    is_published = random.choice([True, False]),
                     category=random.choice(['category1', 'category2']))
                 article.save()

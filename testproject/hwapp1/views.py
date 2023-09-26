@@ -6,9 +6,13 @@ logger = logging.getLogger(__name__)
 
 def index(request):
     logger.info('Index page accessed')
-    return render(request, 'hwapp1/index.html')
+    context = {'name': 'Stan Smith'}
+    return render(request, "hwapp1/index.html", context)
+#    return render(request, 'hwapp1/index.html')
 
 
 def about(request):
     logger.info('Index page accessed')
-    return render(request, 'hwapp1/about.html')
+    context = {'some_text': 'Tssssssssssssssssss'}
+    return render(request, "hwapp1/about.html", context)
+#    return render(request, 'hwapp1/about.html')
