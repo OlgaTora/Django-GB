@@ -24,9 +24,9 @@ def get_orders_by_client(request, pk, limit):
 
 
 def get_full_orders_by_client(request, pk):
-    #   """View for get all orders of client by him ID."""
-    #  msg = f'Request for get orders by client {pk}, limit = {limit}'
-    # logger.info(msg)
+    """View for get all info about orders of client by him ID."""
+    msg = f'Request for get all orders info  by client {pk}'
+    logger.info(msg)
     client = get_object_or_404(Client, pk=pk)
     orders = Order.objects.filter(client=client).all()
     products = {}
