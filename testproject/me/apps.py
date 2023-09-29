@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class Hwapp2Config(AppConfig):
+class MeConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'hwapp2'
+    name = 'me'

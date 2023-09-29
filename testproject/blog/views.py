@@ -31,6 +31,8 @@ def article_by_author(request, name):
 
 def article_content(request, id):
     article = get_object_or_404(Article, pk=id)
+    article.views += 1
+    article.save()
     return render(request,
                   'article.html',
                   {'article': article})

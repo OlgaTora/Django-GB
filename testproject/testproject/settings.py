@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'testapp',
     'randomapp',
-    'hwapp1',
+    'me',
     'blog',
-    'hwapp2',
+    'shop',
 ]
 
 MIDDLEWARE = [
@@ -161,7 +161,7 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': True,
         },
-        'hwapp1': {
+        'me': {
             'handlers': ['console', 'file'],
             'level': 'DEBUG',
             'propagate': True,
@@ -171,7 +171,7 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': True,
         },
-        'hwapp2': {
+        'shop': {
             'handlers': ['console', 'file'],
             'level': 'DEBUG',
             'propagate': True,

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Products available: </h1>
+
+<ul>
+{% for product in products %}
+    <li><a href="{% url 'product' product.id %}">{{product.id}}</a>
+            name: {{product.product_name}} quantity: {{product.quantity}}
+        </li>
+{% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,6 +1,7 @@
+import datetime
 import random
 from django.core.management.base import BaseCommand
-from hwapp2.models import Client, Product, Order
+from shop.models import Client, Product, Order
 
 
 class Command(BaseCommand):
@@ -27,12 +28,14 @@ class Command(BaseCommand):
             )
             product.save()
 
-        for j in range(1, count**2 + 1):
+        for j in range(1, count ** 2 + 1):
             order = Order(
                 client=random.choice(Client.objects.all()),
                 order_summ=random.uniform(0.01, 10000000),
-                status=random.choice(Order.Status.choices)[0]
+                status=random.choice(Order.Status.choices)[0],
+                #order_date=datetime.date(2021, 8, 11)
             )
+            print(order.order_date)
             order.save()
 
             random_products = random.randint(1, count)

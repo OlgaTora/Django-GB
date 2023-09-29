@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if period == 7 %}
+<h1>Product basket of {{client}} in last week: </h1>
+<p>Push to see other periods</p>
+<a href="{% url 'client_basket' client.id 30 %}">last month</a>
+<a href="{% url 'client_basket' client.id 365 %}">last year</a>
+{% elif period == 30 %}
+<h1>Product basket of {{client}} in last month: </h1>
+<p>Push to see other periods</p>
+<a href="{% url 'client_basket' client.id 7 %}">last week</a>
+<a href="{% url 'client_basket' client.id 365 %}">last year</a>
+{% elif period == 365 %}
+<h1>Product basket of {{client}} in last year: </h1>
+<p>Push to see other periods</p>
+<a href="{% url 'client_basket' client.id 7 %}">last week</a>
+<a href="{% url 'client_basket' client.id 30 %}">last month</a>
+{% endif %}
+
+<ul>
+    {% for product in products %}
+    <li><a href="{% url 'product' product.id %}">{{product.id}}</a>
+        name: {{product.product_name}}
+    </li>
+    {% endfor %}
+</ul>
+<br/>
+{% endblock %}

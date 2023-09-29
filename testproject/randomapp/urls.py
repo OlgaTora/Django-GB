@@ -3,6 +3,7 @@ from . import views
 
 
 urlpatterns = [
+    path('', views.index, name='index_random'),
     path('cube/<int:rolls>/', views.get_cube, name='cube'),
     path('number/<int:rolls>/', views.get_number, name='number'),
     path('h_or_t/<int:rolls>/', views.get_heads, name='heads_or_tails_v1'),

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Random games</h1>
+<h3>Auto play 5 times, if you want to change this, push: random/game name/times you want </h3>
+
+<button class="auth_button" type="submit" name="form_auth_submit">
+    <a href="/random/cube/5">Play cube</a>
+</button>
+
+<button class="auth_button" type="submit" name="form_auth_submit">
+    <a href="/random/number/5">Play random number</a>
+</button>
+
+
+<button class="auth_button" type="submit" name="form_auth_submit">
+    <a href="/random/h_or_t/5">Play head or tails</a>
+</button>
+
+{% endblock %}
+
+
+
+

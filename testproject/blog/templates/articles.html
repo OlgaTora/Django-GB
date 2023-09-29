@@ -6,9 +6,10 @@
 <ul>
 {% for article in articles %}
     {% if article.is_published %}
-    <li><a href="{% url 'article_content' article.id %}">{{ article.title }}</a></li>
+    <li><a href="{% url 'article_content' article.id %}">{{ article.title }}
+    views: {{article.views}} </a></li>
     {% else %}
-    <li>{{ article.title }}</li>
+    <li>{{ article.title }} views: {{article.views}} </li>
     {% endif %}
 {% endfor %}
 </ul>

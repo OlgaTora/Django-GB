@@ -2,10 +2,13 @@ import logging
 import random
 from django.http import HttpResponse
 from django.shortcuts import render
-
 from randomapp.models import HeadsOrTails
 
 logger = logging.getLogger(__name__)
+
+
+def index(request):
+    return render(request, 'index_random.html')
 
 
 def get_cube(request, rolls):
@@ -17,7 +20,7 @@ def get_cube(request, rolls):
     msg = f'Side of cube is {res_list}'
     logger.info(msg)
     return render(request, 'game_result.html', context)
-    #return HttpResponse(msg)
+    # return HttpResponse(msg)
 
 
 def get_number(request, rolls):
@@ -29,7 +32,7 @@ def get_number(request, rolls):
     res = f'Number is {res_list}'
     logger.info(res)
     return render(request, 'game_result.html', context)
-    #return HttpResponse(msg)
+    # return HttpResponse(msg)
 
 
 def get_tails(request):

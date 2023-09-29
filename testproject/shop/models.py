@@ -22,7 +22,7 @@ class Product(models.Model):
     def __str__(self):
         return f'Product: {self.product_name} quantity: {self.quantity}'
 
-    def products_list(self):
+    def to_list(self):
         return f'{self.product_name}'
 
 
@@ -43,6 +43,6 @@ class Order(models.Model):
     def __str__(self):
         return (f'Date: {self.order_date}'
                 f' Summa: {self.order_summ},'
-                f' Products: {list(map(Product.products_list, self.product.all()))}'
+                f' Products: {list(map(Product.to_list, self.product.all()))}'
                 f' Client: {self.client},'
                 f' Status: {self.status}\n')
