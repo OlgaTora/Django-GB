@@ -26,3 +26,14 @@ class Article(models.Model):
 
     def __str__(self):
         return f'{self.publish_date} {self.title} {self.author}'
+
+
+class Comment(models.Model):
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    article = models.ForeignKey(Article, on_delete=models.CASCADE)
+    comment_text = models.TextField()
+    added_date = models.DateField()
+    update_date = models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return f'{self.comment_text}'
