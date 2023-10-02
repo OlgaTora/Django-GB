@@ -19,5 +19,9 @@ class AddArticleForm(forms.Form):
                                    widget=forms.DateInput(attrs={'class': 'date'}))
     category = forms.CharField(max_length=100)
     author = forms.ModelChoiceField(queryset=models.Author.objects.all(), empty_label='Choose author')
-    views = forms.IntegerField()
-    is_published = forms.BooleanField()
+
+
+class AddCommentForm(forms.Form):
+    author = forms.ModelChoiceField(queryset=models.Author.objects.all(), empty_label='Choose your name')
+    article = forms.ModelChoiceField(queryset=models.Article.objects.all(), empty_label='Choose article')
+    comment_text = forms.CharField()

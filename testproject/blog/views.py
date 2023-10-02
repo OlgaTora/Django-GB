@@ -1,8 +1,9 @@
+import datetime
 import logging
 
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
-from .forms import AddAuthorForm, AddArticleForm
+from .forms import AddAuthorForm, AddArticleForm, AddCommentForm
 from blog.models import Author, Article, Comment
 
 logger = logging.getLogger(__name__)
@@ -42,9 +43,9 @@ def add_author_form(request):
             mail = form.cleaned_data['mail']
             birthday = form.cleaned_data['birthday']
             biography = form.cleaned_data['biography']
-            logger.info(f'Add new author {name=}, {surname=}')
             author = Author(name=name, surname=surname, mail=mail, birthday=birthday, biography=biography)
             author.save()
+            logger.info(f'Add new author {name=}, {surname=}')
             message = 'Successfully operation'
     else:
         form = AddAuthorForm()
@@ -63,15 +64,31 @@ def add_article_form(request):
             publish_date = form.cleaned_data['publish_date']
             category = form.cleaned_data['category']
             author = form.cleaned_data['author']
-            views = form.cleaned_data['views']
-            is_published = form.cleaned_data['is_published']
-            logger.info(f'Add new article {author=}, {title=}')
-            article = Article(title=title, content=content, publish_date=publish_date, category=category, author=author,
-                              views=views, is_published=is_published)
+            article = Article(title=title, content=content, publish_date=publish_date, category=category, author=author)
             article.save()
+            logger.info(f'Add new article {author=}, {title=}')
             message = 'Successfully operation'
     else:
         form = AddArticleForm()
+    return render(request,
+                  'add_new.html',
+                  {'form': form, 'message': message})
+
+
+def add_comment_form(request):
+    message = 'Please fill form to add new comment'
+    if request.method == 'POST':
+        form = AddCommentForm(request.POST)
+        if form.is_valid():
+            comment = Comment(article=form.cleaned_data['article'],
+                              author=form.cleaned_data['author'],
+                              comment_text=form.cleaned_data['comment_text'])
+            print(comment.added_date)
+            comment.save()
+            logger.info(f'Add new comment {comment.author=}, {comment.article=}')
+            message = 'Successfully operation'
+    else:
+        form = AddCommentForm()
     return render(request,
                   'add_new.html',
                   {'form': form, 'message': message})
@@ -98,7 +115,6 @@ def article_content(request, pk):
     article.views += 1
     article.save()
     comments = Comment.objects.filter(article=article).order_by('added_date')
-    update = 'updated'
     return render(request,
                   'article.html',
-                  {'article': article, 'comments': comments, 'update': update})
+                  {'article': article, 'comments': comments})

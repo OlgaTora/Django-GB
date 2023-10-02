@@ -1,24 +1,28 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Full text of {{article.title}}: </h1>
-<p>content {{ article.content }}</p>
-<p>publish_date {{ article.publish_date }}</p>
-<p>category {{ article.category }}</p>
-<p>author {{ article.author }}</p>
-<p>views {{ article.views }}</p>
-<p>is_published {{ article.is_published }}</p>
-<h3>List of comments: </h3>
+<h1>Full text of article "{{article.title}}": </h1>
+<p>content: {{ article.content }}</p>
+<p>publish_date: {{ article.publish_date }}</p>
+<p>category: {{ article.category }}</p>
+<p>author: {{ article.author }}</p>
+<p>views: {{ article.views }}</p>
+<p>published: {{ article.is_published }}</p>
+
+<button class="auth_button" type="submit" name="form_auth_submit">
+    <a href="/blog/articles/add_new_comment/">Add new comment</a>
+</button>
+
+<h4>List of comments: </h4>
 {% for comment in comments %}
-<p>{{ comment.comment_text }}</p>
-<p>{{ comment.author_text }}</p>
-{% if comment.update_date %}
-<p>{{ comment.update_date }}</p>
-    {{ update }}
-{% else %}
-<p>{{ comment.added_date }}</p>
-{% endif %}
+    <p>text: {{ comment.comment_text }}</p>
+    <p>author: {{ comment.author }}</p>
+    {% if comment.update_date != comment.added_date %}
+        <p>update {{ comment.update_date }}</p>
+        <br/>
+    {% else %}
+        <p>create {{ comment.added_date }}</p>
+        <br/>
+    {% endif %}
 {% endfor %}
-
-
 {% endblock %}

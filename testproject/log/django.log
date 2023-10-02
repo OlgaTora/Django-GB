@@ -337,3 +337,887 @@ INFO 2023-10-01 21:33:24,918 Watching for file changes with StatReloader autorel
 INFO 2023-10-01 21:33:26,789 "GET /blog/article/5/ HTTP/1.1" 200 1903 basehttp 7553 log_message
 INFO 2023-10-01 21:36:03,958 /home/olgatorres/PycharmProjects/Django/testproject/blog/forms.py changed, reloading. autoreload 7553 trigger_reload
 INFO 2023-10-01 21:36:04,541 Watching for file changes with StatReloader autoreload 7596 run_with_reloader
+INFO 2023-10-02 14:49:15,126 Watching for file changes with StatReloader autoreload 5135 run_with_reloader
+INFO 2023-10-02 14:49:19,156 "GET /blog/article/5/ HTTP/1.1" 200 1903 basehttp 5135 log_message
+INFO 2023-10-02 14:49:19,208 "GET /static/css/style.css HTTP/1.1" 200 1444 basehttp 5135 log_message
+INFO 2023-10-02 14:50:13,193 "GET /blog/article/5/ HTTP/1.1" 200 1963 basehttp 5135 log_message
+INFO 2023-10-02 14:50:15,545 "GET /blog/article/5/ HTTP/1.1" 200 1963 basehttp 5135 log_message
+INFO 2023-10-02 14:50:53,821 "GET /blog/article/5/ HTTP/1.1" 200 1963 basehttp 5135 log_message
+INFO 2023-10-02 14:51:20,180 "GET /blog/article/5/ HTTP/1.1" 200 2103 basehttp 5135 log_message
+INFO 2023-10-02 14:52:17,345 "GET /blog/article/5/ HTTP/1.1" 200 2173 basehttp 5135 log_message
+INFO 2023-10-02 14:52:34,377 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 5135 trigger_reload
+INFO 2023-10-02 14:52:34,816 Watching for file changes with StatReloader autoreload 5213 run_with_reloader
+INFO 2023-10-02 14:54:18,186 "GET /blog/article/5/ HTTP/1.1" 200 2173 basehttp 5213 log_message
+INFO 2023-10-02 14:54:22,632 "GET /blog/article/5/ HTTP/1.1" 200 2173 basehttp 5213 log_message
+INFO 2023-10-02 14:55:06,302 "GET /blog/article/5/ HTTP/1.1" 200 2183 basehttp 5213 log_message
+INFO 2023-10-02 14:55:58,766 "GET /blog/article/5/ HTTP/1.1" 200 2326 basehttp 5213 log_message
+INFO 2023-10-02 14:56:02,292 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 3038 basehttp 5213 log_message
+INFO 2023-10-02 15:01:28,503 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 5213 trigger_reload
+INFO 2023-10-02 15:01:29,039 Watching for file changes with StatReloader autoreload 5379 run_with_reloader
+INFO 2023-10-02 15:01:30,430 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 3038 basehttp 5379 log_message
+INFO 2023-10-02 15:01:44,306 /home/olgatorres/PycharmProjects/Django/testproject/blog/urls.py changed, reloading. autoreload 5379 trigger_reload
+INFO 2023-10-02 15:01:44,725 Watching for file changes with StatReloader autoreload 5400 run_with_reloader
+INFO 2023-10-02 15:01:45,412 "GET /blog/article/5/ HTTP/1.1" 200 2326 basehttp 5400 log_message
+INFO 2023-10-02 15:01:47,611 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 11001 basehttp 5400 log_message
+INFO 2023-10-02 15:03:19,814 /home/olgatorres/PycharmProjects/Django/testproject/blog/forms.py changed, reloading. autoreload 5400 trigger_reload
+INFO 2023-10-02 15:03:20,232 Watching for file changes with StatReloader autoreload 5477 run_with_reloader
+INFO 2023-10-02 15:03:21,674 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 9607 basehttp 5477 log_message
+INFO 2023-10-02 15:06:01,188 /home/olgatorres/PycharmProjects/Django/testproject/blog/forms.py changed, reloading. autoreload 5477 trigger_reload
+INFO 2023-10-02 15:06:01,716 Watching for file changes with StatReloader autoreload 5505 run_with_reloader
+INFO 2023-10-02 15:06:02,546 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 9243 basehttp 5505 log_message
+ERROR 2023-10-02 15:06:06,967 Internal Server Error: /blog/articles/add_new_comment/ log 5505 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 90, in add_comment_form
+    update_date=form.cleaned_data['update_date'])
+KeyError: 'update_date'
+ERROR 2023-10-02 15:06:06,968 "POST /blog/articles/add_new_comment/ HTTP/1.1" 500 67709 basehttp 5505 log_message
+INFO 2023-10-02 15:17:10,543 /home/olgatorres/PycharmProjects/Django/testproject/blog/models.py changed, reloading. autoreload 5505 trigger_reload
+INFO 2023-10-02 15:17:11,154 Watching for file changes with StatReloader autoreload 5700 run_with_reloader
+INFO 2023-10-02 15:18:45,936 /home/olgatorres/PycharmProjects/Django/testproject/blog/models.py changed, reloading. autoreload 5700 trigger_reload
+INFO 2023-10-02 15:18:46,472 Watching for file changes with StatReloader autoreload 5759 run_with_reloader
+INFO 2023-10-02 15:23:36,676 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 5759 trigger_reload
+INFO 2023-10-02 15:23:37,208 Watching for file changes with StatReloader autoreload 5811 run_with_reloader
+ERROR 2023-10-02 15:23:40,393 Internal Server Error: /blog/articles/add_new_comment/ log 5811 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: blog_comment.added_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 89, in add_comment_form
+    comment.save()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: blog_comment.added_date
+ERROR 2023-10-02 15:23:40,397 "POST /blog/articles/add_new_comment/ HTTP/1.1" 500 149889 basehttp 5811 log_message
+INFO 2023-10-02 15:24:04,016 Watching for file changes with StatReloader autoreload 5834 run_with_reloader
+ERROR 2023-10-02 15:24:07,719 Internal Server Error: /blog/articles/add_new_comment/ log 5834 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: blog_comment.added_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 89, in add_comment_form
+    comment.save()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: blog_comment.added_date
+ERROR 2023-10-02 15:24:07,724 "POST /blog/articles/add_new_comment/ HTTP/1.1" 500 149889 basehttp 5834 log_message
+INFO 2023-10-02 15:24:38,216 Watching for file changes with StatReloader autoreload 5850 run_with_reloader
+ERROR 2023-10-02 15:24:46,427 Internal Server Error: /blog/articles/add_new_comment/ log 5850 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: blog_comment.added_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 89, in add_comment_form
+    comment.save()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: blog_comment.added_date
+ERROR 2023-10-02 15:24:46,430 "POST /blog/articles/add_new_comment/ HTTP/1.1" 500 149889 basehttp 5850 log_message
+INFO 2023-10-02 15:24:47,786 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 9243 basehttp 5850 log_message
+ERROR 2023-10-02 15:24:49,415 Internal Server Error: /blog/articles/add_new_comment/ log 5850 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: blog_comment.added_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 89, in add_comment_form
+    comment.save()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: blog_comment.added_date
+ERROR 2023-10-02 15:24:49,416 "POST /blog/articles/add_new_comment/ HTTP/1.1" 500 149889 basehttp 5850 log_message
+INFO 2023-10-02 15:26:10,466 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 5850 trigger_reload
+INFO 2023-10-02 15:26:10,912 Watching for file changes with StatReloader autoreload 5875 run_with_reloader
+INFO 2023-10-02 15:26:11,799 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 9243 basehttp 5875 log_message
+ERROR 2023-10-02 15:26:13,320 Internal Server Error: /blog/articles/add_new_comment/ log 5875 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: blog_comment.added_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 90, in add_comment_form
+    comment.save()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: blog_comment.added_date
+ERROR 2023-10-02 15:26:13,323 "POST /blog/articles/add_new_comment/ HTTP/1.1" 500 149865 basehttp 5875 log_message
+INFO 2023-10-02 15:39:40,892 /home/olgatorres/PycharmProjects/Django/testproject/blog/models.py changed, reloading. autoreload 5875 trigger_reload
+INFO 2023-10-02 15:39:41,371 Watching for file changes with StatReloader autoreload 6076 run_with_reloader
+INFO 2023-10-02 15:39:43,190 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 9243 basehttp 6076 log_message
+INFO 2023-10-02 15:39:45,352 "GET /blog/ HTTP/1.1" 200 1606 basehttp 6076 log_message
+INFO 2023-10-02 15:39:48,087 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2878 basehttp 6076 log_message
+ERROR 2023-10-02 15:40:20,475 Internal Server Error: /blog/articles/add_new_article/ log 6076 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 98, in inner
+    return func(*args, **kwargs)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 71, in add_article_form
+    article.save()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1833, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/backends/base/operations.py", line 213, in fetch_returned_insert_columns
+    return cursor.fetchone()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 97, in inner
+    with self:
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/db/utils.py", line 98, in inner
+    return func(*args, **kwargs)
+django.db.utils.OperationalError: database is locked
+ERROR 2023-10-02 15:40:20,478 "POST /blog/articles/add_new_article/ HTTP/1.1" 500 129747 basehttp 6076 log_message
+INFO 2023-10-02 15:40:33,113 Add new article author=<Author: asd s>, title='ert' views 6076 add_article_form
+INFO 2023-10-02 15:40:33,125 "POST /blog/articles/add_new_article/ HTTP/1.1" 200 2909 basehttp 6076 log_message
+INFO 2023-10-02 15:40:57,213 /home/olgatorres/PycharmProjects/Django/testproject/blog/forms.py changed, reloading. autoreload 6076 trigger_reload
+INFO 2023-10-02 15:40:57,648 Watching for file changes with StatReloader autoreload 6120 run_with_reloader
+INFO 2023-10-02 15:40:59,179 Add new article author=<Author: asd s>, title='ert' views 6120 add_article_form
+INFO 2023-10-02 15:40:59,197 "POST /blog/articles/add_new_article/ HTTP/1.1" 200 2769 basehttp 6120 log_message
+INFO 2023-10-02 15:45:34,204 Watching for file changes with StatReloader autoreload 4155 run_with_reloader
+INFO 2023-10-02 15:45:46,343 "GET /blog/ HTTP/1.1" 200 1606 basehttp 4155 log_message
+INFO 2023-10-02 15:45:47,763 "GET /blog/articles/ HTTP/1.1" 200 8469 basehttp 4155 log_message
+INFO 2023-10-02 15:45:49,891 "GET /blog/article/14/ HTTP/1.1" 200 2669 basehttp 4155 log_message
+INFO 2023-10-02 15:45:52,676 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 9327 basehttp 4155 log_message
+INFO 2023-10-02 15:46:01,483 Add new comment comment.author=<Author: Name2 Surname2>, comment.article=<Article: Title8 Name1 Surname1> views 4155 add_comment_form
+INFO 2023-10-02 15:46:01,540 "POST /blog/articles/add_new_comment/ HTTP/1.1" 200 9326 basehttp 4155 log_message
+INFO 2023-10-02 15:46:48,982 /home/olgatorres/PycharmProjects/Django/testproject/blog/forms.py changed, reloading. autoreload 4155 trigger_reload
+INFO 2023-10-02 15:46:49,523 Watching for file changes with StatReloader autoreload 4822 run_with_reloader
+INFO 2023-10-02 15:46:50,448 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 9327 basehttp 4822 log_message
+INFO 2023-10-02 15:46:54,942 "GET /blog/article/14/ HTTP/1.1" 200 2669 basehttp 4822 log_message
+INFO 2023-10-02 15:47:08,005 "GET /blog/article/14/ HTTP/1.1" 200 2669 basehttp 4822 log_message
+INFO 2023-10-02 15:47:24,037 "GET /blog/article/14/ HTTP/1.1" 200 2669 basehttp 4822 log_message
+INFO 2023-10-02 15:47:25,153 "GET /blog/article/14/ HTTP/1.1" 200 2669 basehttp 4822 log_message
+INFO 2023-10-02 15:47:57,529 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 9327 basehttp 4822 log_message
+INFO 2023-10-02 15:48:39,036 /home/olgatorres/PycharmProjects/Django/testproject/blog/forms.py changed, reloading. autoreload 4822 trigger_reload
+INFO 2023-10-02 15:48:39,520 Watching for file changes with StatReloader autoreload 4875 run_with_reloader
+INFO 2023-10-02 15:49:01,787 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 4875 trigger_reload
+INFO 2023-10-02 15:49:02,342 Watching for file changes with StatReloader autoreload 4894 run_with_reloader
+INFO 2023-10-02 15:49:02,969 "GET /blog/article/14/ HTTP/1.1" 200 2669 basehttp 4894 log_message
+INFO 2023-10-02 15:49:04,707 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 2283 basehttp 4894 log_message
+ERROR 2023-10-02 15:49:10,204 Internal Server Error: /blog/articles/add_new_comment/ log 4894 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 83, in add_comment_form
+    comment = Comment(article=request.article,
+AttributeError: 'WSGIRequest' object has no attribute 'article'
+ERROR 2023-10-02 15:49:10,206 "POST /blog/articles/add_new_comment/ HTTP/1.1" 500 67676 basehttp 4894 log_message
+INFO 2023-10-02 15:50:37,413 /home/olgatorres/PycharmProjects/Django/testproject/blog/forms.py changed, reloading. autoreload 4894 trigger_reload
+INFO 2023-10-02 15:50:37,793 Watching for file changes with StatReloader autoreload 4938 run_with_reloader
+INFO 2023-10-02 15:50:38,675 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 9327 basehttp 4938 log_message
+INFO 2023-10-02 15:50:43,306 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 9327 basehttp 4938 log_message
+INFO 2023-10-02 15:50:54,213 Add new comment comment.author=<Author: Name8 Surname8>, comment.article=<Article: Title4 Name1 Surname1> views 4938 add_comment_form
+INFO 2023-10-02 15:50:54,275 "POST /blog/articles/add_new_comment/ HTTP/1.1" 200 9331 basehttp 4938 log_message
+INFO 2023-10-02 15:50:58,762 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 9327 basehttp 4938 log_message
+INFO 2023-10-02 15:51:01,634 "GET /blog/article/14/ HTTP/1.1" 200 2669 basehttp 4938 log_message
+INFO 2023-10-02 15:51:02,663 "GET /blog/article/14/ HTTP/1.1" 200 2669 basehttp 4938 log_message
+INFO 2023-10-02 15:54:32,910 "GET /blog/ HTTP/1.1" 200 1606 basehttp 4938 log_message
+INFO 2023-10-02 15:54:36,945 "GET /blog/articles/ HTTP/1.1" 200 8469 basehttp 4938 log_message
+INFO 2023-10-02 15:54:40,640 "GET /blog/article/4/ HTTP/1.1" 200 2788 basehttp 4938 log_message
+INFO 2023-10-02 15:55:52,606 "GET /blog/ HTTP/1.1" 200 1606 basehttp 4938 log_message
+INFO 2023-10-02 15:56:21,371 "GET /blog/articles/author/Name7/ HTTP/1.1" 200 1536 basehttp 4938 log_message
+INFO 2023-10-02 15:58:22,949 "GET /blog/ HTTP/1.1" 200 1750 basehttp 4938 log_message
+INFO 2023-10-02 15:58:24,553 "GET /blog/article/1/ HTTP/1.1" 200 2669 basehttp 4938 log_message
+INFO 2023-10-02 15:59:25,783 "GET /blog/ HTTP/1.1" 200 1893 basehttp 4938 log_message
+INFO 2023-10-02 15:59:27,697 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 9327 basehttp 4938 log_message
+INFO 2023-10-02 16:03:01,856 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 9327 basehttp 4938 log_message
+INFO 2023-10-02 16:03:03,497 "GET /blog/ HTTP/1.1" 200 1923 basehttp 4938 log_message
+INFO 2023-10-02 16:03:12,495 "GET /blog/authors/ HTTP/1.1" 200 1572 basehttp 4938 log_message
+INFO 2023-10-02 16:03:16,709 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1852 basehttp 4938 log_message
+INFO 2023-10-02 16:04:47,659 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 4938 log_message
+INFO 2023-10-02 16:05:48,471 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 4938 log_message
+INFO 2023-10-02 16:06:00,514 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 4938 log_message
+INFO 2023-10-02 16:06:01,316 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 4938 log_message
+INFO 2023-10-02 16:06:09,426 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 4938 log_message
+INFO 2023-10-02 16:06:10,074 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 4938 log_message
+INFO 2023-10-02 16:06:10,419 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 4938 log_message
+INFO 2023-10-02 16:06:10,989 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 4938 log_message
+INFO 2023-10-02 16:06:18,684 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 4938 log_message
+INFO 2023-10-02 16:06:28,686 Watching for file changes with StatReloader autoreload 5395 run_with_reloader
+INFO 2023-10-02 16:06:30,428 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 5395 log_message
+INFO 2023-10-02 16:06:31,247 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 5395 log_message
+INFO 2023-10-02 16:06:54,046 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 5395 log_message
+INFO 2023-10-02 16:06:54,941 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 5395 log_message
+INFO 2023-10-02 16:06:55,746 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 5395 log_message
+INFO 2023-10-02 16:08:22,100 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 5395 log_message
+INFO 2023-10-02 16:08:22,738 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 5395 log_message
+INFO 2023-10-02 16:08:23,266 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 5395 log_message
+INFO 2023-10-02 16:08:36,938 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1919 basehttp 5395 log_message
+INFO 2023-10-02 16:08:40,905 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2815 basehttp 5395 log_message
+INFO 2023-10-02 16:09:02,180 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 5395 log_message
+INFO 2023-10-02 16:09:03,093 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 5395 log_message
+INFO 2023-10-02 16:09:46,805 "GET /random/ HTTP/1.1" 200 1496 basehttp 5395 log_message
+INFO 2023-10-02 16:09:48,449 "GET /random/choice_form/ HTTP/1.1" 200 1509 basehttp 5395 log_message
+INFO 2023-10-02 16:10:49,123 "GET /random/choice_form/ HTTP/1.1" 200 1572 basehttp 5395 log_message
+INFO 2023-10-02 16:11:26,836 "GET /random/choice_form/ HTTP/1.1" 200 1572 basehttp 5395 log_message
+INFO 2023-10-02 16:11:31,485 "GET /random/choice_form/ HTTP/1.1" 200 1572 basehttp 5395 log_message
+INFO 2023-10-02 16:11:39,317 "GET /random/choice_form/ HTTP/1.1" 200 1572 basehttp 5395 log_message
+INFO 2023-10-02 16:11:44,965 "GET /shop/ HTTP/1.1" 200 1912 basehttp 5395 log_message
+INFO 2023-10-02 16:11:47,537 Request for change order id = 1, new status = paid views 5395 update_status
+INFO 2023-10-02 16:11:47,555 "GET /shop/order/status/update/1/paid/ HTTP/1.1" 200 1272 basehttp 5395 log_message
+INFO 2023-10-02 16:14:03,648 /home/olgatorres/PycharmProjects/Django/testproject/testproject/settings.py changed, reloading. autoreload 5395 trigger_reload
+INFO 2023-10-02 16:14:04,079 Watching for file changes with StatReloader autoreload 5619 run_with_reloader
+INFO 2023-10-02 16:49:15,586 Watching for file changes with StatReloader autoreload 7844 run_with_reloader
+INFO 2023-10-02 16:49:21,424 "GET /blog/ HTTP/1.1" 200 1923 basehttp 7844 log_message
+INFO 2023-10-02 16:49:21,523 "GET /static/css/style.css HTTP/1.1" 200 1554 basehttp 7844 log_message
+INFO 2023-10-02 16:49:22,933 "GET /blog/authors/ HTTP/1.1" 200 1572 basehttp 7844 log_message
+ERROR 2023-10-02 16:51:20,587 Internal Server Error: /blog/ log 7844 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: "'articles_by_author'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 13, in index
+    return render(request, 'index_blog.html')
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 19: ''articles_by_author'', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2023-10-02 16:51:20,590 "GET /blog/ HTTP/1.1" 500 173374 basehttp 7844 log_message
+INFO 2023-10-02 16:51:44,443 "GET /shop/ HTTP/1.1" 200 2040 basehttp 7844 log_message
+ERROR 2023-10-02 16:51:51,623 Internal Server Error: /blog/ log 7844 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 13, in index
+    return render(request, 'index_blog.html')
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'articles_by_author' with arguments '('',)' not found. 1 pattern(s) tried: ['blog/articles/author/(?P<name>[^/]+)/\\Z']
+ERROR 2023-10-02 16:51:51,625 "GET /blog/ HTTP/1.1" 500 164026 basehttp 7844 log_message
+ERROR 2023-10-02 16:52:51,631 Internal Server Error: /blog/ log 7844 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 13, in index
+    return render(request, 'index_blog.html')
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'articles_by_author' with arguments '('',)' not found. 1 pattern(s) tried: ['blog/articles/author/(?P<name>[^/]+)/\\Z']
+ERROR 2023-10-02 16:52:51,632 "GET /blog/ HTTP/1.1" 500 164182 basehttp 7844 log_message
+ERROR 2023-10-02 16:54:37,614 Internal Server Error: /blog/ log 7844 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 13, in index
+    return render(request, 'index_blog.html')
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'articles_by_author' with arguments '('',)' not found. 1 pattern(s) tried: ['blog/articles/author/(?P<name>[^/]+)/\\Z']
+ERROR 2023-10-02 16:54:37,615 "GET /blog/ HTTP/1.1" 500 165333 basehttp 7844 log_message
+ERROR 2023-10-02 16:54:38,577 Internal Server Error: /blog/ log 7844 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 13, in index
+    return render(request, 'index_blog.html')
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'articles_by_author' with arguments '('',)' not found. 1 pattern(s) tried: ['blog/articles/author/(?P<name>[^/]+)/\\Z']
+ERROR 2023-10-02 16:54:38,578 "GET /blog/ HTTP/1.1" 500 165333 basehttp 7844 log_message
+ERROR 2023-10-02 16:54:42,716 Internal Server Error: /blog/ log 7844 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 13, in index
+    return render(request, 'index_blog.html')
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'articles_by_author' with arguments '('',)' not found. 1 pattern(s) tried: ['blog/articles/author/(?P<name>[^/]+)/\\Z']
+ERROR 2023-10-02 16:54:42,717 "GET /blog/ HTTP/1.1" 500 165333 basehttp 7844 log_message
+ERROR 2023-10-02 16:56:04,605 Internal Server Error: /blog/ log 7844 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/blog/views.py", line 13, in index
+    return render(request, 'index_blog.html')
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'add_article_form' not found. 'add_article_form' is not a valid view function or pattern name.
+ERROR 2023-10-02 16:56:04,607 "GET /blog/ HTTP/1.1" 500 161534 basehttp 7844 log_message
+INFO 2023-10-02 16:57:18,320 /home/olgatorres/PycharmProjects/Django/testproject/blog/urls.py changed, reloading. autoreload 7844 trigger_reload
+INFO 2023-10-02 16:57:18,867 Watching for file changes with StatReloader autoreload 7980 run_with_reloader
+INFO 2023-10-02 16:57:19,630 "GET /blog/ HTTP/1.1" 200 1923 basehttp 7980 log_message
+INFO 2023-10-02 16:57:19,704 "GET /static/css/style.css HTTP/1.1" 304 0 basehttp 7980 log_message
+INFO 2023-10-02 16:57:22,120 "GET /blog/articles/author/Name7/ HTTP/1.1" 200 1536 basehttp 7980 log_message
+INFO 2023-10-02 16:57:26,903 "GET /blog/article/1/ HTTP/1.1" 200 2669 basehttp 7980 log_message
+INFO 2023-10-02 16:58:30,542 "GET /shop/ HTTP/1.1" 200 2165 basehttp 7980 log_message
+INFO 2023-10-02 16:58:35,896 Request for get available products views 7980 get_products_available
+INFO 2023-10-02 16:58:35,906 "GET /shop/products/ HTTP/1.1" 200 3527 basehttp 7980 log_message
+INFO 2023-10-02 17:01:08,654 /home/olgatorres/PycharmProjects/Django/testproject/shop/urls.py changed, reloading. autoreload 7980 trigger_reload
+INFO 2023-10-02 17:01:09,082 Watching for file changes with StatReloader autoreload 8055 run_with_reloader
+INFO 2023-10-02 17:03:11,338 /home/olgatorres/PycharmProjects/Django/testproject/shop/views.py changed, reloading. autoreload 8055 trigger_reload
+INFO 2023-10-02 17:03:11,740 Watching for file changes with StatReloader autoreload 8120 run_with_reloader
+INFO 2023-10-02 17:13:11,652 /home/olgatorres/PycharmProjects/Django/testproject/shop/views.py changed, reloading. autoreload 8120 trigger_reload
+INFO 2023-10-02 17:13:12,181 Watching for file changes with StatReloader autoreload 8316 run_with_reloader
+INFO 2023-10-02 17:13:37,851 Watching for file changes with StatReloader autoreload 8335 run_with_reloader
+INFO 2023-10-02 17:13:48,472 Watching for file changes with StatReloader autoreload 8344 run_with_reloader
+INFO 2023-10-02 17:13:50,762 Request for get available products views 8344 get_products_available
+INFO 2023-10-02 17:13:50,776 "GET /shop/products/ HTTP/1.1" 200 3527 basehttp 8344 log_message
+INFO 2023-10-02 17:13:50,850 "GET /static/css/style.css HTTP/1.1" 304 0 basehttp 8344 log_message
+INFO 2023-10-02 17:13:51,947 Request for get available products views 8344 get_products_available
+INFO 2023-10-02 17:13:51,952 "GET /shop/products/ HTTP/1.1" 200 3527 basehttp 8344 log_message
+INFO 2023-10-02 17:13:56,565 Request for get available products views 8344 get_products_available
+INFO 2023-10-02 17:13:56,570 "GET /shop/products/ HTTP/1.1" 200 3527 basehttp 8344 log_message
+INFO 2023-10-02 17:14:31,100 Request for get available products views 8344 get_products_available
+INFO 2023-10-02 17:14:31,115 "GET /shop/products/ HTTP/1.1" 200 3527 basehttp 8344 log_message
+INFO 2023-10-02 17:14:41,059 Request for get available products views 8344 get_products_available
+INFO 2023-10-02 17:14:41,063 "GET /shop/products/ HTTP/1.1" 200 3527 basehttp 8344 log_message
+INFO 2023-10-02 17:14:44,173 "GET /shop/ HTTP/1.1" 200 2168 basehttp 8344 log_message
+INFO 2023-10-02 17:14:45,410 "GET /shop/products/add HTTP/1.1" 200 1926 basehttp 8344 log_message
+INFO 2023-10-02 17:15:13,204 "POST /shop/products/add HTTP/1.1" 200 2030 basehttp 8344 log_message
+INFO 2023-10-02 17:15:31,415 "POST /shop/products/add HTTP/1.1" 200 2029 basehttp 8344 log_message
+INFO 2023-10-02 17:16:03,462 "POST /shop/products/add HTTP/1.1" 200 2029 basehttp 8344 log_message
+INFO 2023-10-02 17:20:53,272 "POST /shop/products/add HTTP/1.1" 200 2060 basehttp 8344 log_message
+INFO 2023-10-02 17:20:53,324 "GET /static/css/style.css HTTP/1.1" 304 0 basehttp 8344 log_message
+INFO 2023-10-02 17:22:19,504 /home/olgatorres/PycharmProjects/Django/testproject/shop/views.py changed, reloading. autoreload 8344 trigger_reload
+INFO 2023-10-02 17:22:20,030 Watching for file changes with StatReloader autoreload 8736 run_with_reloader
+ERROR 2023-10-02 17:22:24,286 Internal Server Error: /shop/products/add log 8736 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/shop/views.py", line 114, in add_new_product
+    image = form.cleaned_data['image']
+KeyError: 'image'
+ERROR 2023-10-02 17:22:24,287 "POST /shop/products/add HTTP/1.1" 500 67888 basehttp 8736 log_message
+INFO 2023-10-02 17:22:55,536 /home/olgatorres/PycharmProjects/Django/testproject/shop/views.py changed, reloading. autoreload 8736 trigger_reload
+INFO 2023-10-02 17:22:56,022 Watching for file changes with StatReloader autoreload 8779 run_with_reloader
+ERROR 2023-10-02 17:22:58,167 Internal Server Error: /shop/products/add log 8779 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/shop/views.py", line 114, in add_new_product
+    image = form.cleaned_data['image']
+KeyError: 'image'
+ERROR 2023-10-02 17:22:58,168 "POST /shop/products/add HTTP/1.1" 500 67889 basehttp 8779 log_message
+INFO 2023-10-02 17:23:20,440 /home/olgatorres/PycharmProjects/Django/testproject/shop/views.py changed, reloading. autoreload 8779 trigger_reload
+INFO 2023-10-02 17:23:20,939 Watching for file changes with StatReloader autoreload 8792 run_with_reloader
+INFO 2023-10-02 17:23:22,770 "POST /shop/products/add HTTP/1.1" 200 2001 basehttp 8792 log_message
+INFO 2023-10-02 17:24:17,734 /home/olgatorres/PycharmProjects/Django/testproject/shop/views.py changed, reloading. autoreload 8792 trigger_reload
+INFO 2023-10-02 17:24:18,146 Watching for file changes with StatReloader autoreload 8816 run_with_reloader
+INFO 2023-10-02 17:25:37,135 /home/olgatorres/PycharmProjects/Django/testproject/shop/views.py changed, reloading. autoreload 8816 trigger_reload
+INFO 2023-10-02 17:25:37,575 Watching for file changes with StatReloader autoreload 8838 run_with_reloader
+INFO 2023-10-02 17:25:38,456 "POST /shop/products/add HTTP/1.1" 200 2023 basehttp 8838 log_message
+INFO 2023-10-02 17:27:00,739 /home/olgatorres/PycharmProjects/Django/testproject/shop/views.py changed, reloading. autoreload 8838 trigger_reload
+INFO 2023-10-02 17:27:01,223 Watching for file changes with StatReloader autoreload 8863 run_with_reloader
+INFO 2023-10-02 17:27:30,681 "GET /blog/ HTTP/1.1" 200 1923 basehttp 8863 log_message
+INFO 2023-10-02 17:28:17,657 "GET /shop/ HTTP/1.1" 200 2168 basehttp 8863 log_message
+INFO 2023-10-02 17:28:17,752 "GET /static/css/style.css HTTP/1.1" 304 0 basehttp 8863 log_message
+INFO 2023-10-02 17:28:26,052 "GET /shop/products/add HTTP/1.1" 200 1998 basehttp 8863 log_message
+INFO 2023-10-02 17:28:51,921 "GET /shop/products/add HTTP/1.1" 200 1998 basehttp 8863 log_message
+INFO 2023-10-02 17:29:12,766 "GET /shop/products/add HTTP/1.1" 200 1997 basehttp 8863 log_message
+INFO 2023-10-02 18:10:27,802 Watching for file changes with StatReloader autoreload 3077 run_with_reloader
+WARNING 2023-10-02 18:10:54,865 Not Found: / log 3077 log_response
+WARNING 2023-10-02 18:10:54,866 "GET / HTTP/1.1" 404 2589 basehttp 3077 log_message
+INFO 2023-10-02 18:11:02,016 "GET /blog/ HTTP/1.1" 200 1923 basehttp 3077 log_message
+INFO 2023-10-02 18:11:02,072 "GET /static/css/style.css HTTP/1.1" 304 0 basehttp 3077 log_message
+INFO 2023-10-02 18:11:14,535 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 3077 log_message
+INFO 2023-10-02 18:12:21,246 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 3077 log_message
+INFO 2023-10-02 18:12:26,706 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 3077 log_message
+INFO 2023-10-02 18:12:43,908 Watching for file changes with StatReloader autoreload 4863 run_with_reloader
+INFO 2023-10-02 18:12:46,566 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 4863 log_message
+INFO 2023-10-02 18:12:47,422 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 4863 log_message
+INFO 2023-10-02 18:12:50,020 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 4863 log_message
+INFO 2023-10-02 18:12:52,133 "GET /blog/authors/add_new_author/ HTTP/1.1" 200 1915 basehttp 4863 log_message
+INFO 2023-10-02 18:13:13,577 Watching for file changes with StatReloader autoreload 4882 run_with_reloader
+WARNING 2023-10-02 18:13:15,289 Not Found: / log 4882 log_response
+WARNING 2023-10-02 18:13:15,289 "GET / HTTP/1.1" 404 2589 basehttp 4882 log_message
+INFO 2023-10-02 18:13:20,538 "GET /blog/ HTTP/1.1" 200 1923 basehttp 4882 log_message
+INFO 2023-10-02 18:13:22,713 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 4882 log_message
+INFO 2023-10-02 18:13:38,889 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 4882 log_message
+INFO 2023-10-02 18:13:40,889 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 4882 log_message
+INFO 2023-10-02 18:13:41,994 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 4882 log_message
+INFO 2023-10-02 18:14:03,704 Watching for file changes with StatReloader autoreload 5408 run_with_reloader
+INFO 2023-10-02 18:14:10,497 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 5408 log_message
+INFO 2023-10-02 18:15:02,354 "GET /static/css/style.css HTTP/1.1" 200 1508 basehttp 5408 log_message
+INFO 2023-10-02 18:15:07,388 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 5408 log_message
+INFO 2023-10-02 18:15:08,421 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 5408 log_message
+INFO 2023-10-02 18:15:41,445 "GET /blog/articles/add_new_article/ HTTP/1.1" 200 2811 basehttp 5408 log_message
+INFO 2023-10-02 18:15:56,001 "GET /blog/articles/add_new_comment/ HTTP/1.1" 200 9390 basehttp 5408 log_message
+INFO 2023-10-02 18:16:08,958 "GET /shop/ HTTP/1.1" 200 2168 basehttp 5408 log_message
+INFO 2023-10-02 18:16:10,143 "GET /shop/products/add HTTP/1.1" 200 1997 basehttp 5408 log_message

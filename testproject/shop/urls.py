@@ -7,6 +7,7 @@ urlpatterns = [
     path('client/products/<int:pk>/<int:period>', views.get_products_by_client, name='client_basket'),
     path('product/<int:pk>', views.get_product, name='product'),
     path('products/', views.get_products_available, name='products_available'),
+    path('products/add', views.add_new_product, name='add_new_product'),
     path('order/<int:pk>/', views.get_order, name='order'),
     path('order/status/<str:status>/', views.status_order, name='status_order'),
     path('order/status/update/<int:pk>/<str:status>/', views.update_status, name='update_status'),

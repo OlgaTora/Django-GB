@@ -2,28 +2,33 @@
 {% block content %}
 <h1>Welcome to the little Blog</h1>
 
+<div class="container">
 <button class="auth_button" type="submit" name="form_auth_submit">
-    <a href="/blog/authors/add_new_author/">Add new author</a>
+    <a href="{% url 'authors' %}">Show all authors</a>
 </button>
 
 <button class="auth_button" type="submit" name="form_auth_submit">
-    <a href="/blog/authors/">Show all authors</a>
+    <a href="{% url 'articles' %}">Show all articles</a>
 </button>
 
 <button class="auth_button" type="submit" name="form_auth_submit">
-    <a href="/blog/articles/">Show all articles</a>
+    <a href="{% url 'article_content' 1 %}">Show article by id (default =1)</a>
 </button>
 
 <button class="auth_button" type="submit" name="form_auth_submit">
-    <a href="/blog/articles/add_new_article/">Add new article</a>
+    <a href="{% url 'articles_by_author' 'Name7' %}">Show articles of author (default = Name7)</a>
 </button>
 
 <button class="auth_button" type="submit" name="form_auth_submit">
-    <a href="/blog/articles/author/Name7/">Show articles of author (default = Name7)</a>
+    <a href="{% url 'add_new_author' %}">Add new author</a>
 </button>
 
 <button class="auth_button" type="submit" name="form_auth_submit">
-    <a href="/blog/articles/add_new_comment/">Add new comment</a>
+    <a href="{% url 'add_new_article' %}">Add new article</a>
 </button>
 
+<button class="auth_button" type="submit" name="form_auth_submit">
+    <a href="{% url 'add_new_comment' %}">Add new comment</a>
+</button>
+</div>
 {% endblock %}

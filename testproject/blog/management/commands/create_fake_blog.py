@@ -33,7 +33,7 @@ class Command(BaseCommand):
                 article.save()
                 for k in range(1, count + 1):
                     comment = Comment(
-                        author=author,
+                        author=random.choice(Author.objects.all()),
                         article=article,
                         comment_text=f'Comments from {author}',
                         added_date=datetime.date.today() - datetime.timedelta(days=random.randint(1, 365)))

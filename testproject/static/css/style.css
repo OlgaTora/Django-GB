@@ -42,6 +42,11 @@ h3{
     text-align: center;
 }
 
+h4{
+    font-size: 25px;
+    color: red;
+    text-align: left;
+}
 
 .show-users{
     font-size: 15px;
@@ -61,8 +66,8 @@ h3{
 }
 
 input{
-    height: 30px;
-    padding: 15px;
+    height: 35px;
+    padding: 5px;
     width: 100%;
     margin: 5px 0 22px 0;
     font-size: 20px;

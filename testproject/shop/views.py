@@ -1,7 +1,10 @@
 import logging
 import datetime
+
+from django.core.files.storage import FileSystemStorage
 from django.shortcuts import render, get_object_or_404
 from shop.models import Order, Product, Client
+from .forms import AddNewProduct
 
 logger = logging.getLogger(__name__)
 
@@ -102,3 +105,33 @@ def update_status(request, *args, **kwargs):
     order.status = status
     order.save()
     return get_order(request, pk)
+
+
+def add_new_product(request):
+    message = 'Please fill information about new product'
+    if request.method == 'POST':
+        form = AddNewProduct(request.POST, request.FILES)
+        if form.is_valid():
+            image = form.cleaned_data['product_image']
+            product_name = form.cleaned_data['product_name']
+            description = form.cleaned_data['description']
+            price = form.cleaned_data['price']
+            quantity = form.cleaned_data['quantity']
+            product = Product(
+                product_name=product_name,
+                description=description,
+                price=price,
+
+                quantity=quantity,
+                product_image=image)
+            fs = FileSystemStorage()
+            fs.save(image.name, image)
+            product.save()
+            message = 'Successfully operation'
+    else:
+        form = AddNewProduct()
+    return render(
+        request,
+        'add_new_product.html',
+        {'form': form, 'message': message}
+    )
