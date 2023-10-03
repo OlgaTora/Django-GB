@@ -1266,3 +1266,209 @@ INFO 2023-10-03 07:33:28,908 "POST /blog/article/32/ HTTP/1.1" 302 0 basehttp 55
 INFO 2023-10-03 07:33:28,950 "GET /blog/article/32/ HTTP/1.1" 200 4468 basehttp 5528 log_message
 INFO 2023-10-03 07:33:57,033 /home/olgatorres/PycharmProjects/Django/testproject/blog/views.py changed, reloading. autoreload 5528 trigger_reload
 INFO 2023-10-03 07:33:57,557 Watching for file changes with StatReloader autoreload 5548 run_with_reloader
+INFO 2023-10-03 07:54:24,644 Watching for file changes with StatReloader autoreload 6179 run_with_reloader
+INFO 2023-10-03 07:54:27,565 "GET /shop/ HTTP/1.1" 200 2168 basehttp 6179 log_message
+INFO 2023-10-03 07:54:30,720 "GET /shop/ HTTP/1.1" 200 2168 basehttp 6179 log_message
+INFO 2023-10-03 07:54:36,597 Request for get available products views 6179 get_products_available
+INFO 2023-10-03 07:54:36,611 "GET /shop/products/ HTTP/1.1" 200 3527 basehttp 6179 log_message
+INFO 2023-10-03 07:54:38,603 "GET /shop/product/1 HTTP/1.1" 200 1047 basehttp 6179 log_message
+INFO 2023-10-03 07:55:36,438 "GET /shop/product/1 HTTP/1.1" 200 1048 basehttp 6179 log_message
+INFO 2023-10-03 07:55:37,518 "GET /shop/product/1 HTTP/1.1" 200 1048 basehttp 6179 log_message
+INFO 2023-10-03 07:56:08,844 "GET /shop/product/1 HTTP/1.1" 200 1055 basehttp 6179 log_message
+ERROR 2023-10-03 08:01:41,679 Internal Server Error: /shop/product/1 log 6179 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/shop/views.py", line 56, in get_product
+    return render(request,
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 3: 'block'. Looking for one of: endblock.
+ERROR 2023-10-03 08:01:41,682 "GET /shop/product/1 HTTP/1.1" 500 158247 basehttp 6179 log_message
+INFO 2023-10-03 08:02:01,845 "GET /shop/product/1 HTTP/1.1" 200 1060 basehttp 6179 log_message
+INFO 2023-10-03 08:02:02,686 "GET /shop/product/1 HTTP/1.1" 200 1060 basehttp 6179 log_message
+INFO 2023-10-03 08:02:48,675 "GET /shop/product/1 HTTP/1.1" 200 1085 basehttp 6179 log_message
+WARNING 2023-10-03 08:02:48,732 Not Found: /shop/product/{ product.product_image } log 6179 log_response
+WARNING 2023-10-03 08:02:48,732 "GET /shop/product/%7B%20product.product_image%20%7D HTTP/1.1" 404 4635 basehttp 6179 log_message
+WARNING 2023-10-03 08:02:53,067 Not Found: /shop/product/{ product.product_image } log 6179 log_response
+WARNING 2023-10-03 08:02:53,067 "GET /shop/product/%7B%20product.product_image%20%7D HTTP/1.1" 404 4635 basehttp 6179 log_message
+INFO 2023-10-03 08:03:31,419 "GET /shop/product/1 HTTP/1.1" 200 1083 basehttp 6179 log_message
+WARNING 2023-10-03 08:03:31,470 Not Found: /shop/product/product.product_image log 6179 log_response
+WARNING 2023-10-03 08:03:31,471 "GET /shop/product/product.product_image HTTP/1.1" 404 4615 basehttp 6179 log_message
+INFO 2023-10-03 08:03:32,166 "GET /shop/product/1 HTTP/1.1" 200 1083 basehttp 6179 log_message
+WARNING 2023-10-03 08:03:32,216 Not Found: /shop/product/product.product_image log 6179 log_response
+WARNING 2023-10-03 08:03:32,217 "GET /shop/product/product.product_image HTTP/1.1" 404 4615 basehttp 6179 log_message
+INFO 2023-10-03 08:03:32,797 "GET /shop/product/1 HTTP/1.1" 200 1083 basehttp 6179 log_message
+WARNING 2023-10-03 08:03:32,847 Not Found: /shop/product/product.product_image log 6179 log_response
+WARNING 2023-10-03 08:03:32,847 "GET /shop/product/product.product_image HTTP/1.1" 404 4615 basehttp 6179 log_message
+INFO 2023-10-03 08:03:54,834 "GET /shop/products/add HTTP/1.1" 200 2005 basehttp 6179 log_message
+INFO 2023-10-03 08:04:09,382 "POST /shop/products/add HTTP/1.1" 200 2030 basehttp 6179 log_message
+INFO 2023-10-03 08:04:14,133 "GET /shop/ HTTP/1.1" 200 2168 basehttp 6179 log_message
+INFO 2023-10-03 08:04:15,956 Request for get available products views 6179 get_products_available
+INFO 2023-10-03 08:04:15,964 "GET /shop/products/ HTTP/1.1" 200 3618 basehttp 6179 log_message
+INFO 2023-10-03 08:04:22,544 "GET /shop/product/29 HTTP/1.1" 200 1048 basehttp 6179 log_message
+WARNING 2023-10-03 08:04:22,629 Not Found: /shop/product/product.product_image log 6179 log_response
+WARNING 2023-10-03 08:04:22,630 "GET /shop/product/product.product_image HTTP/1.1" 404 4615 basehttp 6179 log_message
+INFO 2023-10-03 08:05:13,106 "GET /shop/product/29 HTTP/1.1" 200 1054 basehttp 6179 log_message
+WARNING 2023-10-03 08:05:13,171 Not Found: /media/IMG_9781_KFOoSTO.JPG log 6179 log_response
+WARNING 2023-10-03 08:05:13,171 "GET /media/IMG_9781_KFOoSTO.JPG HTTP/1.1" 404 2685 basehttp 6179 log_message
+INFO 2023-10-03 08:05:13,803 "GET /shop/product/29 HTTP/1.1" 200 1054 basehttp 6179 log_message
+WARNING 2023-10-03 08:05:13,860 Not Found: /media/IMG_9781_KFOoSTO.JPG log 6179 log_response
+WARNING 2023-10-03 08:05:13,861 "GET /media/IMG_9781_KFOoSTO.JPG HTTP/1.1" 404 2685 basehttp 6179 log_message
+INFO 2023-10-03 08:05:14,511 "GET /shop/product/29 HTTP/1.1" 200 1054 basehttp 6179 log_message
+WARNING 2023-10-03 08:05:14,560 Not Found: /media/IMG_9781_KFOoSTO.JPG log 6179 log_response
+WARNING 2023-10-03 08:05:14,561 "GET /media/IMG_9781_KFOoSTO.JPG HTTP/1.1" 404 2685 basehttp 6179 log_message
+INFO 2023-10-03 08:05:15,212 "GET /shop/product/29 HTTP/1.1" 200 1054 basehttp 6179 log_message
+WARNING 2023-10-03 08:05:15,266 Not Found: /media/IMG_9781_KFOoSTO.JPG log 6179 log_response
+WARNING 2023-10-03 08:05:15,266 "GET /media/IMG_9781_KFOoSTO.JPG HTTP/1.1" 404 2685 basehttp 6179 log_message
+INFO 2023-10-03 08:05:28,192 "GET /shop/product/29 HTTP/1.1" 200 1047 basehttp 6179 log_message
+WARNING 2023-10-03 08:05:28,245 Not Found: /shop/product/IMG_9781_KFOoSTO.JPG log 6179 log_response
+WARNING 2023-10-03 08:05:28,247 "GET /shop/product/IMG_9781_KFOoSTO.JPG HTTP/1.1" 404 4612 basehttp 6179 log_message
+ERROR 2023-10-03 08:09:37,656 Internal Server Error: /shop/product/29 log 6179 log_response
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/testproject/shop/views.py", line 56, in get_product
+    return render(request,
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 12: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+ERROR 2023-10-03 08:09:37,657 "GET /shop/product/29 HTTP/1.1" 500 181881 basehttp 6179 log_message
+INFO 2023-10-03 08:09:53,685 "GET /shop/product/29 HTTP/1.1" 200 1085 basehttp 6179 log_message
+WARNING 2023-10-03 08:09:53,748 Not Found: /media/IMG_9781_KFOoSTO.JPG log 6179 log_response
+WARNING 2023-10-03 08:09:53,750 "GET /media/IMG_9781_KFOoSTO.JPG HTTP/1.1" 404 2685 basehttp 6179 log_message
+INFO 2023-10-03 08:09:54,774 "GET /shop/product/29 HTTP/1.1" 200 1085 basehttp 6179 log_message
+WARNING 2023-10-03 08:09:54,834 Not Found: /media/IMG_9781_KFOoSTO.JPG log 6179 log_response
+WARNING 2023-10-03 08:09:54,835 "GET /media/IMG_9781_KFOoSTO.JPG HTTP/1.1" 404 2685 basehttp 6179 log_message
+INFO 2023-10-03 08:11:09,507 "GET /shop/product/29 HTTP/1.1" 200 1085 basehttp 6179 log_message
+WARNING 2023-10-03 08:11:09,552 Not Found: /media/IMG_9781_KFOoSTO.JPG log 6179 log_response
+WARNING 2023-10-03 08:11:09,553 "GET /media/IMG_9781_KFOoSTO.JPG HTTP/1.1" 404 2685 basehttp 6179 log_message
+INFO 2023-10-03 08:11:10,323 "GET /shop/product/29 HTTP/1.1" 200 1085 basehttp 6179 log_message
+WARNING 2023-10-03 08:11:10,373 Not Found: /media/IMG_9781_KFOoSTO.JPG log 6179 log_response
+WARNING 2023-10-03 08:11:10,374 "GET /media/IMG_9781_KFOoSTO.JPG HTTP/1.1" 404 2685 basehttp 6179 log_message
+INFO 2023-10-03 08:11:34,190 "GET /shop/products/add HTTP/1.1" 200 2005 basehttp 6179 log_message
+INFO 2023-10-03 08:12:01,995 "POST /shop/products/add HTTP/1.1" 200 2030 basehttp 6179 log_message
+INFO 2023-10-03 08:12:06,858 "GET /shop/ HTTP/1.1" 200 2168 basehttp 6179 log_message
+INFO 2023-10-03 08:12:07,839 Request for get available products views 6179 get_products_available
+INFO 2023-10-03 08:12:07,845 "GET /shop/products/ HTTP/1.1" 200 3709 basehttp 6179 log_message
+INFO 2023-10-03 08:12:09,775 "GET /shop/product/30 HTTP/1.1" 200 1124 basehttp 6179 log_message
+WARNING 2023-10-03 08:12:09,862 Not Found: /media/5bb8bb9a33d81_a1d28d6151118b6dd78566b6d91b8829_EF61GLE.webp log 6179 log_response
+WARNING 2023-10-03 08:12:09,863 "GET /media/5bb8bb9a33d81_a1d28d6151118b6dd78566b6d91b8829_EF61GLE.webp HTTP/1.1" 404 2802 basehttp 6179 log_message
+WARNING 2023-10-03 08:12:25,186 Not Found: /media/5bb8bb9a33d81_a1d28d6151118b6dd78566b6d91b8829_EF61GLE.webp log 6179 log_response
+WARNING 2023-10-03 08:12:25,186 "GET /media/5bb8bb9a33d81_a1d28d6151118b6dd78566b6d91b8829_EF61GLE.webp HTTP/1.1" 404 2802 basehttp 6179 log_message
+INFO 2023-10-03 08:13:04,387 "GET /shop/products/add HTTP/1.1" 200 2005 basehttp 6179 log_message
+INFO 2023-10-03 08:13:28,899 "POST /shop/products/add HTTP/1.1" 200 2030 basehttp 6179 log_message
+INFO 2023-10-03 08:13:35,706 "GET /shop/ HTTP/1.1" 200 2168 basehttp 6179 log_message
+INFO 2023-10-03 08:13:37,509 Request for get available products views 6179 get_products_available
+INFO 2023-10-03 08:13:37,514 "GET /shop/products/ HTTP/1.1" 200 3800 basehttp 6179 log_message
+INFO 2023-10-03 08:13:40,043 "GET /shop/product/31 HTTP/1.1" 200 1085 basehttp 6179 log_message
+WARNING 2023-10-03 08:13:40,153 Not Found: /media/IMG_9791_KeWdNEv.JPG log 6179 log_response
+WARNING 2023-10-03 08:13:40,155 "GET /media/IMG_9791_KeWdNEv.JPG HTTP/1.1" 404 2685 basehttp 6179 log_message
+WARNING 2023-10-03 08:13:54,805 Not Found: /media/IMG_9791_KeWdNEv.JPG log 6179 log_response
+WARNING 2023-10-03 08:13:54,806 "GET /media/IMG_9791_KeWdNEv.JPG HTTP/1.1" 404 2685 basehttp 6179 log_message
+INFO 2023-10-03 08:15:37,174 /home/olgatorres/PycharmProjects/Django/testproject/shop/urls.py changed, reloading. autoreload 6179 trigger_reload
+INFO 2023-10-03 08:15:37,656 Watching for file changes with StatReloader autoreload 7712 run_with_reloader
+INFO 2023-10-03 08:15:48,787 /home/olgatorres/PycharmProjects/Django/testproject/shop/urls.py changed, reloading. autoreload 7712 trigger_reload
+INFO 2023-10-03 08:15:49,303 Watching for file changes with StatReloader autoreload 7730 run_with_reloader
+INFO 2023-10-03 08:15:50,244 "GET /shop/product/31 HTTP/1.1" 200 1085 basehttp 7730 log_message
+WARNING 2023-10-03 08:15:50,327 Not Found: /media/IMG_9791_KeWdNEv.JPG log 7730 log_response
+WARNING 2023-10-03 08:15:50,327 "GET /media/IMG_9791_KeWdNEv.JPG HTTP/1.1" 404 2685 basehttp 7730 log_message
+INFO 2023-10-03 08:15:51,320 "GET /shop/product/31 HTTP/1.1" 200 1085 basehttp 7730 log_message
+WARNING 2023-10-03 08:15:51,411 Not Found: /media/IMG_9791_KeWdNEv.JPG log 7730 log_response
+WARNING 2023-10-03 08:15:51,412 "GET /media/IMG_9791_KeWdNEv.JPG HTTP/1.1" 404 2685 basehttp 7730 log_message
+INFO 2023-10-03 08:15:55,498 "GET /shop/product/31 HTTP/1.1" 200 1085 basehttp 7730 log_message
+WARNING 2023-10-03 08:15:55,585 Not Found: /media/IMG_9791_KeWdNEv.JPG log 7730 log_response
+WARNING 2023-10-03 08:15:55,587 "GET /media/IMG_9791_KeWdNEv.JPG HTTP/1.1" 404 2685 basehttp 7730 log_message
+WARNING 2023-10-03 08:15:59,719 Not Found: /media/IMG_9791_KeWdNEv.JPG log 7730 log_response
+WARNING 2023-10-03 08:15:59,720 "GET /media/IMG_9791_KeWdNEv.JPG HTTP/1.1" 404 2685 basehttp 7730 log_message
+INFO 2023-10-03 08:17:43,593 /home/olgatorres/PycharmProjects/Django/testproject/shop/urls.py changed, reloading. autoreload 7730 trigger_reload
+INFO 2023-10-03 08:17:44,008 Watching for file changes with StatReloader autoreload 7866 run_with_reloader
+INFO 2023-10-03 08:17:58,159 /home/olgatorres/PycharmProjects/Django/testproject/testproject/urls.py changed, reloading. autoreload 7866 trigger_reload
+INFO 2023-10-03 08:17:58,622 Watching for file changes with StatReloader autoreload 7881 run_with_reloader
+INFO 2023-10-03 08:18:00,165 "GET /shop/product/31 HTTP/1.1" 200 1085 basehttp 7881 log_message
+INFO 2023-10-03 08:18:00,245 "GET /media/IMG_9791_KeWdNEv.JPG HTTP/1.1" 200 336514 basehttp 7881 log_message

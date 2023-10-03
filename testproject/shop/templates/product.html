@@ -7,4 +7,7 @@
 <p>Price: {{ product.price }}</p>
 <p>Quantity: {{ product.quantity }}</p>
 <p>Added_date: {{ product.added_date }}</p>
+{% if product.product_image %}
+        <img src="{{ product.product_image.url }}" alt="{{ product.product_name }}" height="200">
+{% endif %}
 {% endblock %}
