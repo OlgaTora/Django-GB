@@ -9,9 +9,14 @@
 <p>views: {{ article.views }}</p>
 <p>published: {{ article.is_published }}</p>
 
-<button class="auth_button" type="submit" name="form_auth_submit">
-    <a href="/blog/articles/add_new_comment/">Add new comment</a>
-</button>
+<h1>{{ message }}</h1>
+<div class="container">
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Push">
+    </form>
+</div>
 
 <h4>List of comments: </h4>
 {% for comment in comments %}

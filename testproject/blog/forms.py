@@ -23,5 +23,4 @@ class AddArticleForm(forms.Form):
 
 class AddCommentForm(forms.Form):
     author = forms.ModelChoiceField(queryset=models.Author.objects.all(), empty_label='Choose your name')
-    article = forms.ModelChoiceField(queryset=models.Article.objects.all(), empty_label='Choose article')
     comment_text = forms.CharField()

@@ -10,6 +10,4 @@ urlpatterns = [
     path('articles/add_new_article/', views.add_article_form, name='add_new_article'),
     path('articles/author/<str:name>/', views.article_by_author, name='articles_by_author'),
     path('article/<int:pk>/', views.article_content, name='article_content'),
-    path('articles/add_new_comment/', views.add_comment_form, name='add_new_comment'),
-
 ]

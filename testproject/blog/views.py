@@ -1,6 +1,6 @@
-import datetime
 import logging
 
+from django import http
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
 from .forms import AddAuthorForm, AddArticleForm, AddCommentForm
@@ -75,25 +75,6 @@ def add_article_form(request):
                   {'form': form, 'message': message})
 
 
-def add_comment_form(request):
-    message = 'Please fill form to add new comment'
-    if request.method == 'POST':
-        form = AddCommentForm(request.POST)
-        if form.is_valid():
-            comment = Comment(article=form.cleaned_data['article'],
-                              author=form.cleaned_data['author'],
-                              comment_text=form.cleaned_data['comment_text'])
-            print(comment.added_date)
-            comment.save()
-            logger.info(f'Add new comment {comment.author=}, {comment.article=}')
-            message = 'Successfully operation'
-    else:
-        form = AddCommentForm()
-    return render(request,
-                  'add_new.html',
-                  {'form': form, 'message': message})
-
-
 # def article_by_author(request):
 #     author = request.GET.get('author')
 #     author_id = Author.objects.filter(name=author).first()
@@ -115,6 +96,19 @@ def article_content(request, pk):
     article.views += 1
     article.save()
     comments = Comment.objects.filter(article=article).order_by('added_date')
-    return render(request,
-                  'article.html',
-                  {'article': article, 'comments': comments})
+    message = 'Add new comment'
+
+    if request.method == 'POST':
+        form = AddCommentForm(request.POST)
+        if form.is_valid():
+            comment = Comment(article=article,
+                              author=form.cleaned_data['author'],
+                              comment_text=form.cleaned_data['comment_text'])
+            comment.save()
+            logger.info(f'Add new comment {comment.author=}, {comment.article=}')
+            return http.HttpResponseRedirect('')
+    else:
+        form = AddCommentForm()
+        return render(request,
+                      'article.html',
+                      {'article': article, 'comments': comments, 'form': form, 'message': message})
