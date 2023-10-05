@@ -108,3 +108,11 @@ input:focus{
     color: red;
     text-align:center;
 }
+
+{.app-blog module
+    background: silver;
+}
+
+#branding h1{
+    color:silver;
+}
