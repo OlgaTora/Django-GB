@@ -19,12 +19,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-z_(8lb&nfv@#mv=s#mssqw$ts!j268b__j@$rhv05q8bc=vx#d'
+# SECRET_KEY = 'django-insecure-z_(8lb&nfv@#mv=s#mssqw$ts!j268b__j@$rhv05q8bc=vx#d'
+
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '109.197.204.19']
+ALLOWED_HOSTS = ['127.0.0.1', '109.197.204.19', 'username.pythonanywhere.com']
 
 # Application definition
 
@@ -80,11 +82,25 @@ WSGI_APPLICATION = 'testproject.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+#
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'OlgaTora$default',
+        'USER': 'OlgaTora',
+        'PASSWORD': os.getenv('MYSQL_PASSWORD'),
+        'HOST': 'OlgaTora.mysql.pythonanywhere-services.com',
+        'OPTIONS': {
+            'init_command': "SET NAMES 'utf8mb4';SET sql_mode = 'STRICT_TRANS_TABLES'",
+            'charset': 'utf8mb4',
+        },
     }
 }
 
@@ -124,6 +140,7 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 
+STATIC_ROOT = BASE_DIR / 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -132,6 +149,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = BASE_DIR / 'media'
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 LOGGING = {
     'version': 1,
