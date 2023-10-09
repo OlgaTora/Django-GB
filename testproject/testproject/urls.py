@@ -26,6 +26,7 @@ urlpatterns = [
     path('test/', include('testapp.urls')),
     path('random/', include('randomapp.urls')),
     path('blog/', include('blog.urls')),
+    path('__debug__/', include("debug_toolbar.urls")),
 ]
 if settings.DEBUG:
     urlpatterns += static(

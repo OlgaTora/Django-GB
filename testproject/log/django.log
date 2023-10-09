@@ -2400,3 +2400,269 @@ INFO 2023-10-05 09:48:46,440 Watching for file changes with StatReloader autorel
 INFO 2023-10-05 09:49:37,543 Watching for file changes with StatReloader autoreload 10487 run_with_reloader
 INFO 2023-10-05 09:49:39,685 "GET /admin/shop/order/151/change/ HTTP/1.1" 200 16168 basehttp 10487 log_message
 INFO 2023-10-05 09:49:39,782 "GET /admin/jsi18n/ HTTP/1.1" 200 3343 basehttp 10487 log_message
+INFO 2023-10-07 12:59:53,778 Watching for file changes with StatReloader autoreload 16500 run_with_reloader
+WARNING 2023-10-07 12:59:57,823 Not Found: / log 16500 log_response
+WARNING 2023-10-07 12:59:57,825 "GET / HTTP/1.1" 404 2715 basehttp 16500 log_message
+INFO 2023-10-07 13:00:18,633 "GET /blog/ HTTP/1.1" 200 1780 basehttp 16500 log_message
+WARNING 2023-10-07 13:00:35,228 Not Found: /blog/articles_by_author/ log 16500 log_response
+WARNING 2023-10-07 13:00:35,229 "GET /blog/articles_by_author/?name=Name5 HTTP/1.1" 404 4046 basehttp 16500 log_message
+WARNING 2023-10-07 13:01:02,532 Not Found: /blog/articles_by_author/ log 16500 log_response
+WARNING 2023-10-07 13:01:02,533 "GET /blog/articles_by_author/?name=Name7 HTTP/1.1" 404 4046 basehttp 16500 log_message
+WARNING 2023-10-07 13:01:42,657 Not Found: /blog/article/ log 16500 log_response
+WARNING 2023-10-07 13:01:42,657 "GET /blog/article/?pk=1 HTTP/1.1" 404 4007 basehttp 16500 log_message
+WARNING 2023-10-07 13:02:06,121 Not Found: /blog/article/s log 16500 log_response
+WARNING 2023-10-07 13:02:06,122 "GET /blog/article/s HTTP/1.1" 404 4005 basehttp 16500 log_message
+WARNING 2023-10-07 13:02:09,662 Not Found: /blog/articles_by_author/ log 16500 log_response
+WARNING 2023-10-07 13:02:09,662 "GET /blog/articles_by_author/ HTTP/1.1" 404 4035 basehttp 16500 log_message
+INFO 2023-10-07 13:02:17,750 "GET /blog/articles HTTP/1.1" 301 0 basehttp 16500 log_message
+INFO 2023-10-07 13:02:17,779 "GET /blog/articles/ HTTP/1.1" 200 8469 basehttp 16500 log_message
+INFO 2023-10-07 13:02:20,607 "GET /blog/article/4/ HTTP/1.1" 200 4114 basehttp 16500 log_message
+INFO 2023-10-09 09:14:47,371 Watching for file changes with StatReloader autoreload 5830 run_with_reloader
+WARNING 2023-10-09 09:14:49,865 Not Found: / log 5830 log_response
+WARNING 2023-10-09 09:14:49,866 "GET / HTTP/1.1" 404 12146 basehttp 5830 log_message
+INFO 2023-10-09 09:14:49,919 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621 basehttp 5830 log_message
+INFO 2023-10-09 09:14:49,921 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404 basehttp 5830 log_message
+INFO 2023-10-09 09:14:49,972 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527 basehttp 5830 log_message
+INFO 2023-10-09 09:14:49,972 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43 basehttp 5830 log_message
+WARNING 2023-10-09 09:15:00,230 Not Found: /test/ log 5830 log_response
+WARNING 2023-10-09 09:15:00,231 "GET /test/ HTTP/1.1" 404 12251 basehttp 5830 log_message
+INFO 2023-10-09 09:16:46,781 "GET /random/ HTTP/1.1" 200 10845 basehttp 5830 log_message
+INFO 2023-10-09 09:16:46,880 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0 basehttp 5830 log_message
+INFO 2023-10-09 09:16:46,883 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0 basehttp 5830 log_message
+INFO 2023-10-09 09:16:46,885 "GET /static/css/style.css HTTP/1.1" 200 1587 basehttp 5830 log_message
+INFO 2023-10-09 09:16:46,911 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0 basehttp 5830 log_message
+INFO 2023-10-09 09:16:46,931 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0 basehttp 5830 log_message
+INFO 2023-10-09 09:17:28,383 "GET /random/cube/5 HTTP/1.1" 200 10308 basehttp 5830 log_message
+INFO 2023-10-09 09:17:28,457 "GET /static/debug_toolbar/js/redirect.js HTTP/1.1" 200 48 basehttp 5830 log_message
+INFO 2023-10-09 09:17:33,602 "GET /random/cube/5/ HTTP/1.1" 200 10991 basehttp 5830 log_message
+INFO 2023-10-09 09:17:36,142 "GET /random/cube/5/ HTTP/1.1" 200 10991 basehttp 5830 log_message
+INFO 2023-10-09 09:17:36,724 "GET /random/cube/5/ HTTP/1.1" 200 10991 basehttp 5830 log_message
+INFO 2023-10-09 09:17:37,345 "GET /random/cube/5/ HTTP/1.1" 200 10991 basehttp 5830 log_message
+INFO 2023-10-09 09:50:56,183 "GET /__debug__/render_panel/?store_id=218cd99e50f441569d185d360cc1c080&panel_id=HistoryPanel HTTP/1.1" 200 13152 basehttp 5830 log_message
+INFO 2023-10-09 09:50:56,194 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3330 basehttp 5830 log_message
+INFO 2023-10-09 09:51:04,233 "GET /__debug__/render_panel/?store_id=218cd99e50f441569d185d360cc1c080&panel_id=VersionsPanel HTTP/1.1" 200 622 basehttp 5830 log_message
+INFO 2023-10-09 09:51:21,165 "GET /__debug__/render_panel/?store_id=218cd99e50f441569d185d360cc1c080&panel_id=TimerPanel HTTP/1.1" 200 1375 basehttp 5830 log_message
+INFO 2023-10-09 09:51:21,175 "GET /static/debug_toolbar/js/timer.js HTTP/1.1" 200 3686 basehttp 5830 log_message
+INFO 2023-10-09 09:51:28,414 "GET /__debug__/render_panel/?store_id=218cd99e50f441569d185d360cc1c080&panel_id=SettingsPanel HTTP/1.1" 200 27791 basehttp 5830 log_message
+INFO 2023-10-09 09:52:38,332 "GET /__debug__/render_panel/?store_id=218cd99e50f441569d185d360cc1c080&panel_id=HeadersPanel HTTP/1.1" 200 3565 basehttp 5830 log_message
+INFO 2023-10-09 09:52:42,190 "GET /__debug__/render_panel/?store_id=218cd99e50f441569d185d360cc1c080&panel_id=RequestPanel HTTP/1.1" 200 1107 basehttp 5830 log_message
+INFO 2023-10-09 09:52:46,548 "GET /__debug__/render_panel/?store_id=218cd99e50f441569d185d360cc1c080&panel_id=SQLPanel HTTP/1.1" 200 14177 basehttp 5830 log_message
+ERROR 2023-10-09 09:52:55,869 The joined path (/css/style.css) is located outside of the base path component (/home/olgatorres/PycharmProjects/Django/testproject/static) exception 5830 response_for_exception
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/debug_toolbar/decorators.py", line 18, in inner
+    return view(request, *args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/debug_toolbar/decorators.py", line 30, in inner
+    return view(request, *args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/debug_toolbar/views.py", line 23, in render_panel
+    content = panel.content
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/debug_toolbar/panels/__init__.py", line 103, in content
+    return render_to_string(self.template, self.get_stats())
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/test/utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/debug_toolbar/panels/staticfiles.py", line 26, in real_path
+    return finders.find(self.path)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/contrib/staticfiles/finders.py", line 298, in find
+    result = finder.find(path, all=all)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/contrib/staticfiles/finders.py", line 124, in find
+    matched_path = self.find_location(root, path, prefix)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/contrib/staticfiles/finders.py", line 141, in find_location
+    path = safe_join(root, path)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/utils/_os.py", line 31, in safe_join
+    raise SuspiciousFileOperation(
+django.core.exceptions.SuspiciousFileOperation: The joined path (/css/style.css) is located outside of the base path component (/home/olgatorres/PycharmProjects/Django/testproject/static)
+WARNING 2023-10-09 09:52:55,905 Bad Request: /__debug__/render_panel/ log 5830 log_response
+WARNING 2023-10-09 09:52:55,906 "GET /__debug__/render_panel/?store_id=218cd99e50f441569d185d360cc1c080&panel_id=StaticFilesPanel HTTP/1.1" 400 258299 basehttp 5830 log_message
+INFO 2023-10-09 09:53:06,509 "GET /random/ HTTP/1.1" 200 10862 basehttp 5830 log_message
+INFO 2023-10-09 09:53:06,544 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0 basehttp 5830 log_message
+INFO 2023-10-09 09:53:06,544 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0 basehttp 5830 log_message
+INFO 2023-10-09 09:53:06,551 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0 basehttp 5830 log_message
+INFO 2023-10-09 09:53:06,598 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0 basehttp 5830 log_message
+INFO 2023-10-09 09:53:18,906 "GET /__debug__/render_panel/?store_id=143548925fa34a62bb33c37a945a4472&panel_id=SignalsPanel HTTP/1.1" 200 2274 basehttp 5830 log_message
+INFO 2023-10-09 09:53:23,298 "GET /random/ HTTP/1.1" 200 11252 basehttp 5830 log_message
+INFO 2023-10-09 09:53:25,122 "GET /random/cube/5 HTTP/1.1" 200 10308 basehttp 5830 log_message
+INFO 2023-10-09 09:53:25,162 "GET /static/debug_toolbar/js/redirect.js HTTP/1.1" 304 0 basehttp 5830 log_message
+INFO 2023-10-09 09:53:26,287 "GET /random/cube/5/ HTTP/1.1" 200 10991 basehttp 5830 log_message
+INFO 2023-10-09 09:53:31,939 "GET /__debug__/render_panel/?store_id=021774d1295f4489b3aad768bf22f36f&panel_id=SignalsPanel HTTP/1.1" 200 2274 basehttp 5830 log_message
+INFO 2023-10-09 09:53:44,416 "GET /random/choice_form/ HTTP/1.1" 200 11347 basehttp 5830 log_message
+INFO 2023-10-09 09:53:47,749 "POST /random/choice_form/ HTTP/1.1" 200 10747 basehttp 5830 log_message
+INFO 2023-10-09 09:53:55,463 "GET /__debug__/render_panel/?store_id=992e8545f3b140a2bdb7ab71ddfc01ea&panel_id=SignalsPanel HTTP/1.1" 200 2274 basehttp 5830 log_message
+ERROR 2023-10-09 09:54:14,266 The joined path (/css/style.css) is located outside of the base path component (/home/olgatorres/PycharmProjects/Django/testproject/static) exception 5830 response_for_exception
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/debug_toolbar/decorators.py", line 18, in inner
+    return view(request, *args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/debug_toolbar/decorators.py", line 30, in inner
+    return view(request, *args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/debug_toolbar/views.py", line 23, in render_panel
+    content = panel.content
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/debug_toolbar/panels/__init__.py", line 103, in content
+    return render_to_string(self.template, self.get_stats())
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/test/utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/debug_toolbar/panels/staticfiles.py", line 26, in real_path
+    return finders.find(self.path)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/contrib/staticfiles/finders.py", line 298, in find
+    result = finder.find(path, all=all)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/contrib/staticfiles/finders.py", line 124, in find
+    matched_path = self.find_location(root, path, prefix)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/contrib/staticfiles/finders.py", line 141, in find_location
+    path = safe_join(root, path)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/utils/_os.py", line 31, in safe_join
+    raise SuspiciousFileOperation(
+django.core.exceptions.SuspiciousFileOperation: The joined path (/css/style.css) is located outside of the base path component (/home/olgatorres/PycharmProjects/Django/testproject/static)
+WARNING 2023-10-09 09:54:14,299 Bad Request: /__debug__/render_panel/ log 5830 log_response
+WARNING 2023-10-09 09:54:14,299 "GET /__debug__/render_panel/?store_id=992e8545f3b140a2bdb7ab71ddfc01ea&panel_id=StaticFilesPanel HTTP/1.1" 400 258310 basehttp 5830 log_message
+INFO 2023-10-09 09:54:19,586 "GET /__debug__/render_panel/?store_id=992e8545f3b140a2bdb7ab71ddfc01ea&panel_id=SQLPanel HTTP/1.1" 200 115 basehttp 5830 log_message
+INFO 2023-10-09 09:54:25,286 "GET /random/choice_form/ HTTP/1.1" 200 11347 basehttp 5830 log_message
+INFO 2023-10-09 09:54:27,218 "GET /random/ HTTP/1.1" 200 11252 basehttp 5830 log_message
+INFO 2023-10-09 09:54:29,334 "GET /random/choice_form/ HTTP/1.1" 200 11347 basehttp 5830 log_message
+INFO 2023-10-09 09:54:31,289 "POST /random/choice_form/ HTTP/1.1" 200 10747 basehttp 5830 log_message
+INFO 2023-10-09 09:54:33,394 "GET /__debug__/render_panel/?store_id=9b9ea4e2ef53469bb1cea970a1cc4d34&panel_id=VersionsPanel HTTP/1.1" 200 622 basehttp 5830 log_message
+INFO 2023-10-09 09:54:37,463 "GET /__debug__/render_panel/?store_id=9b9ea4e2ef53469bb1cea970a1cc4d34&panel_id=TimerPanel HTTP/1.1" 200 1374 basehttp 5830 log_message
+INFO 2023-10-09 09:54:40,266 "GET /__debug__/render_panel/?store_id=9b9ea4e2ef53469bb1cea970a1cc4d34&panel_id=SettingsPanel HTTP/1.1" 200 27791 basehttp 5830 log_message
+INFO 2023-10-09 09:54:43,681 "GET /__debug__/render_panel/?store_id=9b9ea4e2ef53469bb1cea970a1cc4d34&panel_id=SQLPanel HTTP/1.1" 200 115 basehttp 5830 log_message
+INFO 2023-10-09 09:54:48,318 "GET /random/choice_form/ HTTP/1.1" 200 11347 basehttp 5830 log_message
+INFO 2023-10-09 09:54:51,330 "GET /random/ HTTP/1.1" 200 11252 basehttp 5830 log_message
+INFO 2023-10-09 09:54:52,931 "GET /random/h_or_t/5 HTTP/1.1" 200 10314 basehttp 5830 log_message
+INFO 2023-10-09 09:54:54,503 "GET /random/h_or_t/5/ HTTP/1.1" 200 11023 basehttp 5830 log_message
+INFO 2023-10-09 09:54:57,736 "GET /__debug__/render_panel/?store_id=587eb84138c14018bb7ea2db1b6656f6&panel_id=SQLPanel HTTP/1.1" 200 115 basehttp 5830 log_message
+ERROR 2023-10-09 09:55:00,906 The joined path (/css/style.css) is located outside of the base path component (/home/olgatorres/PycharmProjects/Django/testproject/static) exception 5830 response_for_exception
+Traceback (most recent call last):
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/debug_toolbar/decorators.py", line 18, in inner
+    return view(request, *args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/debug_toolbar/decorators.py", line 30, in inner
+    return view(request, *args, **kwargs)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/debug_toolbar/views.py", line 23, in render_panel
+    content = panel.content
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/debug_toolbar/panels/__init__.py", line 103, in content
+    return render_to_string(self.template, self.get_stats())
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/test/utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/debug_toolbar/panels/staticfiles.py", line 26, in real_path
+    return finders.find(self.path)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/contrib/staticfiles/finders.py", line 298, in find
+    result = finder.find(path, all=all)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/contrib/staticfiles/finders.py", line 124, in find
+    matched_path = self.find_location(root, path, prefix)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/contrib/staticfiles/finders.py", line 141, in find_location
+    path = safe_join(root, path)
+  File "/home/olgatorres/PycharmProjects/Django/venv/lib/python3.10/site-packages/django/utils/_os.py", line 31, in safe_join
+    raise SuspiciousFileOperation(
+django.core.exceptions.SuspiciousFileOperation: The joined path (/css/style.css) is located outside of the base path component (/home/olgatorres/PycharmProjects/Django/testproject/static)
+WARNING 2023-10-09 09:55:00,939 Bad Request: /__debug__/render_panel/ log 5830 log_response
+WARNING 2023-10-09 09:55:00,940 "GET /__debug__/render_panel/?store_id=587eb84138c14018bb7ea2db1b6656f6&panel_id=StaticFilesPanel HTTP/1.1" 400 258446 basehttp 5830 log_message
+INFO 2023-10-09 09:55:12,967 "GET /__debug__/render_panel/?store_id=587eb84138c14018bb7ea2db1b6656f6&panel_id=CachePanel HTTP/1.1" 200 1413 basehttp 5830 log_message
+INFO 2023-10-09 09:55:15,357 "GET /__debug__/render_panel/?store_id=587eb84138c14018bb7ea2db1b6656f6&panel_id=SignalsPanel HTTP/1.1" 200 2274 basehttp 5830 log_message
+INFO 2023-10-09 09:55:17,749 "GET /random/h_or_t/5/ HTTP/1.1" 200 11023 basehttp 5830 log_message
+INFO 2023-10-09 09:55:24,676 "GET /random/choice_form/ HTTP/1.1" 200 11347 basehttp 5830 log_message
+INFO 2023-10-09 09:55:30,728 "POST /random/choice_form/ HTTP/1.1" 200 11028 basehttp 5830 log_message
+INFO 2023-10-09 09:55:33,204 "GET /__debug__/render_panel/?store_id=3a9b6244c20a4ccca27913819511f709&panel_id=SQLPanel HTTP/1.1" 200 115 basehttp 5830 log_message
+INFO 2023-10-09 09:55:38,450 "GET /__debug__/render_panel/?store_id=3a9b6244c20a4ccca27913819511f709&panel_id=HistoryPanel HTTP/1.1" 200 41053 basehttp 5830 log_message
+INFO 2023-10-09 09:55:46,488 "GET /__debug__/render_panel/?store_id=3a9b6244c20a4ccca27913819511f709&panel_id=ProfilingPanel HTTP/1.1" 200 33547 basehttp 5830 log_message
