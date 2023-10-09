@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 
 def index(request):
-    return render(request, 'index_blog.html')
+    return render(request, 'blog/index_blog.html')
 
 
 def author_read(request):
@@ -18,7 +18,7 @@ def author_read(request):
     # return HttpResponse(authors)
     return render(
         request,
-        'authors.html',
+        'blog/authors.html',
         {'authors': authors}
     )
 
@@ -29,7 +29,7 @@ def article_read(request):
     # return HttpResponse(article)
     return render(
         request,
-        'articles.html',
+        'blog/articles.html',
         {'articles': articles, 'title': title})
 
 
@@ -50,7 +50,7 @@ def add_author_form(request):
     else:
         form = AddAuthorForm()
     return render(request,
-                  'add_new.html',
+                  'blog/add_new.html',
                   {'form': form, 'message': message})
 
 
@@ -71,7 +71,7 @@ def add_article_form(request):
     else:
         form = AddArticleForm()
     return render(request,
-                  'add_new.html',
+                  'blog/add_new.html',
                   {'form': form, 'message': message})
 
 
@@ -87,7 +87,7 @@ def article_by_author(request, name):
     title = f'by {author}'
     return render(
         request,
-        'articles.html',
+        'blog/articles.html',
         {'articles': articles, 'title': title})
 
 
@@ -110,5 +110,5 @@ def article_content(request, pk):
     else:
         form = AddCommentForm()
         return render(request,
-                      'article.html',
+                      'blog/article.html',
                       {'article': article, 'comments': comments, 'form': form, 'message': message})

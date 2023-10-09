@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 
 def index(request):
-    return render(request, 'index_random.html')
+    return render(request, 'randomapp/index_random.html')
 
 
 def choice_form(request):
@@ -30,7 +30,7 @@ def choice_form(request):
     else:
         form = ChoiceGameForm()
         return render(request,
-                      'choice_form.html',
+                      'randomapp/choice_form.html',
                       {'form': form})
 
 
@@ -42,7 +42,7 @@ def get_cube(request, rolls):
     context = {'results': res_list, 'game': 'cube'}
     msg = f'Side of cube is {res_list}'
     logger.info(msg)
-    return render(request, 'game_result.html', context)
+    return render(request, 'randomapp/game_result.html', context)
     # return HttpResponse(msg)
 
 
@@ -54,7 +54,7 @@ def get_number(request, rolls):
     context = {'results': res_list, 'game': 'numbers'}
     res = f'Number is {res_list}'
     logger.info(res)
-    return render(request, 'game_result.html', context)
+    return render(request, 'randomapp/game_result.html', context)
     # return HttpResponse(msg)
 
 
@@ -75,4 +75,4 @@ def get_heads(request, rolls):
     context = {'results': res_list, 'game': 'head or tails'}
     res = f'Result is {res_list}'
     logger.info(res)
-    return render(request, 'game_result.html', context)
+    return render(request, 'randomapp/game_result.html', context)

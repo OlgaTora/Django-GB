@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 
 def index(request):
-    return render(request, 'index_shop.html')
+    return render(request, 'shop/index_shop.html')
 
 
 def get_orders_by_client(request, pk, limit):
@@ -22,7 +22,7 @@ def get_orders_by_client(request, pk, limit):
     orders = orders[:limit]
     info = f'of client {client.name}'
     return render(request,
-                  'orders.html',
+                  'shop/orders.html',
                   {'client': client, 'orders': orders, 'info': info})
 
 
@@ -37,7 +37,7 @@ def get_full_orders_by_client(request, pk):
         products[order.id] = list(map(Product.to_list, order.product.all()))
     info = f'of client {client.name}'
     return render(request,
-                  'orders_with_products.html',
+                  'shop/orders_with_products.html',
                   {'client': client, 'orders': orders, 'info': info, 'products': products})
 
 
@@ -46,7 +46,7 @@ def get_order(request, pk):
     order = get_object_or_404(Order, pk=pk)
     products = list(map(Product.to_list, order.product.all()))
     return render(request,
-                  'order.html',
+                  'shop/order.html',
                   {'order': order, 'products': products}, )
 
 
@@ -54,7 +54,7 @@ def get_product(request, pk):
     """View for get full information about product."""
     product = get_object_or_404(Product, pk=pk)
     return render(request,
-                  'product.html',
+                  'shop/product.html',
                   {'product': product}, )
 
 
@@ -68,7 +68,7 @@ def get_products_by_client(request, pk, period):
     products = set(product for order in orders for product in order.product.all())
     return render(
         request,
-        'client_basket.html',
+        'shop/client_basket.html',
         {'client': client, 'products': products, 'period': period}
     )
 
@@ -80,7 +80,7 @@ def get_products_available(request):
     logger.info(msg)
     products = Product.objects.filter(quantity__gt=quantity)
     return render(request,
-                  'products.html',
+                  'shop/products.html',
                   {'products': products})
 
 
@@ -91,7 +91,7 @@ def status_order(request, status):
     orders = Order.objects.filter(status=status)
     info = f'by status = {status}'
     return render(request,
-                  'orders.html',
+                  'shop/orders.html',
                   {'orders': orders, 'info': info})
 
 
@@ -132,6 +132,6 @@ def add_new_product(request):
         form = AddNewProduct()
     return render(
         request,
-        'add_new_product.html',
+        'shop/add_new_product.html',
         {'form': form, 'message': message}
     )
